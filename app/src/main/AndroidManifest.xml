@@ -29,6 +29,9 @@
 
         </activity>
         <activity
+            android:name=".Mode_change_page"
+            android:exported="false" />
+        <activity
             android:name=".User_info_page"
             android:exported="false" />
         <activity
