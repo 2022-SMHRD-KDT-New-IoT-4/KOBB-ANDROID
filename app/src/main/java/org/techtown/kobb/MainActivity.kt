@@ -10,5 +10,6 @@ class MainActivity : AppCompatActivity() {
         print("확인용입니당")
         print("승주")
         print("승철")
+        print("종일")
     }
 }
