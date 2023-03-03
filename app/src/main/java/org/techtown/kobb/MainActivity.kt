@@ -7,9 +7,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        print("확인용입니당")
-        print("승주")
-        print("승철")
-        print("종일")
+
+
     }
 }
