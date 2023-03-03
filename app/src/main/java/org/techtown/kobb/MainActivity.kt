@@ -9,5 +9,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         print("확인용입니당")
         print("승주")
+        print("승철")
     }
 }
