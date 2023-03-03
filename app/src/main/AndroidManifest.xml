@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Kobb"
         tools:targetApi="31">
         <activity
+            android:name=".Control_inventory_page"
+            android:exported="false" />
+        <activity
+            android:name=".Control_menu_page"
+            android:exported="false" />
+        <activity
+            android:name=".Sales_condition_page"
+            android:exported="false" />
+        <activity
             android:name=".User_info_page"
             android:exported="false" />
         <activity
@@ -19,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".Manage_main_page"
-            android:exported="false" />
-        <activity
-            android:name=".Choice_mode_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +35,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Choice_mode_page"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
