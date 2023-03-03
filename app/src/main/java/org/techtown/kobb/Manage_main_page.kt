@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class Manage_main_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,7 @@ class Manage_main_page : AppCompatActivity() {
         val btn_Control_inventory_page = findViewById<Button>(R.id.btn_Control_inventory_page)
         //val btn_Control_kiosk_page = findViewById<Button>(R.id.btn_Control_kiosk_page)
         val btn_Start_kiosk_page = findViewById<Button>(R.id.btn_Start_kiosk_page)
+        val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page)
 
 
         btn_Sales_condition_page.setOnClickListener {
@@ -44,6 +46,12 @@ class Manage_main_page : AppCompatActivity() {
         btn_Start_kiosk_page.setOnClickListener{
             val intent = Intent(this,Start_kiosk_page::class.java)
             startActivity(intent)
+        }
+
+        btn_User_info_page.setOnClickListener{
+            val intent = Intent(this,User_info_page::class.java)
+            startActivity(intent)
+
         }
 
 

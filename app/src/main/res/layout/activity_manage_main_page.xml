@@ -113,7 +113,7 @@
         android:id="@+id/btn_Start_kiosk_page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="10dp"
         android:backgroundTint="#FF5555"
         android:text="모드전환"
         android:textSize="16sp"
