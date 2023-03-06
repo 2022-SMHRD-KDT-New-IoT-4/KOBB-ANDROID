@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btn_join"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/main_color"

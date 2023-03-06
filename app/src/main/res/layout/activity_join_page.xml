@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#FF5555"
-    tools:context=".Manage_main_page">
+    tools:context=".Join_page">
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -23,8 +23,7 @@
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobb" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -67,7 +66,7 @@
         android:layout_height="wrap_content"
         android:text="아이디"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="@+id/user_phone"
         tools:layout_editor_absoluteY="272dp" />
 
     <TextView
@@ -81,7 +80,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/user_id"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
@@ -95,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/user_shop"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@color/white"
@@ -117,7 +116,7 @@
         tools:layout_editor_absoluteY="359dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/user_pw"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@color/white"
@@ -139,7 +138,7 @@
         tools:layout_editor_absoluteY="447dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/user_phone"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@color/white"
@@ -175,7 +174,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btn_join"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/main_color"
