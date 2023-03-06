@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/b"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#FF5555"
-    tools:context=".Manage_main_page">
+    tools:context=".Join_page">
+
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -19,7 +19,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="220dp"
+        android:layout_width="110dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
@@ -48,13 +48,16 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="800dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="50dp"
         android:background="#FFEAEA"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:layout_constraintVertical_bias="0.0" />
@@ -64,9 +67,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="아이디"
-        android:textColor="#504E4E"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="490dp"
+        app:layout_constraintStart_toStartOf="@+id/user_phone"
         tools:layout_editor_absoluteY="272dp" />
 
     <TextView
@@ -74,90 +76,81 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="매장이름"
-        android:textColor="#504E4E"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+        tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="186dp" />
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/user_id"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="  아이디를 입력해 주세요"
         android:inputType="textPersonName"
-        android:textColorHint="#504E4E"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/user_shop"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="  매장명을 입력해 주세요"
         android:inputType="textPersonName"
-        android:textColorHint="#504E4E"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        tools:layout_editor_absoluteY="223dp" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:text="비밀번호"
-        android:textColor="#504E4E"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6" />
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="359dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/user_pw"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="  비밀번호를 입력해 주세요"
         android:inputType="textPersonName"
-        android:textColorHint="#504E4E"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="398dp" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:text="전화번호"
-        android:textColor="#504E4E"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="447dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/user_phone"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="  전화번호를 입력해 주세요"
         android:inputType="textPersonName"
-        android:textColorHint="#504E4E"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
-        tools:layout_editor_absoluteY="476dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="486dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -175,7 +168,7 @@
         android:layout_height="wrap_content"
         android:text="회원가입"
         android:textColor="#504E4E"
-        android:textSize="34sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -183,23 +176,20 @@
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <Button
-        android:id="@+id/btn_Login_page"
+        android:id="@+id/btn_join"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:background="@color/main_color"
         android:text="가입 완료"
-        android:textColor="#504E4E"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="543dp" />
 
 
     <ImageButton
         android:id="@+id/btn_User_info_page"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="16dp"
         android:background="#FFFFFF"
         android:scaleType="fitXY"
@@ -207,6 +197,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homeicon_1" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
