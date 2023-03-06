@@ -15,18 +15,20 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         android:maxWidth="35dp"
         android:maxHeight="35dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobb" />
+        app:srcCompat="@drawable/kobbicon" />
 
     <Button
         android:layout_width="100dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#FF5555"
         android:text="모드 전환"
         android:textColor="#FFFFFF"
@@ -112,7 +114,7 @@
     <ImageButton
         android:id="@+id/btn_TakeOut_main_menu_page"
         android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_height="250dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/takeout2"
         android:scaleType="fitXY"

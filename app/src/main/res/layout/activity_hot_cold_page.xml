@@ -58,22 +58,6 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline"
                 app:layout_constraintVertical_bias="1.0" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="180dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="70dp"
-                android:background="#f4c6c6"
-                app:layout_constraintBottom_toTopOf="@+id/guideline2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toTopOf="@+id/guideline"
-                app:layout_constraintVertical_bias="1.0" />
-
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
@@ -83,20 +67,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline2"
                 app:srcCompat="@drawable/kobbtext" />
-
-            <Button
-                android:id="@+id/btn_Choice_mode_page"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="15dp"
-                android:backgroundTint="#FF5555"
-                android:text="모드 전환"
-                android:textColor="#FFFFFF"
-                android:textSize="32dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -113,7 +83,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="현재 접속된 모드는 고객모드입니다."
+                android:text="ㄴㅇㅇ"
                 android:textSize="34dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -124,76 +94,12 @@
                 android:id="@+id/textView13"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="관리자 모드로 전환을 원하시면"
+                android:text="차갑게 또는 따뜻하게 중 선택해주세요"
                 android:textSize="34dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView11"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:text="아래에 비밀번호를 입력해주세요."
-                android:textSize="34dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView13"
-                app:layout_constraintStart_toStartOf="@+id/textView13"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:text="관리자 비밀번호를 입력해주세요"
-                android:textSize="40dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-            <EditText
-                android:id="@+id/editTextTextPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:backgroundTint="#F8F0F0"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:textColorHighlight="#DAECDA"
-                app:layout_constraintEnd_toEndOf="@+id/textView12"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="@+id/textView12"
-                app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-            <Button
-                android:id="@+id/btn_Customer_main_page"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="100dp"
-                android:backgroundTint="#FF5555"
-                android:text="뒤로 가기"
-                android:textColor="#FFFFFF"
-                android:textSize="32dp"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-            <Button
-                android:id="@+id/btn_manage_main_page"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="100dp"
-                android:backgroundTint="#ff5555"
-                android:text="전환 하기"
-                android:textColor="#FFFFFF"
-                android:textSize="32dp"
-                app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
@@ -204,9 +110,52 @@
                 android:inputType="textPersonName"
                 android:text="(상호명)"
                 android:textSize="32dp"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Choice_mode_page"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton8"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#FFFFFF"
+                android:maxWidth="120dp"
+                android:maxHeight="90dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/shopping_cart1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="550sp"
+                android:layout_height="500sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="40sp"
+                android:layout_marginBottom="10sp"
+                android:background="#FF5555"
+                android:gravity="center|top"
+                android:text="따뜻하게"
+                android:textColor="#FFFFFF"
+                android:textSize="100sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="550sp"
+                android:layout_height="500sp"
+                android:layout_marginStart="40sp"
+                android:background="#FF5555"
+                android:gravity="center|top"
+                android:text="차갑게"
+                android:textColor="#FFFFFF"
+                android:textSize="100sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/button2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
