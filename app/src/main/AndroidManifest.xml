@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -24,8 +23,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".small_meun_page"
+            android:name=".join_success_page"
             android:exported="false" />
+        <activity
+            android:name=".join_page"
+            android:exported="false" />
+        <activity
+            android:name=".small_menu_page"
+            android:exported="false"/>
         <activity
             android:name=".Main_menu_page"
             android:exported="false" />
@@ -37,9 +42,7 @@
             android:exported="true">
 
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+
     </application>
 
 </manifest>

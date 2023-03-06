@@ -7,7 +7,7 @@
     tools:context=".Start_kiosk_page">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_Choice_mode_page"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
@@ -29,14 +29,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         android:maxWidth="35dp"
         android:maxHeight="35dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobb" />
+        app:srcCompat="@drawable/kobbicon" />
 
     <Button
         android:id="@+id/button"
@@ -54,6 +55,7 @@
         android:id="@+id/imageButton4"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
         android:background="#FFFFFF"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
