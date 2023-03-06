@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#FF5555"
@@ -18,7 +19,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="110dp"
+        android:layout_width="220dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
@@ -60,35 +61,36 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="56dp"
         android:text="회원가입완료!"
         android:textColor="#504E4E"
-        android:textSize="30sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <Button
-        android:id="@+id/btn_join"
+        android:id="@+id/btn_Login_page"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:background="@color/main_color"
-        android:text="로그인"
-        android:textSize="16sp"
+        android:text="로그인하기"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="543dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.387"
+        app:layout_constraintVertical_bias="0.338"
         tools:srcCompat="@drawable/checkmark" />
 
     <TextView
@@ -97,11 +99,10 @@
         android:layout_height="wrap_content"
         android:text="(매장명) 사장님!"
         android:textColor="#504E4E"
-        android:textSize="16sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="417dp" />
+        tools:layout_editor_absoluteY="461dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -110,7 +111,7 @@
         android:layout_marginTop="10dp"
         android:text="KOBB의 회원이 되신것을 축하합니다!"
         android:textColor="#504E4E"
-        android:textSize="16sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/textView14"
