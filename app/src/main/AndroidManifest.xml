@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Kobb"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".small_menu_page"
             android:exported="false" />
         <activity
@@ -27,8 +30,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".Join_page"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
