@@ -78,7 +78,7 @@
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint=" #F7F7F7"
+        android:backgroundTint="#F7F7F7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:srcCompat="@drawable/back" />
