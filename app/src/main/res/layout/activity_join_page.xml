@@ -178,6 +178,7 @@
         android:id="@+id/button11"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:background="@color/main_color"
         android:text="가입 완료"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -195,6 +196,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homeicon_1" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
