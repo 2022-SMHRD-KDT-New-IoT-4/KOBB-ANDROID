@@ -197,14 +197,4 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.25" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="년도 선택"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
