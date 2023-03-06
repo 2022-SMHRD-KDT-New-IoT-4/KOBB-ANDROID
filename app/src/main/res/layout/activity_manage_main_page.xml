@@ -17,13 +17,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobb" />
+        app:srcCompat="@drawable/kobbicon" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

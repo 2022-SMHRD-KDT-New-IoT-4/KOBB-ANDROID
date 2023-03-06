@@ -15,12 +15,12 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobb" />
+        app:srcCompat="@drawable/kobbicon" />
 
     <TextView
         android:id="@+id/textView7"
