@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Kobb"
         tools:targetApi="31">
         <activity
-            android:name=".small_meun_page"
+            android:name=".small_menu_page"
             android:exported="false" />
         <activity
             android:name=".Main_menu_page"
