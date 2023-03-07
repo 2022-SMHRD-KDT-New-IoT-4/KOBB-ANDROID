@@ -9,7 +9,7 @@ class Start_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start_page)
-
+        print("")
         Handler().postDelayed({
             val intent = Intent(this@Start_page,
                 Login_page::class.java)
