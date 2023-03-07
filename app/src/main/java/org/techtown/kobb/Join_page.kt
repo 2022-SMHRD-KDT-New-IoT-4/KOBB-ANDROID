@@ -1,5 +1,6 @@
 package org.techtown.kobb
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -55,6 +56,8 @@ class Join_page : AppCompatActivity() {
             // post 방식의 데이터를 담을 수 있는 위치
 
             requestQueue.add(request)
+            val intent = Intent(this,Join_success_page ::class.java)
+            startActivity(intent)
         })
 
 

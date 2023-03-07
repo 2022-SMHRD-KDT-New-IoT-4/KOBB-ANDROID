@@ -1,5 +1,6 @@
 package org.techtown.kobb
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -35,7 +36,7 @@ class Login_page : AppCompatActivity() {
                 url,
                 {response->
                     Toast.makeText(this@Login_page,"통신성공", Toast.LENGTH_SHORT).show()
-
+                    Log.d("respons값",response.toString())
                 },
                 { error ->
                     Toast.makeText(this@Login_page,"통신실패", Toast.LENGTH_SHORT).show()
@@ -43,8 +44,11 @@ class Login_page : AppCompatActivity() {
 
             )
             // post 방식의 데이터를 담을 수 있는 위치
-                Log.d("여기",request.toString())
+
             requestQueue.add(request)
+
+            val intent = Intent(this@Login_page,Choice_mode_page::class.java)
+            startActivity(intent)
         })
 
 
