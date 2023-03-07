@@ -10,7 +10,7 @@ class Cart_page : AppCompatActivity() {
 
         // page 21 장바구니 페이지
         // 뒤로가기 버튼 : btn_Small_menu_page3
-        // 장바구니 버튼 : btn_Cart_page2
+        // 장바구니 버튼 : btn_Cart_page3
         // 장바구니 사진1 : btn_cart_page_img
         // 장바구니 사진2 : btn_cart_page_img1
         // 결제하기 버튼 : btn_Choice_pay_page
