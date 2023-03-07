@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<typeAliases>
+		<!-- MemberMapper파일에서 사용할 type들의 별명을 지정해주는 공간 -->
+		<typeAlias type="com.kobb.model.UserDTO" alias="UserDTO" />
+	</typeAliases>
+
+	<environments default="development">
+
+		<environment id="development">
+
+			<transactionManager type="JDBC" />
+
+			<dataSource type="POOLED">
+				<property name="driver"
+					value="oracle.jdbc.driver.OracleDriver" />
+				<property name="url"
+					value="jdbc:oracle:thin:@project-db-stu3.ddns.net:1525:xe" />
+				<property name="username" value="tmdwn" />
+				<property name="password" value="tmdwntmdwn" />
+			</dataSource>
+
+		</environment>
+	</environments>
+
+	<!-- 연결하고 싶은 파일의 명칭 -->
+	<!-- mapper파일이 생길때마다 반드시 연결할 수 있도록 기술해줄 것 -->
+	<mappers>
+
+		<mapper resource="com/db/UserMapper.xml" />
+
+
+	</mappers>
+
+
+</configuration>
