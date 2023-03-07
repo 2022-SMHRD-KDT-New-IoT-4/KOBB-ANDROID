@@ -35,6 +35,8 @@ class Join_page : AppCompatActivity() {
             var id = user_id.text.toString()
             var pw = user_pw.text.toString()
             var phone = user_phone.text.toString()
+            var status = true;
+
             val url="http://172.30.1.83:8003/KOBB/Join.do?user_shop_name="+shop_name+"&user_id="+id+"&user_pw="+pw+"&user_phone="+phone
 
             val request = StringRequest(
