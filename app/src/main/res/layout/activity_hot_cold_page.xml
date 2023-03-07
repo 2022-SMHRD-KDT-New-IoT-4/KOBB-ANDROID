@@ -48,12 +48,11 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="1283dp"
+                android:layout_width="0dp"
                 android:layout_height="519dp"
                 android:background="#FFF7F7"
                 app:layout_constraintBottom_toTopOf="@+id/guideline2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
                 app:layout_constraintVertical_bias="1.0" />
@@ -79,43 +78,19 @@
                 app:srcCompat="@drawable/casher" />
 
             <TextView
-                android:id="@+id/textView11"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="ㄴㅇㅇ"
-                android:textSize="34dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toTopOf="@+id/imageView5" />
-
-            <TextView
                 android:id="@+id/textView13"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:text="차갑게 또는 따뜻하게 중 선택해주세요"
                 android:textSize="34dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView11"
-                app:layout_constraintStart_toStartOf="@+id/textView11"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="(상호명)"
-                android:textSize="32dp"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton8"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/btn_Cart_page2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
@@ -128,34 +103,73 @@
                 app:srcCompat="@drawable/shopping_cart1" />
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="550sp"
-                android:layout_height="500sp"
-                android:layout_marginTop="10sp"
-                android:layout_marginEnd="40sp"
-                android:layout_marginBottom="10sp"
+                android:id="@+id/btn_btn_Check_menu_page"
+                android:layout_width="550dp"
+                android:layout_height="500dp"
+                android:layout_marginEnd="40dp"
                 android:background="#FF5555"
+                android:drawableBottom="@drawable/hot_file"
                 android:gravity="center|top"
                 android:text="따뜻하게"
                 android:textColor="#FFFFFF"
-                android:textSize="100sp"
+                android:textSize="100dp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView3"
                 app:layout_constraintEnd_toEndOf="@+id/textView"
                 app:layout_constraintTop_toTopOf="@+id/textView" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="550sp"
-                android:layout_height="500sp"
-                android:layout_marginStart="40sp"
+                android:id="@+id/btn_Check_menu_page"
+                android:layout_width="550dp"
+                android:layout_height="500dp"
+                android:layout_marginStart="40dp"
                 android:background="#FF5555"
+                android:drawableBottom="@drawable/cold_file"
                 android:gravity="center|top"
                 android:text="차갑게"
                 android:textColor="#FFFFFF"
-                android:textSize="100sp"
+                android:textSize="100dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toTopOf="@+id/button2" />
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btn_Small_menu_page3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:backgroundTint="#FF5555"
+                android:text="뒤로 가기"
+                android:textColor="#FFFFFF"
+                android:textSize="34dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Cart_page2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:text="(상호명)"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btn_Cart_page2"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="아메리카노를 선택하셨습니다."
+                android:textSize="34dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
