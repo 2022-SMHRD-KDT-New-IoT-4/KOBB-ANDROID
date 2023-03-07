@@ -8,7 +8,7 @@ class Hot_cold_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hot_cold_page)
 
-        // page 19 온도결정 페이지
+        // page 19 온도결정 페이지 (하하 테스트에요)
 
         // 차갑게 버튼 : btn_Check_menu_page -> 메뉴확인 페이지로 이동
         // 따뜻하게 버튼 : btn_btn_Check_menu_page -> 메뉴확인 페이지로 이동
