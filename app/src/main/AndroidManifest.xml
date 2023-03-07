@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,21 +12,38 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kobb"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
         <activity
-            android:name=".Main_menu_page"
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Start_kiosk_page"
             android:exported="false" />
         <activity
-            android:name=".Choice_mode_page"
+            android:name=".Join_page"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         </activity>
-
+        <activity
+            android:name=".Join_success_page"
+            android:exported="true" />
+        <activity
+            android:name=".small_menu_page"
+            android:exported="true" />
+        <activity
+            android:name=".Main_menu_page"
+            android:exported="true" />
+        <activity
+            android:name=".Choice_mode_page"
+            android:exported="true" />
     </application>
 
 </manifest>
