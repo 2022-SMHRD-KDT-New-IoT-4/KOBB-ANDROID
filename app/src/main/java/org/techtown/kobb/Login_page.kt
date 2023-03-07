@@ -28,7 +28,7 @@ class Login_page : AppCompatActivity() {
         btn_Choice_mode_page.setOnClickListener(View.OnClickListener {
             var id = login_user_id.text.toString()
             var pw = login_user_pw.text.toString()
-            val url="http://172.30.1.89:8081/KOBB/Login.do?user_id="+id+"&user_pw="+pw
+            val url="http://172.30.1.83:8003/KOBB/Login.do?user_id="+id+"&user_pw="+pw
 
             val request = StringRequest(
                 Request.Method.GET,
