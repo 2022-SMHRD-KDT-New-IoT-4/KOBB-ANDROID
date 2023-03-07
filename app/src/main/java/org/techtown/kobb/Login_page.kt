@@ -2,6 +2,7 @@ package org.techtown.kobb
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -17,8 +18,8 @@ class Login_page : AppCompatActivity() {
 
 
 
-        var login_user_id : EditText = findViewById(R.id.login_user_id)
-        var login_user_pw : EditText = findViewById(R.id.login_user_pw)
+        var login_user_id  = findViewById<EditText>(R.id.login_user_id)
+        var login_user_pw = findViewById<EditText>(R.id.login_user_pw)
         var btn_Choice_mode_page = findViewById<Button>(R.id.btn_Choice_mode_page)
 
 
@@ -27,7 +28,7 @@ class Login_page : AppCompatActivity() {
         btn_Choice_mode_page.setOnClickListener(View.OnClickListener {
             var id = login_user_id.text.toString()
             var pw = login_user_pw.text.toString()
-            val url="http://169.254.181.135/KOBB2/Login.do?&user_id="+id+"&user_pw="+pw
+            val url="http://172.30.1.89:8081/KOBB/Login.do?user_id="+id+"&user_pw="+pw
 
             val request = StringRequest(
                 Request.Method.GET,
@@ -42,7 +43,7 @@ class Login_page : AppCompatActivity() {
 
             )
             // post 방식의 데이터를 담을 수 있는 위치
-
+                Log.d("여기",request.toString())
             requestQueue.add(request)
         })
 
