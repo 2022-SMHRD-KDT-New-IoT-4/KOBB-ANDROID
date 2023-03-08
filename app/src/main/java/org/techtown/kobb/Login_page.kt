@@ -22,7 +22,7 @@ class Login_page : AppCompatActivity() {
         var login_user_id  = findViewById<EditText>(R.id.login_user_id)
         var login_user_pw = findViewById<EditText>(R.id.login_user_pw)
         var btn_Choice_mode_page = findViewById<Button>(R.id.btn_Choice_mode_page)
-
+        var btn_Join_page = findViewById<Button>(R.id.btn_Join_page)
 
         val requestQueue = Volley.newRequestQueue(applicationContext)
 
@@ -49,8 +49,15 @@ class Login_page : AppCompatActivity() {
 
             val intent = Intent(this@Login_page,Choice_mode_page::class.java)
             startActivity(intent)
-        })
 
+        })
+            btn_Join_page.setOnClickListener{
+                val intent = Intent(
+                    this@Login_page,
+                    Join_page::class.java
+                )
+                startActivity(intent)
+            }
+    }
 
     }
-}
