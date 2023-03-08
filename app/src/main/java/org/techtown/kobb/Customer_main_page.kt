@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -15,7 +16,10 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
     lateinit var btn_Eat_main_menu_page : ImageButton
     lateinit var btn_TakeOut_main_menu_page : ImageButton
     lateinit var textToSpeech: TextToSpeech
+    //음성
     lateinit var  a : String
+    //매장명
+    lateinit var user_shop_name : String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_customer_main_page)
@@ -25,11 +29,17 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
         btn_TakeOut_main_menu_page =findViewById(R.id.btn_TakeOut_main_menu_page)
 
         a = "안녕하세요 시각 장애인 이시면 아래 점자를 읽고 버튼을 눌러주세요"
+        //상호명
+        val tvname = findViewById<TextView>(R.id.tvname)
+        //받아온 매장명
+       user_shop_name = intent.getStringExtra("매장명")!!
+        //상호명에 받아온 매장명 적용
+        tvname.text =user_shop_name
 
         //음성전환
-        val intent : Intent = Intent()
-        intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-        activityResult.launch(intent)
+    //   val intent : Intent = Intent()
+  //    intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
+//      activityResult.launch(intent)
 
         //시각 장애인이 하드웨어 버튼을 눌렀을 때
 
@@ -40,9 +50,12 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
             intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
             activityResult.launch(intent)
            val intent = Intent(this, Main_menu_page::class.java)
-            a = "먹고 가시겠습니까?"
-            intent.putExtra("음성",a)
-           startActivity(intent)
+            //매장명
+            intent.putExtra("매장명",user_shop_name)
+            startActivity(intent)
+//            a = "먹고 가시겠습니까?"
+//            intent.putExtra("음성",a)
+//           startActivity(intent)
 
         }
         //포장하기 눌렀을 때
