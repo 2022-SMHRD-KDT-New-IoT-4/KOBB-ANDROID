@@ -32,7 +32,7 @@ class Join_page : AppCompatActivity() {
         val user_id = findViewById<EditText>(R.id.user_id)
         val user_pw = findViewById<EditText>(R.id.user_pw)
         val user_phone = findViewById<EditText>(R.id.user_phone)
-
+        
 
 
 
