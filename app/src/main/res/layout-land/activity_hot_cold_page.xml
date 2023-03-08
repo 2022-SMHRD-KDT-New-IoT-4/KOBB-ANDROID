@@ -132,7 +132,7 @@
             app:layout_constraintVertical_bias="0.173" />
 
         <ImageButton
-            android:id="@+id/btn_User_info_page"
+            android:id="@+id/btn_User_info_page1"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"

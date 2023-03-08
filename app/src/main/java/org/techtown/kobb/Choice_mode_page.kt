@@ -13,7 +13,7 @@ class Choice_mode_page : AppCompatActivity() {
 
         val btn_Manage_main_page = findViewById<Button>(R.id.btn_Manage_main_page)
         val btn_Start_kiosk_page = findViewById<Button>(R.id.btn_Start_kiosk_page)
-        val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page)
+        val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page1)
 
         btn_Manage_main_page.setOnClickListener{
 
