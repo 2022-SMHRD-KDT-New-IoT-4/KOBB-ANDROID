@@ -23,6 +23,7 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_customer_main_page)
+
         //텍스트 읽기
         btn_Eat_main_menu_page =findViewById(R.id.btn_Eat_main_menu_page)
         btn_TakeOut_main_menu_page =findViewById(R.id.btn_TakeOut_main_menu_page)

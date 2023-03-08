@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -19,6 +20,39 @@ class Main_menu_page : AppCompatActivity(), TextToSpeech.OnInitListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu_page)
 
+        // 6개 버튼 소메뉴 페이지(small_menu_page) 로 이동
+        var btn_small_menu_page1 = findViewById<Button>(R.id.btn_small_menu_page1)
+        var btn_small_menu_page2 = findViewById<Button>(R.id.btn_small_menu_page2)
+        var btn_small_menu_page3 = findViewById<Button>(R.id.btn_small_menu_page3)
+        var btn_small_menu_page4 = findViewById<Button>(R.id.btn_small_menu_page4)
+        var btn_small_menu_page5 = findViewById<Button>(R.id.btn_small_menu_page5)
+        var btn_small_menu_page6 = findViewById<Button>(R.id.btn_small_menu_page6)
+
+        btn_small_menu_page1.setOnClickListener{
+            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            startActivity(intent)
+        }
+        btn_small_menu_page2.setOnClickListener{
+            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            startActivity(intent)
+        }
+        btn_small_menu_page3.setOnClickListener{
+            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            startActivity(intent)
+        }
+        btn_small_menu_page4.setOnClickListener{
+            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            startActivity(intent)
+        }
+        btn_small_menu_page5.setOnClickListener{
+            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            startActivity(intent)
+        }
+        btn_small_menu_page6.setOnClickListener{
+            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            startActivity(intent)
+        }
+
         //customer 에서 넘어온 음성 값
          a = intent.getStringExtra("음성")!!
         //음성 출력
@@ -26,7 +60,6 @@ class Main_menu_page : AppCompatActivity(), TextToSpeech.OnInitListener {
         intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
         activityResult.launch(intent)
         Log.d("음성 값",a)
-
 
     }
 
