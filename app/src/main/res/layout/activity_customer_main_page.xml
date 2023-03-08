@@ -11,11 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.10218978" />
+        app:layout_constraintGuide_begin="82dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="110dp"
+        android:layout_width="220dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:maxWidth="35dp"
@@ -26,13 +26,14 @@
         app:srcCompat="@drawable/kobbicon" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
+        android:id="@+id/btn_Mode_change_page"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#FF5555"
         android:text="모드 전환"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,12 +46,12 @@
         android:gravity="center_horizontal"
         android:textColor="#504E4E"
         android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
@@ -59,18 +60,18 @@
         android:gravity="center"
         android:text="상호명"
         android:textColor=" #FF5555"
-        android:textSize="16dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Mode_change_page"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:srcCompat="@drawable/casher" />
@@ -78,10 +79,11 @@
     <TextView
         android:id="@+id/textView5"
         android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_height="55dp"
         android:layout_marginTop="12dp"
         android:text="안녕하세요:)"
-        android:textSize="18dp"
+        android:textColor="#504E4E"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.442"
@@ -91,9 +93,10 @@
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_height="55dp"
         android:text="매장에서 드시나요? 아니면 포장해드릴까요?"
-        android:textSize="18dp"
+        android:textColor="#504E4E"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,26 +105,47 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="80dp"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="100dp"
         android:backgroundTint="#FF5555"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.605"
         tools:srcCompat="@drawable/eat2" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginEnd="80dp"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_marginEnd="100dp"
         android:backgroundTint="#FF5555"
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.571"
+        tools:srcCompat="@drawable/takeout2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:srcCompat="@drawable/takeout2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/kobbtext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package org.techtown.kobb
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -35,7 +36,9 @@ class Join_page : AppCompatActivity() {
             var id = user_id.text.toString()
             var pw = user_pw.text.toString()
             var phone = user_phone.text.toString()
-            val url="http://169.254.200.1:8003/KOBB/Join.do?user_shop_name="+shop_name+"&user_id="+id+"&user_pw="+pw+"&user_phone="+phone
+            var status = true;
+
+            val url="http://172.30.1.83:8003/KOBB/Join.do?user_shop_name="+shop_name+"&user_id="+id+"&user_pw="+pw+"&user_phone="+phone
 
             val request = StringRequest(
                 Request.Method.GET,
@@ -53,6 +56,8 @@ class Join_page : AppCompatActivity() {
             // post 방식의 데이터를 담을 수 있는 위치
 
             requestQueue.add(request)
+            val intent = Intent(this,Join_success_page ::class.java)
+            startActivity(intent)
         })
 
 
