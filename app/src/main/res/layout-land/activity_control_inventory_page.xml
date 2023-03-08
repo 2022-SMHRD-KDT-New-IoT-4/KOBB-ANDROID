@@ -168,7 +168,7 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/textView76"
+                        android:id="@+id/ch"
                         android:layout_width="59dp"
                         android:layout_height="70dp"
                         android:background="#E9E9E9"

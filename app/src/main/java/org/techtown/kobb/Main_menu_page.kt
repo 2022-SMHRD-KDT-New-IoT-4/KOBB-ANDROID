@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -16,10 +17,28 @@ class Main_menu_page : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     lateinit var textToSpeech: TextToSpeech
     lateinit var  a : String
+    //매장명
+    lateinit var user_shop_name : String
+    lateinit var eat:String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu_page)
+        //먹고가기 포장하기
+        if(intent.getStringExtra("먹고가기")!=null){
+            eat = intent.getStringExtra("먹고가기")!!
 
+        }else{
+            eat =intent.getStringExtra("포장하기")!!
+        }
+
+
+        //상호명
+        var tvmenu= findViewById<TextView>(R.id.tvmenu)
+        //받아온 매장명
+        user_shop_name = intent.getStringExtra("매장명")!!
+        //상호명에 받아온 매장명 담아주기
+        tvmenu.text = user_shop_name
         // 6개 버튼 소메뉴 페이지(small_menu_page) 로 이동
         var btn_small_menu_page1 = findViewById<Button>(R.id.btn_small_menu_page1)
         var btn_small_menu_page2 = findViewById<Button>(R.id.btn_small_menu_page2)
@@ -30,36 +49,49 @@ class Main_menu_page : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         btn_small_menu_page1.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
+
         }
         btn_small_menu_page2.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page3.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page4.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page5.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page6.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
 
         //customer 에서 넘어온 음성 값
-         a = intent.getStringExtra("음성")!!
+       //  a = intent.getStringExtra("음성")!!
         //음성 출력
-        val intent : Intent = Intent()
-        intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-        activityResult.launch(intent)
-        Log.d("음성 값",a)
+//        val intent : Intent = Intent()
+//        intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
+//        activityResult.launch(intent)
+//        Log.d("음성 값",a)
 
     }
 

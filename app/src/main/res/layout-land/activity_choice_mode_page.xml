@@ -83,7 +83,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_Manage_main_page" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -101,7 +101,7 @@
             android:text="(매장명)"
             android:textColor="#504E4E"
             android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintBottom_toTopOf="@+id/tvname"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
