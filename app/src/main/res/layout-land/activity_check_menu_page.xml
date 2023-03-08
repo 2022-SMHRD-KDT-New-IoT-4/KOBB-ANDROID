@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#FFFFFF"
-    tools:context=".Check_menu_pagee">
+    tools:context=".Check_menu_page">
 
     <ScrollView
         android:layout_width="0dp"
@@ -28,13 +28,13 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="110dp"
+                android:layout_width="220dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/kobb" />
+                app:srcCompat="@drawable/kobbicon" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
@@ -83,7 +83,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
                 android:text="차가운 아메리카노를 선택하셨습니다."
-                android:textSize="34dp"
+                android:textColor="#504E4E"
+                android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
@@ -95,7 +96,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="장바구니에 담을까요?"
-                android:textSize="34dp"
+                android:textColor="#504E4E"
+                android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView11"
                 app:layout_constraintStart_toStartOf="@+id/textView11"
@@ -104,7 +106,7 @@
             <ImageButton
                 android:id="@+id/btn_Cart_page3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:adjustViewBounds="true"
                 android:backgroundTint="#FFFFFF"
                 android:maxWidth="120dp"
@@ -112,7 +114,7 @@
                 android:scaleType="fitCenter"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/shopping_cart1" />
+                app:srcCompat="@drawable/shopping_cart" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -125,24 +127,26 @@
 
             <ImageView
                 android:id="@+id/btn_check_menu_img"
-                android:layout_width="600dp"
-                android:layout_height="450dp"
-                android:layout_marginStart="25dp"
+                android:layout_width="300dp"
+                android:layout_height="270dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="25dp"
-                app:layout_constraintStart_toStartOf="@+id/textView17"
-                app:layout_constraintTop_toTopOf="@+id/textView"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:background="@drawable/coffee01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:backgroundTint="#FF5555"
                 android:text="(상호명)"
+                android:textColor=" #FF5555"
                 android:textSize="40dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Cart_page3"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -207,7 +211,7 @@
                 android:textSize="45dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView24"
-                app:layout_constraintStart_toStartOf="@+id/textView24"
+                app:layout_constraintStart_toStartOf="@+id/textView"
                 app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
             <Button
@@ -218,23 +222,93 @@
                 android:text="장바구니 확인"
                 android:textSize="45dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView17"
                 app:layout_constraintStart_toEndOf="@+id/btn_Small_menu_page1"
                 app:layout_constraintTop_toTopOf="@+id/btn_Small_menu_page1" />
 
-            <Button
-                android:id="@+id/btn_Small_menu_page3"
+            <ImageButton
+                android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="50dp"
-                android:backgroundTint="#FF5555"
-                android:text="뒤로 가기"
-                android:textColor="#FFFFFF"
-                android:textSize="34dp"
+                android:background="#F7F7F7"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toStartOf="@+id/btn_Cart_page3"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아메리카노"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="차갑게"
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1잔"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,500원"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                app:layout_constraintStart_toEndOf="@+id/textView24"
+                app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="-"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView77"
+                app:layout_constraintStart_toEndOf="@+id/textView77"
+                app:layout_constraintTop_toTopOf="@+id/textView77" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="+"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_minus"
+                app:layout_constraintStart_toEndOf="@+id/btn_minus"
+                app:layout_constraintTop_toTopOf="@+id/btn_minus" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

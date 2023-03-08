@@ -59,16 +59,18 @@
         android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F7F7F7"
-        app:srcCompat="@drawable/back"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="82dp" />
+        android:layout_marginStart="10dp"
+        android:background="#FFEAEA"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="300dp"
+        android:background="#FFEAEA"
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:srcCompat="@drawable/casher" />
@@ -125,7 +127,8 @@
         android:id="@+id/btn_Hot_cold_page"
         android:layout_width="400dp"
         android:layout_height="380dp"
-        android:layout_marginStart="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView43"
         tools:srcCompat="@tools:sample/avatars" />
@@ -134,7 +137,8 @@
         android:id="@+id/btn_Hot_cold_page"
         android:layout_width="400dp"
         android:layout_height="380dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView43"
         tools:srcCompat="@tools:sample/avatars" />
@@ -143,7 +147,7 @@
         android:id="@+id/button4"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_marginStart="400dp"
+        android:layout_marginStart="150dp"
         android:layout_marginBottom="90dp"
         android:background="@drawable/btn_radius"
         android:text="◀ 이전페이지"
@@ -156,7 +160,7 @@
         android:id="@+id/button11"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="400dp"
+        android:layout_marginEnd="150dp"
         android:layout_marginBottom="90dp"
         android:background="@drawable/btn_radius"
         android:text="다음페이지 ▶"
