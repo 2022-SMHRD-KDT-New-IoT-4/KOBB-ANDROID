@@ -175,21 +175,21 @@
             app:layout_constraintStart_toStartOf="@+id/user_pw"
             app:layout_constraintTop_toBottomOf="@+id/user_pw" />
 
-        <EditText
-            android:id="@+id/user_phone"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="  전화번호를 입력해 주세요"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.405"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="  전화번호를 입력해 주세요"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.404"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-        <ImageView
+            <ImageView
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

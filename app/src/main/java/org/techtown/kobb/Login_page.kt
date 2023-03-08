@@ -49,6 +49,7 @@ class Login_page : AppCompatActivity() {
 
             val intent = Intent(this@Login_page,Choice_mode_page::class.java)
             startActivity(intent)
+
         })
 
 
