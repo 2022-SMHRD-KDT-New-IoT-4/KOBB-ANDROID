@@ -115,10 +115,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btn_Eat_main_menu_page"
                 android:layout_width="250dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="80dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="300dp"
                 android:backgroundTint="#FF5555"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -127,10 +127,10 @@
                 tools:srcCompat="@drawable/eat2" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/btn_TakeOut_main_menu_page"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
-                android:layout_marginEnd="80dp"
+                android:layout_marginEnd="300dp"
                 android:backgroundTint="#FF5555"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
