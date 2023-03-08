@@ -18,7 +18,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"
@@ -54,7 +54,7 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="680dp"
                 android:background="#FFEAEA"
                 android:gravity="center_horizontal"
                 android:textColor="#504E4E"
@@ -139,6 +139,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2"
                 tools:srcCompat="@drawable/takeout2" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/kobbtext"
+                tools:layout_editor_absoluteX="612dp"
+                tools:layout_editor_absoluteY="744dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

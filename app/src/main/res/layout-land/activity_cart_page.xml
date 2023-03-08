@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7F7F7"
     tools:context=".Cart_page">
+
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -28,13 +30,13 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="110dp"
+                android:layout_width="220dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/kobb" />
+                app:srcCompat="@drawable/kobbicon" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline2"
@@ -83,30 +85,19 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
                 android:text="장바구니에 담긴 품목입니다."
+                android:textColor="#504E4E"
                 android:textSize="34dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
                 app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
-            <ImageButton
-                android:id="@+id/btn_Cart_page3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                android:backgroundTint="#FFFFFF"
-                android:maxWidth="120dp"
-                android:maxHeight="90dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/shopping_cart1" />
-
             <TextView
                 android:id="@+id/textView17"
                 android:layout_width="1200dp"
                 android:layout_height="500dp"
                 android:background="#FF5555"
+                android:paddingLeft="50dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView"
                 app:layout_constraintTop_toTopOf="@+id/textView" />
@@ -115,138 +106,142 @@
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:text="(상호명)"
+                android:textColor="#504E4E"
                 android:textSize="40dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Cart_page3"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/btn_Small_menu_page3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="50dp"
-                android:backgroundTint="#FF5555"
-                android:text="뒤로 가기"
-                android:textColor="#FFFFFF"
-                android:textSize="34dp"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Cart_page3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView25"
-                android:layout_width="380dp"
-                android:layout_height="380dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="300dp"
                 android:layout_marginTop="20dp"
                 android:background="#F6ABAB"
                 app:layout_constraintStart_toStartOf="@+id/textView17"
                 app:layout_constraintTop_toTopOf="@+id/textView17" />
 
             <TextView
-                android:id="@+id/textView28"
-                android:layout_width="380dp"
-                android:layout_height="380dp"
-                android:layout_marginStart="20dp"
+                android:id="@+id/textView79"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="30dp"
                 android:background="#F6ABAB"
-                app:layout_constraintBottom_toBottomOf="@+id/textView25"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:background="#F6ABAB"
+                app:layout_constraintStart_toEndOf="@+id/textView79"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="10dp"
+                android:background="#F6ABAB"
                 app:layout_constraintStart_toEndOf="@+id/textView25"
                 app:layout_constraintTop_toTopOf="@+id/textView25" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="250dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:backgroundTint="#FFFFFF"
                 android:text="◀ 이전 페이지"
-                android:textSize="36dp"
+                android:textSize="10sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView25"
-                app:layout_constraintStart_toStartOf="@+id/textView25"
-                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+                app:layout_constraintEnd_toEndOf="@+id/textView79"
+                app:layout_constraintStart_toStartOf="@+id/textView79"
+                app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="250dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:backgroundTint="#FFFFFF"
                 android:text="다음 페이지▶"
-                android:textSize="36dp"
+                android:textSize="10sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView28"
-                app:layout_constraintStart_toEndOf="@+id/button2"
-                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+                app:layout_constraintEnd_toEndOf="@+id/textView80"
+                app:layout_constraintHorizontal_bias="0.475"
+                app:layout_constraintStart_toStartOf="@+id/textView80"
+                app:layout_constraintTop_toBottomOf="@+id/textView80" />
 
             <TextView
                 android:id="@+id/textView29"
-                android:layout_width="340dp"
-                android:layout_height="460dp"
+                android:layout_width="200dp"
+                android:layout_height="400dp"
+                android:layout_marginStart="15dp"
                 android:background="#FFFFFF"
-                app:layout_constraintEnd_toEndOf="@+id/textView17"
                 app:layout_constraintStart_toEndOf="@+id/textView28"
                 app:layout_constraintTop_toTopOf="@+id/textView28" />
 
             <ImageView
                 android:id="@+id/btn_cart_page_img"
-                android:layout_width="280dp"
-                android:layout_height="270dp"
-                android:layout_marginStart="151dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="171dp"
-                app:layout_constraintEnd_toEndOf="@+id/textView25"
-                app:layout_constraintHorizontal_bias="0.486"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintStart_toStartOf="@+id/textView25"
                 app:layout_constraintTop_toTopOf="@+id/textView25"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <ImageView
                 android:id="@+id/btn_cart_page_img1"
-                android:layout_width="280dp"
-                android:layout_height="270dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintEnd_toEndOf="@+id/textView28"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintStart_toStartOf="@+id/textView28"
                 app:layout_constraintTop_toTopOf="@+id/textView28"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/coffee01"/>
 
             <TextView
                 android:id="@+id/textView30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="170dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
                 android:text="메뉴 : "
-                android:textSize="32dp"
+                android:textColor="#504E4E"
+                android:textSize="10sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/btn_cart_page_img"
-                app:layout_constraintStart_toStartOf="@+id/btn_cart_page_img"
-                app:layout_constraintTop_toBottomOf="@+id/btn_cart_page_img" />
+                app:layout_constraintStart_toStartOf="@+id/textView79"
+                app:layout_constraintTop_toTopOf="@+id/textView79" />
 
             <TextView
                 android:id="@+id/textView32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="170dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
                 android:text="메뉴 : "
-                android:textSize="32dp"
+                android:textColor="#504E4E"
+                android:textColorHighlight="#504E4E"
+                android:textSize="10sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/btn_cart_page_img1"
-                app:layout_constraintStart_toStartOf="@+id/btn_cart_page_img1"
-                app:layout_constraintTop_toBottomOf="@+id/btn_cart_page_img1" />
+                app:layout_constraintStart_toStartOf="@+id/textView80"
+                app:layout_constraintTop_toTopOf="@+id/textView80" />
 
             <TextView
                 android:id="@+id/textView31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:text="금액 : "
-                android:textSize="32dp"
+                android:textColor="#504E4E"
+                android:textSize="10sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView30"
                 app:layout_constraintStart_toStartOf="@+id/textView30"
@@ -256,9 +251,8 @@
                 android:id="@+id/textView39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:text="금액 : "
-                android:textSize="32dp"
+                android:textSize="10sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView32"
                 app:layout_constraintStart_toStartOf="@+id/textView32"
@@ -272,9 +266,10 @@
                 android:layout_marginEnd="130dp"
                 android:text="주문 금액 : "
                 android:textColor="#000000"
-                android:textSize="38dp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView29"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView29"
                 app:layout_constraintTop_toTopOf="@+id/textView29" />
 
@@ -282,12 +277,13 @@
                 android:id="@+id/textView41"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:text="할인 금액 : "
                 android:textColor="#000000"
-                android:textSize="38dp"
+                android:textSize="24dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView40"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView40"
                 app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
@@ -298,7 +294,7 @@
                 android:layout_marginTop="10dp"
                 android:text="결제 금액 : "
                 android:textColor="#000000"
-                android:textSize="38dp"
+                android:textSize="24dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/textView41"
                 app:layout_constraintStart_toStartOf="@+id/textView41"
@@ -318,6 +314,25 @@
                 app:layout_constraintBottom_toBottomOf="@+id/textView29"
                 app:layout_constraintEnd_toEndOf="@+id/textView29"
                 app:layout_constraintStart_toStartOf="@+id/textView29" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F7F7F7"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
+                app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="#F7F7F7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/shopping_cart" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
