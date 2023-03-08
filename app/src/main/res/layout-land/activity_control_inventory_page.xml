@@ -12,15 +12,487 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
+            <!-- 어플 뚜껑 코드 -->
 
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="0dp"
+                android:layout_height="650dp"
+                android:layout_marginTop="36dp"
+                android:background="#FFEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+            <!-- 상단 로고 이미지 -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kobb" />
+
+            <!-- 모드 전환 버튼 -->
+            <Button
+                android:id="@+id/btn_Start_kiosk_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="#FF5555"
+                android:text="모드전환"
+                android:textColor="#F8F0F0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page1"
+                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
+                app:layout_constraintTop_toTopOf="@+id/btn_User_info_page1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#FFF7F7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- 개인정보 페이지 이동 버튼  -->
+            <ImageButton
+                android:id="@+id/btn_User_info_page1"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/user" />
+
+            <!-- 메뉴 관리 -->
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="메뉴관리"
+                android:textColor="#FF5555"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 하단 @kobb-->
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/kobbtext" />
+            <!-- =============================================== -->
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView45"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView45">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="월"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="화"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView73"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="수"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="목"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView75"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="금"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView76"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="토"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:background="#E9E9E9"
+                        android:gravity="center"
+                        android:text="일"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView78"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text=""
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text=""
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView81"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="2"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView82"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="3"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView83"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="4"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView84"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="5"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView85"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="6"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView86"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="7"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView87"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="8"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="9"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView89"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="10"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView90"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="11"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView91"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="12"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="13"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="14"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="15"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="16"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="17"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="18"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="19"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="20"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="21"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="22"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView58"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="23"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="24"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="25"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="26"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView62"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="27"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="28"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="29"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="30"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView66"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="31"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView67"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView68"
+                        android:layout_width="59dp"
+                        android:layout_height="70dp"
+                        android:gravity="top"
+                        android:text="2"
+                        android:textSize="20sp" />
+                </TableRow>
+
+            </TableLayout>
 
 
 
