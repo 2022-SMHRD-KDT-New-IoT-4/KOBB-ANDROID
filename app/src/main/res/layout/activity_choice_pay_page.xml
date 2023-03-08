@@ -74,98 +74,14 @@
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
         android:gravity="center"
-        android:text="어떤 메뉴를 주문할까요?"
+        android:text="결제 방식을 선택해주세요"
+        android:textColor="#504E4E"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageButton3"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/btn_radius"
-        android:backgroundTint="#FF5555"
-        android:text="커피"
-        android:textColor="#F7F7F7"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/btn_radius"
-        android:backgroundTint="#FF5555"
-        android:text="라떼"
-        android:textColor="#F7F7F7"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/btn_radius"
-        android:backgroundTint="#FF5555"
-        android:text="차"
-        android:textColor="#F7F7F7"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/button6"
-        app:layout_constraintStart_toStartOf="@+id/button6"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/btn_radius"
-        android:backgroundTint="#FF5555"
-        android:text="요거트"
-        android:textColor="#F7F7F7"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="250dp"
-        android:background="@drawable/btn_radius"
-        android:backgroundTint="#FF5555"
-        android:text="에이드"
-        android:textColor="#F7F7F7"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/btn_radius"
-        android:backgroundTint="#FF5555"
-        android:text="디저트"
-        android:textColor="#F7F7F7"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/button8"
-        app:layout_constraintStart_toStartOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -183,5 +99,79 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/kobbtext" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="100dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shopping_cart" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="301dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/btn_radius"
+        android:drawableStart="@drawable/card_5"
+        android:paddingLeft="20dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4dp"
+        android:text="카드결제"
+        android:textColor="#F7F7F7"
+        android:textSize="33sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="301dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="320dp"
+        android:background="@drawable/btn_radius"
+        android:drawableStart="@drawable/cash_2"
+        android:text="현금결제"
+        android:textColor="#F7F7F7"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_radius"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:drawableStart="@drawable/kakaopay"
+        android:text="카카오페이"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="300dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="320dp"
+        android:background="@drawable/btn_radius"
+        android:drawableStart="@drawable/payco"
+        android:text="페이코"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
