@@ -40,7 +40,7 @@
                 app:srcCompat="@drawable/kobbicon" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_card"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="8dp"
@@ -75,7 +75,7 @@
                 android:textColor=" #FF5555"
                 android:textSize="16dp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
-                app:layout_constraintEnd_toStartOf="@+id/button"
+                app:layout_constraintEnd_toStartOf="@+id/btn_card"
                 app:layout_constraintStart_toEndOf="@+id/imageView"
                 app:layout_constraintTop_toTopOf="parent" />
 
