@@ -89,7 +89,7 @@
                 app:layout_constraintVertical_bias="0.214" />
 
             <ImageButton
-                android:id="@+id/btn_User_info_page"
+                android:id="@+id/btn_User_info_page1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_marginEnd="16dp"
@@ -132,9 +132,9 @@
                 android:text="모드전환"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
-                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
-                app:layout_constraintTop_toTopOf="@+id/btn_User_info_page" />
+                app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page1"
+                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
+                app:layout_constraintTop_toTopOf="@+id/btn_User_info_page1" />
 
             <Button
                 android:id="@+id/btn_Sales_condition_page"

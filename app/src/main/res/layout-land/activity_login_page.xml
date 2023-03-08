@@ -19,18 +19,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
             <EditText
-                android:id="@+id/editTextTextPassword2"
+                android:id="@+id/login_user_pw"
                 android:layout_width="440dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="20dp"
                 android:ems="10"
                 android:hint="비밀번호를 입력하세요"
                 android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
-
+                app:layout_constraintEnd_toEndOf="@+id/login_user_id"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/login_user_id"
+                app:layout_constraintTop_toBottomOf="@+id/login_user_id" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -52,9 +53,9 @@
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+                app:layout_constraintEnd_toEndOf="@+id/login_user_pw"
+                app:layout_constraintStart_toStartOf="@+id/login_user_pw"
+                app:layout_constraintTop_toBottomOf="@+id/login_user_pw" />
 
             <Button
                 android:id="@+id/btn_Join_page"
@@ -64,7 +65,7 @@
                 android:layout_marginBottom="120dp"
                 android:backgroundTint="#F6ABAB"
                 android:text="회원가입"
-                android:textColor="#FFFFFF"
+                android:textColor="#504E4E"
                 android:textSize="30dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -83,7 +84,7 @@
 
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/login_user_id"
                 android:layout_width="440dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="80dp"
@@ -91,7 +92,7 @@
                 android:ems="10"
                 android:hint="아이디를 입력하세요"
                 android:inputType="textPersonName"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+                app:layout_constraintBottom_toTopOf="@+id/login_user_pw"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -100,17 +101,17 @@
                 android:id="@+id/imageView8"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
-                app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2"
+                app:layout_constraintEnd_toStartOf="@+id/login_user_pw"
+                app:layout_constraintTop_toTopOf="@+id/login_user_pw"
                 app:srcCompat="@drawable/passwordkey2" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
-                app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
-                app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
+                app:layout_constraintBottom_toBottomOf="@+id/login_user_id"
+                app:layout_constraintEnd_toStartOf="@+id/login_user_id"
+                app:layout_constraintTop_toTopOf="@+id/login_user_id"
                 app:srcCompat="@drawable/usericon" />
 
 

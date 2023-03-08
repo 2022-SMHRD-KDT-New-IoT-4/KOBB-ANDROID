@@ -27,6 +27,7 @@
                 android:layout_marginEnd="20dp"
                 android:backgroundTint="#FF5555"
                 android:text="영업시작"
+                android:textColor="#F7F7F7"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toEndOf="@+id/textView2"
@@ -127,13 +128,65 @@
                 android:layout_marginBottom="100dp"
                 android:background="#F6ABAB"
                 android:gravity="center"
-                android:text="여러분~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toEndOf="@+id/textView2"
                 app:layout_constraintStart_toStartOf="@+id/textView2"
                 app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023년 00월 00일 00시 00분 00초"
+                android:textColor="#F7F7F7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="(매장명)"
+                android:textColor="#F7F7F7"
+                app:layout_constraintStart_toStartOf="@+id/textView69"
+                app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="사장님,"
+                android:textColor="#F7F7F7"
+                app:layout_constraintEnd_toEndOf="@+id/textView69"
+                app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="오늘 영업을 시작할까요?"
+                android:textColor="#F7F7F7"
+                app:layout_constraintEnd_toEndOf="@+id/textView69"
+                app:layout_constraintStart_toStartOf="@+id/textView69"
+                app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="오늘도 좋은 하루 보내세요♥"
+                android:textColor="#F7F7F7"
+                app:layout_constraintEnd_toEndOf="@+id/textView73"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="@+id/textView73"
+                app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
