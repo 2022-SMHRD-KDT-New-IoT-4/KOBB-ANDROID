@@ -12,10 +12,14 @@ class Hot_cold_page : AppCompatActivity() {
 
     lateinit var cold : String
     lateinit var hot : String
+    //먹포
+    lateinit var eat:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hot_cold_page)
+        //먹고가기 포장하기
+        eat = intent.getStringExtra("먹포")!!
         //상호명
         val chname = findViewById<TextView>(R.id.chname)
         //받아온 매장명
@@ -32,6 +36,7 @@ class Hot_cold_page : AppCompatActivity() {
         btn_Check_menu_page.setOnClickListener {
             val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             intent.putExtra("COLD","COLD")
             startActivity(intent)
         }
@@ -39,6 +44,7 @@ class Hot_cold_page : AppCompatActivity() {
         btn_btn_Check_menu_page.setOnClickListener {
             val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             intent.putExtra("HOT","HOT")
             startActivity(intent)
         }

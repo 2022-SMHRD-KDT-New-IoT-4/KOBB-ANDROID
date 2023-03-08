@@ -52,6 +52,7 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
            val intent = Intent(this, Main_menu_page::class.java)
             //매장명
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹고가기","먹고가기")
             startActivity(intent)
 //            a = "먹고 가시겠습니까?"
 //            intent.putExtra("음성",a)
@@ -63,9 +64,12 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
             intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
             activityResult.launch(intent)
           val intent =Intent(this,Main_menu_page::class.java)
-            a = "포장 하시겠습니까?"
-            intent.putExtra("음성",a)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("포장하기","포장하기")
             startActivity(intent)
+//            a = "포장 하시겠습니까?"
+//            intent.putExtra("음성",a)
+//            startActivity(intent)
         }
 
     }
