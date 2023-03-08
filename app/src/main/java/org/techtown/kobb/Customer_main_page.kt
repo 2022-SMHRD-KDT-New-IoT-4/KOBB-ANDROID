@@ -37,9 +37,9 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
         tvname.text =user_shop_name
 
         //음성전환
-       val intent : Intent = Intent()
-       intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-   //   activityResult.launch(intent)
+    //   val intent : Intent = Intent()
+  //    intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
+//      activityResult.launch(intent)
 
         //시각 장애인이 하드웨어 버튼을 눌렀을 때
 
@@ -50,9 +50,12 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
             intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
             activityResult.launch(intent)
            val intent = Intent(this, Main_menu_page::class.java)
-            a = "먹고 가시겠습니까?"
-            intent.putExtra("음성",a)
-           startActivity(intent)
+            //매장명
+            intent.putExtra("매장명",user_shop_name)
+            startActivity(intent)
+//            a = "먹고 가시겠습니까?"
+//            intent.putExtra("음성",a)
+//           startActivity(intent)
 
         }
         //포장하기 눌렀을 때

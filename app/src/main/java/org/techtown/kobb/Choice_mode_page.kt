@@ -23,7 +23,7 @@ class Choice_mode_page : AppCompatActivity() {
         
         val btn_Manage_main_page = findViewById<Button>(R.id.btn_Manage_main_page)
         val btn_Start_kiosk_page = findViewById<Button>(R.id.btn_Start_kiosk_page)
-        val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page)
+        //val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page)
        //관리자 모드를 눌렀을 때 Manage_main_page로 이동 
         btn_Manage_main_page.setOnClickListener{
         
@@ -38,10 +38,10 @@ class Choice_mode_page : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btn_User_info_page.setOnClickListener{
-            val intent = Intent(this,User_info_page::class.java)
-            startActivity(intent)
-        }
+//        btn_User_info_page.setOnClickListener{
+//            val intent = Intent(this,User_info_page::class.java)
+//            startActivity(intent)
+//        }
 
 
     }

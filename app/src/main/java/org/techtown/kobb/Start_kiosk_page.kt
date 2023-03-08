@@ -23,9 +23,8 @@ class Start_kiosk_page : AppCompatActivity() {
         btn_Choice_mode_page.setOnClickListener {
             val intent = Intent(this,Customer_main_page::class.java)
             // 매장명 보내기
-           intent.putExtra("매장명", user_shop_name)
-           startActivity(intent)
-
+            intent.putExtra("매장명",user_shop_name)
+            startActivity(intent)
         }
     }
 }
