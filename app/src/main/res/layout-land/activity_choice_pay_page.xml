@@ -63,7 +63,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="320dp"
-        android:background="#F7F7F7"
+        android:background="#FFEAEA"
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:srcCompat="@drawable/casher" />

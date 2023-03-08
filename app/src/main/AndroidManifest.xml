@@ -24,6 +24,13 @@
             android:exported="true">
 
         </activity>
+
+
+        <activity
+            android:name=".Customer_main_page"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" >
@@ -36,20 +43,14 @@
         </activity>
         <activity
             android:name=".Join_page"
-            android:exported="true">
+            android:exported="true"/>
 
-        </activity>
+
         <activity
             android:name=".Join_success_page"
             android:exported="true" />
         <activity
             android:name=".small_menu_page"
-            android:exported="true" />
-        <activity
-            android:name=".Main_menu_page"
-            android:exported="true" />
-        <activity
-            android:name=".Start_page"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,10 +59,26 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Main_menu_page"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Start_page"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".Login_page"
             android:exported="true" />
         <activity
             android:name=".Choice_mode_page"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
+            android:name=".Mode_change_page"
             android:exported="true" >
 
         </activity>
