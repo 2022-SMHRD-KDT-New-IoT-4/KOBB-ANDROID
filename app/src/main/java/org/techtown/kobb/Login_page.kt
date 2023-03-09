@@ -50,6 +50,8 @@ class Login_page : AppCompatActivity() {
                         user_shop_name = String(response.subSequence(response.indexOf('.')+1,response.length).toString().toByteArray(Charsets.ISO_8859_1),Charsets.UTF_8)
                         val intent = Intent(this, Choice_mode_page::class.java)
                         intent.putExtra("매장명", user_shop_name)
+                        Log.d("?", user_shop_name.toString())
+
                         startActivity(intent)
                     }else{
                         Toast.makeText(this@Login_page,"로그인 실패 다시 시도해주세요", Toast.LENGTH_SHORT).show()
