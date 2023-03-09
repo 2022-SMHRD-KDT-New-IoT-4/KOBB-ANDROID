@@ -12,20 +12,546 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
+
+            <!-- 어플 뚜껑 코드 -->
+
+            <!-- 상단 로고 이미지 -->
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="0dp"
+                android:layout_height="650dp"
+                android:layout_marginTop="36dp"
+                android:background="#FFEAEA"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/kobb" />
+
+            <!-- 모드 전환 버튼 -->
+            <Button
+                android:id="@+id/btn_Start_kiosk_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="#FF5555"
+                android:text="모드전환"
+                android:textColor="#F8F0F0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page1"
+                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
+                app:layout_constraintTop_toTopOf="@+id/btn_User_info_page1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#FFF7F7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- 개인정보 페이지 이동 버튼  -->
+            <ImageButton
+                android:id="@+id/btn_User_info_page1"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/user" />
+
+            <!-- 메뉴 관리 -->
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="메뉴 관리"
+                android:textColor="#FF5555"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 하단 @kobb-->
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/kobbtext" />
+            <!-- =============================================== -->
+
+            <!-- 페이징 라이브러리 -->
 
 
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/table_temp"
+                android:padding="8dp"
+                android:stretchColumns="*"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="메뉴이름"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="판매가격"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="카테고리 분류"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="상태"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="메뉴 사진"
+                        android:textSize="24dp" />
+                </TableRow>
 
 
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 체크박스1 -->
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_temp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/invent_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/invent_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/invent_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 체크박스2 -->
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_temp" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 체크박스3 -->
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_temp" />
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                </TableRow>
 
 
+            </TableLayout>
 
+            <Button
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="600dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFEAEA"
+                android:text="판매량 높은 순"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+                app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+                app:layout_constraintTop_toTopOf="@+id/textView66" />
+
+            <Button
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFEAEA"
+                android:text="판매량 낮은 순"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+                app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
+                app:layout_constraintStart_toEndOf="@+id/textView65" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FF5555"
+                android:text="선택항목 삭제"
+                android:textColor="#FAF7F7"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/button14"
+                app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FF5555"
+                android:text="저장"
+                android:textColor="#F4EEEE"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tableLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#FF5555"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button12"
+                app:layout_constraintEnd_toStartOf="@+id/button16"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/button18" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF5555"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button15"
+                app:layout_constraintEnd_toStartOf="@+id/button17"
+                app:layout_constraintTop_toTopOf="@+id/button15"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="190dp"
+                android:backgroundTint="#FF5555"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button16"
+                app:layout_constraintEnd_toStartOf="@+id/button14"
+                app:layout_constraintTop_toTopOf="@+id/button16"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:backgroundTint="#FF5555"
+                android:text="◀"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button15"
+                app:layout_constraintStart_toEndOf="@+id/button12"
+                app:layout_constraintTop_toTopOf="@+id/button15" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="550dp"
+                android:layout_marginEnd="100dp"
+                android:backgroundTint="#FF5555"
+                android:text="▶"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button17"
+                app:layout_constraintEnd_toStartOf="@+id/button14"
+                app:layout_constraintStart_toEndOf="@+id/button12"
+                app:layout_constraintTop_toTopOf="@+id/button17" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="420dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+            <EditText
+                android:id="@+id/textView4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:hint="카테고리 추가"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/button5"
+                app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="400dp"
+                android:backgroundTint="#FF5555"
+                android:text="저장"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView4" />
 
 
 
