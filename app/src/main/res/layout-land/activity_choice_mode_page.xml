@@ -88,7 +88,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/btn_Manage_main_page" />
 
             <TextView
-                android:id="@+id/tvname"
+                android:id="@+id/tvcname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="사장님 안녕하세요!"

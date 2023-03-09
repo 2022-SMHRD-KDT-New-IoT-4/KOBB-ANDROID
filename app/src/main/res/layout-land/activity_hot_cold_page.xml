@@ -47,7 +47,7 @@
                             app:layout_constraintVertical_bias="0.0" />
 
                         <TextView
-                            android:id="@+id/tvname"
+                            android:id="@+id/tvcname"
                             android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:gravity="center"
@@ -82,7 +82,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.499"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/tvname" />
+                            app:layout_constraintTop_toBottomOf="@+id/tvcname" />
 
                         <TextView
                             android:id="@+id/textView6"
@@ -136,8 +136,8 @@
                             android:layout_marginTop="11dp"
                             android:backgroundTint="#00FFFFFF"
                             app:layout_constraintBottom_toTopOf="@+id/textView"
-                            app:layout_constraintStart_toEndOf="@+id/tvname"
-                            app:layout_constraintTop_toTopOf="@+id/tvname"
+                            app:layout_constraintStart_toEndOf="@+id/tvcname"
+                            app:layout_constraintTop_toTopOf="@+id/tvcname"
                             app:srcCompat="@drawable/shoppingcart" />
 
                         <!-- 뚜껑 끝 -->
@@ -158,7 +158,7 @@
                             app:layout_constraintTop_toTopOf="@+id/btn_cart_page3" />
 
                         <Button
-                            android:id="@+id/button6"
+                            android:id="@+id/btn_btn_Check_menu_page"
                             android:layout_width="440dp"
                             android:layout_height="440dp"
                             android:layout_marginTop="20dp"
@@ -170,11 +170,11 @@
                             android:textSize="60sp"
                             app:layout_constraintEnd_toEndOf="@+id/textView"
                             app:layout_constraintHorizontal_bias="0.475"
-                            app:layout_constraintStart_toEndOf="@+id/button8"
+                            app:layout_constraintStart_toEndOf="@+id/btn_Check_menu_page"
                             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
                         <Button
-                            android:id="@+id/button8"
+                            android:id="@+id/btn_Check_menu_page"
                             android:layout_width="440dp"
                             android:layout_height="440dp"
                             android:layout_marginStart="160dp"
@@ -184,9 +184,9 @@
                             android:text="차갑게"
                             android:textColor="#FFFFFF"
                             android:textSize="60sp"
-                            app:layout_constraintBottom_toBottomOf="@+id/button6"
+                            app:layout_constraintBottom_toBottomOf="@+id/btn_btn_Check_menu_page"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="@+id/button6" />
+                            app:layout_constraintTop_toTopOf="@+id/btn_btn_Check_menu_page" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,7 @@ class Check_menu_page : AppCompatActivity() {
         //먹고가기 포장하기
         eat = intent.getStringExtra("먹포")!!
         //차가운지 뜨거운지
-        var ch = findViewById<TextView>(R.id.ch)
+         var ch = findViewById<TextView>(R.id.ch)
         if(intent.getStringExtra("COLD")!=null){
             cold = intent.getStringExtra("COLD")!!
             ch.text = cold
@@ -35,7 +35,7 @@ class Check_menu_page : AppCompatActivity() {
 
 
         //상호명
-        var tvcname = findViewById<TextView>(R.id.tvcname2)
+        var tvcname = findViewById<TextView>(R.id.tvcname)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         tvcname.text = user_shop_name
