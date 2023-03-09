@@ -133,8 +133,17 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="15dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="1dp"
+                        android:background="@drawable/table_temp"
+                        android:gravity="center"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="15dp"
+                        android:layout_height="40dp"
                         android:layout_margin="1dp"
                         android:background="@drawable/table_temp"
                         android:gravity="center"
@@ -299,7 +308,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="224dp" />
+                app:layout_constraintGuide_begin="216dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lv_Control_inventory_page"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tableLayout2"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="188dp"
+                android:layout_marginEnd="1092dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_begin="52dp"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

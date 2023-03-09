@@ -19,14 +19,14 @@
         <!-- 체크박스1 -->
 
         <CheckBox
-            android:layout_width="31dp"
-            android:layout_height="40dp"
-            android:background="@drawable/table_temp" />
+            android:id="@+id/checkBox3"
+            android:layout_width="37dp"
+            android:layout_height="match_parent" />
 
         <TextView
             android:id="@+id/invent_num"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:background="@drawable/table_temp"
             android:gravity="center"
@@ -36,8 +36,8 @@
 
         <TextView
             android:id="@+id/invent_name"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:background="@drawable/table_temp"
             android:gravity="center"
@@ -45,8 +45,8 @@
 
         <TextView
             android:id="@+id/invent_price"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:background="@drawable/table_temp"
             android:gravity="center"
@@ -54,8 +54,8 @@
 
         <TextView
             android:id="@+id/invent_stock"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="157dp"
+            android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:background="@drawable/table_temp"
             android:gravity="center"
@@ -63,8 +63,8 @@
 
         <TextView
             android:id="@+id/invent_partner"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:background="@drawable/table_temp"
             android:gravity="center"
@@ -72,14 +72,28 @@
 
         <TextView
             android:id="@+id/invent_partNum"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:background="@drawable/table_temp"
             android:gravity="center"
             android:textSize="24dp" />
 
     </TableRow>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
