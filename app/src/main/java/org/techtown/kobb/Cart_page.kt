@@ -2,11 +2,20 @@ package org.techtown.kobb
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 
 class Cart_page : AppCompatActivity() {
+    //매장명
+    lateinit var user_shop_name : String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart_page)
+
+        //상호명
+        val tvcname2 = findViewById<TextView>(R.id.tvcname2)
+        //받아온 매장명
+        user_shop_name = intent.getStringExtra("매장명")!!
+        tvcname2.text = user_shop_name
 
         // page 21 장바구니 페이지
         // 뒤로가기 버튼 : btn_Small_menu_page3

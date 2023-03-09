@@ -13,10 +13,13 @@ class Check_menu_page : AppCompatActivity() {
     lateinit var cold: String
     //뜨겁게
     lateinit var hot : String
-
+    //먹포
+    lateinit var eat:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_menu_page)
+        //먹고가기 포장하기
+        eat = intent.getStringExtra("먹포")!!
         //차가운지 뜨거운지
         var ch = findViewById<TextView>(R.id.ch)
         if(intent.getStringExtra("COLD")!=null){
@@ -32,7 +35,7 @@ class Check_menu_page : AppCompatActivity() {
 
 
         //상호명
-        var tvcname = findViewById<TextView>(R.id.tvcname)
+        var tvcname = findViewById<TextView>(R.id.tvcname2)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         tvcname.text = user_shop_name
@@ -45,6 +48,9 @@ class Check_menu_page : AppCompatActivity() {
         //장바구니 확인 버튼 눌렀을 때
         btn_Cart_page1.setOnClickListener {
             val intent = Intent(this@Check_menu_page,Cart_page::class.java)
+            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
+            startActivity(intent)
         }
 
 

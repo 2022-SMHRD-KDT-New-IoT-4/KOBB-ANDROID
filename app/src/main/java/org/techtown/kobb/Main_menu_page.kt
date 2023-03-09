@@ -19,10 +19,20 @@ class Main_menu_page : AppCompatActivity(), TextToSpeech.OnInitListener {
     lateinit var  a : String
     //매장명
     lateinit var user_shop_name : String
+    lateinit var eat:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu_page)
+        //먹고가기 포장하기
+        if(intent.getStringExtra("먹고가기")!=null){
+            eat = intent.getStringExtra("먹고가기")!!
+
+        }else{
+            eat =intent.getStringExtra("포장하기")!!
+        }
+
+
         //상호명
         var tvmenu= findViewById<TextView>(R.id.tvmenu)
         //받아온 매장명
@@ -40,32 +50,38 @@ class Main_menu_page : AppCompatActivity(), TextToSpeech.OnInitListener {
         btn_small_menu_page1.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
 
         }
         btn_small_menu_page2.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page3.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page4.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page5.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
         btn_small_menu_page6.setOnClickListener{
             val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
             intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("먹포",eat)
             startActivity(intent)
         }
 
