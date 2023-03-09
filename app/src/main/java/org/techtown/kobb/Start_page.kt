@@ -15,6 +15,6 @@ class Start_page : AppCompatActivity() {
                 Login_page::class.java)
             startActivity(intent)
             finish()
-        },4000)
+        },2000)
     }
 }

@@ -5,74 +5,73 @@
     tools:context=".Login_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:backgroundTint="#F6ABAB"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-
             <EditText
                 android:id="@+id/login_user_pw"
-                android:layout_width="440dp"
+                android:layout_width="400dp"
                 android:layout_height="70dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
                 android:ems="10"
                 android:hint="비밀번호를 입력하세요"
                 android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="@+id/login_user_id"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/login_user_id"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_Choice_mode_page"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
                 app:layout_constraintTop_toBottomOf="@+id/login_user_id" />
-
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="0dp"
-                android:layout_height="160dp"
-                android:layout_marginTop="50dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="423dp"
+                android:layout_height="175dp"
+                android:layout_marginTop="52dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                app:layout_constraintEnd_toEndOf="@+id/login_user_id"
+                app:layout_constraintStart_toStartOf="@+id/imageView10"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.421"
                 app:srcCompat="@drawable/kobbicon" />
-
             <Button
                 android:id="@+id/btn_Choice_mode_page"
                 android:layout_width="480dp"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="70dp"
-                android:background="#FF5555"
+                android:background="@drawable/button_style"
                 android:text="로그인"
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/login_user_pw"
-                app:layout_constraintStart_toStartOf="@+id/login_user_pw"
+                app:layout_constraintEnd_toEndOf="@+id/btn_Join_page"
+                app:layout_constraintStart_toStartOf="@+id/btn_Join_page"
                 app:layout_constraintTop_toBottomOf="@+id/login_user_pw" />
-
             <Button
                 android:id="@+id/btn_Join_page"
                 android:layout_width="480dp"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="120dp"
-                android:backgroundTint="#F6ABAB"
+                android:layout_marginBottom="110dp"
+                android:background="@drawable/button_style"
+                android:backgroundTint=" #FFEAEA"
                 android:text="회원가입"
                 android:textColor="#504E4E"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/btn_Choice_mode_page"
-                app:layout_constraintStart_toStartOf="@+id/btn_Choice_mode_page"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btn_Choice_mode_page" />
-
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
@@ -82,41 +81,47 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/kobbtext" />
-
-
             <EditText
                 android:id="@+id/login_user_id"
-                android:layout_width="440dp"
+                android:layout_width="400dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="80dp"
                 android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
                 android:ems="10"
                 android:hint="아이디를 입력하세요"
                 android:inputType="textPersonName"
+                android:shadowColor="#3A3838"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/login_user_pw"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/login_user_pw"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
                 app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
             <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:layout_constraintEnd_toStartOf="@+id/login_user_pw"
+                android:layout_width="59dp"
+                android:layout_height="55dp"
+                app:layout_constraintBottom_toBottomOf="@+id/login_user_pw"
+                app:layout_constraintStart_toStartOf="@+id/btn_Choice_mode_page"
                 app:layout_constraintTop_toTopOf="@+id/login_user_pw"
                 app:srcCompat="@drawable/passwordkey2" />
-
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="53dp"
+                android:layout_height="48dp"
                 app:layout_constraintBottom_toBottomOf="@+id/login_user_id"
-                app:layout_constraintEnd_toStartOf="@+id/login_user_id"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
                 app:layout_constraintTop_toTopOf="@+id/login_user_id"
+                app:layout_constraintVertical_bias="0.363"
                 app:srcCompat="@drawable/usericon" />
-
-
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="235dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

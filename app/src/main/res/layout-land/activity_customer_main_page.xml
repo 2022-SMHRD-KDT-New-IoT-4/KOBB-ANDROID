@@ -10,15 +10,19 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="false">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline"
@@ -27,26 +31,16 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.10218978" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="110dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="8dp"
-                android:maxWidth="35dp"
-                android:maxHeight="35dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/kobbicon" />
-
             <Button
-                android:id="@+id/button"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="8dp"
+                android:id="@+id/btn_card"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_style"
                 android:backgroundTint="#FF5555"
                 android:text="모드 전환"
                 android:textColor="#FFFFFF"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -54,98 +48,120 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="0dp"
-                android:layout_height="680dp"
+                android:layout_height="0dp"
                 android:background="#FFEAEA"
                 android:gravity="center_horizontal"
                 android:textColor="#504E4E"
                 android:textSize="24dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/guideline14"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tvname"
+                android:id="@+id/tvcname"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
                 android:text="상호명"
                 android:textColor=" #FF5555"
-                android:textSize="16dp"
+                android:textSize="34sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
-                app:layout_constraintEnd_toStartOf="@+id/button"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="180dp"
+                app:layout_constraintEnd_toStartOf="@+id/textView5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
                 app:srcCompat="@drawable/casher" />
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="안녕하세요:)"
                 android:textColor="#504E4E"
-                android:textSize="24sp"
+                android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.442"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="매장에서 드시나요? 아니면 포장해드릴까요?"
                 android:textColor="#504E4E"
-                android:textSize="24sp"
+                android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
             <ImageButton
                 android:id="@+id/btn_Eat_main_menu_page"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
                 android:layout_marginStart="100dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/eat2"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
             <ImageButton
                 android:id="@+id/btn_TakeOut_main_menu_page"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_marginStart="50dp"
                 android:layout_marginEnd="100dp"
-                android:scaleType="fitXY"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/takeout2"
+                android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2"
-                 />
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/kobbtext"
-                tools:layout_editor_absoluteX="612dp"
-                tools:layout_editor_absoluteY="744dp" />
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:srcCompat="@drawable/kobbtext" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="736dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

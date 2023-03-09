@@ -5,7 +5,6 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -46,7 +45,7 @@ class Main_menu_page : AppCompatActivity() {
 
 
         //상호명
-        var tvmenu= findViewById<TextView>(R.id.tvmenu)
+        var tvmenu= findViewById<TextView>(R.id.tvcname)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 담아주기

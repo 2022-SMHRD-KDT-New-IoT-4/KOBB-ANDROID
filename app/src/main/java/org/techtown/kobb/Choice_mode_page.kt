@@ -16,6 +16,8 @@ class Choice_mode_page : AppCompatActivity() {
         //login에서 넘어온 이름 값
         user_shop_name = intent.getStringExtra("매장명")!!
 
+        val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page1)
+
         //매장명
         val choice_user_shop_name = findViewById<TextView>(R.id.choice_user_shop_name)
         // 매장명에 이름 값 담아주기
@@ -38,10 +40,10 @@ class Choice_mode_page : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        btn_User_info_page.setOnClickListener{
-//            val intent = Intent(this,User_info_page::class.java)
-//            startActivity(intent)
-//        }
+        btn_User_info_page.setOnClickListener{
+            val intent = Intent(this,User_info_page::class.java)
+            startActivity(intent)
+        }
 
 
     }

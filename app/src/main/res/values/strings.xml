@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">Kobb</string>
+    <string name="app_name">KOBB</string>
+
+    메뉴 카테고리
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Why do we use it?</string>
+
+    <string-array name="KOBB_menu">
+        <item>커피</item>
+        <item>라떼</item>
+        <item>차</item>
+        <item>에이드</item>
+        <item>요거트</item>
+        <item>디저트</item>
+
+    </string-array>
+
+    <!-- 이미지 넣고 싶으면 여기 활용  -->
+    <!--    <integer-array name="images">-->
+    <!--        <item>@drawable/avatar</item>-->
+    <!--    </integer-array>-->
+
+
 </resources>

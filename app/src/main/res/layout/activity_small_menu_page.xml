@@ -76,7 +76,7 @@
         app:srcCompat="@drawable/casher" />
 
     <TextView
-        android:id="@+id/tvname"
+        android:id="@+id/tvcname"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:gravity="center"
@@ -137,8 +137,8 @@
         android:id="@+id/btn_Hot_cold_page2"
         android:layout_width="400dp"
         android:layout_height="380dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="104dp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView43"
         tools:srcCompat="@tools:sample/avatars" />
