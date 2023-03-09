@@ -184,19 +184,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="240dp"
-                android:text="메뉴 : "
+                android:text="메뉴 : 아메리카노"
                 android:textColor="#FFFFFF"
-                android:textSize="50dp"
+                android:textSize="50sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView16"
-                app:layout_constraintTop_toTopOf="@+id/textView4" />
+                app:layout_constraintTop_toTopOf="@+id/textView4"
+                app:layout_constraintVertical_bias="0.496" />
 
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="상태 : "
+                android:text="상태 : 차갑게"
                 android:textColor="#FFFFFF"
                 android:textSize="50dp"
                 app:layout_constraintEnd_toEndOf="@+id/textView7"
@@ -213,6 +214,17 @@
                 app:layout_constraintEnd_toEndOf="@+id/textView18"
                 app:layout_constraintStart_toStartOf="@+id/textView18"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="금액 : "
+                android:textColor="#FFFFFF"
+                android:textSize="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
