@@ -25,7 +25,7 @@ class Login_page : AppCompatActivity() {
         var login_user_id  = findViewById<EditText>(R.id.login_user_id)
         var login_user_pw = findViewById<EditText>(R.id.login_user_pw)
         var btn_Choice_mode_page = findViewById<Button>(R.id.btn_Choice_mode_page)
-
+        var btn_Join_page = findViewById<Button>(R.id.btn_Join_page)
 
         val requestQueue = Volley.newRequestQueue(applicationContext)
 
@@ -38,9 +38,9 @@ class Login_page : AppCompatActivity() {
                 Request.Method.GET,
                 url,
                 {response->
-                    Log.d("리스폰스",String(response.toString().toByteArray(Charsets.ISO_8859_1),Charsets.UTF_8))
+                    // Log.d("리스폰스",String(response.toString().toByteArray(Charsets.ISO_8859_1),Charsets.UTF_8))
                      var  id2 = response.subSequence(0,response.indexOf(','))
-                    Log.d("쪼갠 아이디 값",id2.toString())
+                    //Log.d("쪼갠 아이디 값",id2.toString())
                     var pw2 = response.subSequence(response.indexOf(',')+1,response.indexOf('.'))
                     Log.d("쪼갠 패스워드 값",pw2.toString())
                      var user_shop_name = response.subSequence(response.indexOf('.')+1,response.length)
@@ -69,6 +69,12 @@ class Login_page : AppCompatActivity() {
             requestQueue.add(request)
 
         })
+
+        // 회원가입 페이지로 이동
+        btn_Join_page.setOnClickListener{
+            intent = Intent(this,Join_page::class.java)
+            startActivity(intent)
+        }
 
 
 
