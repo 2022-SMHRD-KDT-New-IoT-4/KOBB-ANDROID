@@ -47,7 +47,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tvname"
+                android:id="@+id/tvcname"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -82,7 +82,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.499"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvname" />
+                app:layout_constraintTop_toBottomOf="@+id/tvcname" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -136,12 +136,12 @@
                 android:layout_marginTop="11dp"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintBottom_toTopOf="@+id/textView"
-                app:layout_constraintStart_toEndOf="@+id/tvname"
-                app:layout_constraintTop_toTopOf="@+id/tvname"
+                app:layout_constraintStart_toEndOf="@+id/tvcname"
+                app:layout_constraintTop_toTopOf="@+id/tvcname"
                 app:srcCompat="@drawable/shoppingcart" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btn_Hot_cold_page1"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
                 android:layout_marginStart="160dp"
@@ -155,13 +155,15 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/button5" />
+                app:layout_constraintTop_toTopOf="@+id/btn_Hot_cold_page2" />
+
+            <!-- 뚜껑 끝 -->
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btn_Hot_cold_page2"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="24dp"
                 android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/coffee1_small_menu"
                 android:gravity="center"
@@ -170,10 +172,8 @@
                 android:textSize="50dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintStart_toEndOf="@+id/btn_Hot_cold_page1"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-            <!-- 뚜껑 끝 -->
 
             <Button
                 android:id="@+id/btn_Customer_main_page"
@@ -185,8 +185,8 @@
                 android:textColor="#FFFFFF"
                 android:textSize="32dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
-                app:layout_constraintStart_toStartOf="@+id/button3"
-                app:layout_constraintTop_toBottomOf="@+id/button3" />
+                app:layout_constraintStart_toStartOf="@+id/btn_Hot_cold_page1"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Hot_cold_page1" />
 
             <Button
                 android:layout_width="wrap_content"

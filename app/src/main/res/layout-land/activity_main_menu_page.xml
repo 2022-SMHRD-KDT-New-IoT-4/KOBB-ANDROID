@@ -48,7 +48,7 @@
 
             <!-- 뚜껑 상호명-->
             <TextView
-                android:id="@+id/tvname"
+                android:id="@+id/tvcname"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -147,6 +147,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/btn_small_menu_page2" />
 
             <Button
+                android:id="@+id/btn_small_menu_page4"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_radius"
+                android:backgroundTint="#FF5555"
+                android:text="에이드"
+                android:textColor="#F7F7F7"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btn_small_menu_page5"
+                app:layout_constraintEnd_toEndOf="@+id/btn_small_menu_page5"
+                app:layout_constraintStart_toStartOf="@+id/btn_small_menu_page5" />
+
+            <Button
                 android:id="@+id/btn_small_menu_page5"
                 android:layout_width="400dp"
                 android:layout_height="100dp"
@@ -161,21 +176,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline8"
                 app:layout_constraintTop_toTopOf="@+id/guideline10" />
-
-            <Button
-                android:id="@+id/btn_small_menu_page4"
-                android:layout_width="400dp"
-                android:layout_height="100dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/btn_radius"
-                android:backgroundTint="#FF5555"
-                android:text="에이드"
-                android:textColor="#F7F7F7"
-                android:textSize="48sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/btn_small_menu_page5"
-                app:layout_constraintEnd_toEndOf="@+id/btn_small_menu_page5"
-                app:layout_constraintStart_toStartOf="@+id/btn_small_menu_page5" />
 
             <Button
                 android:id="@+id/btn_small_menu_page6"
@@ -225,8 +225,8 @@
                 android:layout_marginTop="11dp"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintBottom_toTopOf="@+id/textView"
-                app:layout_constraintStart_toEndOf="@+id/tvname"
-                app:layout_constraintTop_toTopOf="@+id/tvname"
+                app:layout_constraintStart_toEndOf="@+id/tvcname"
+                app:layout_constraintTop_toTopOf="@+id/tvcname"
                 app:srcCompat="@drawable/shoppingcart" />
 
             <Button
