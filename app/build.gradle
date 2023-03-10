@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId "org.techtown.kobb"
-        minSdk 24
-        targetSdk 33
+        minSdk 27
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -30,7 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-     buildToolsVersion '30.0.3'
+    buildToolsVersion '30.0.3'
 }
 
 dependencies {
