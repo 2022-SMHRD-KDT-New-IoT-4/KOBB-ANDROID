@@ -29,8 +29,10 @@ class Check_menu_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_menu_page)
+
+
         val check_menu_menu =findViewById<TextView>(R.id.check_menu_menu)
-        val check_menu = findViewById<TextView>(R.id.check_menu)
+        val check_menu = findViewById<TextView>(R.id.tv_Hot_Cold_ryu)
         //먹고가기 포장하기
         eat = intent.getStringExtra("먹포")!!
         //차가운지 뜨거운지
@@ -59,9 +61,8 @@ class Check_menu_page : AppCompatActivity() {
 
         //장바구니 확인
        // val btn_Cart_page1=findViewById<Button>(R.id.btn_Cart_page1)
+
         val check_menu_add =findViewById<Button>(R.id.check_menu_add)
-
-
         //장바구니 담기를 눌렀을 때
         check_menu_add.setOnClickListener {
             voice = "장바구니에 담았습니다"

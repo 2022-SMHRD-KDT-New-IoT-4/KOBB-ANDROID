@@ -47,7 +47,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tvcname"
+                android:id="@+id/main_menu_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -72,7 +72,7 @@
                 app:srcCompat="@drawable/casher" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tv_Hot_Cold_ryu"
                 android:layout_width="wrap_content"
                 android:layout_height="67dp"
                 android:text="아메리카노"
@@ -81,7 +81,7 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/textView6"
                 app:layout_constraintEnd_toStartOf="@+id/textView52"
-                app:layout_constraintStart_toEndOf="@+id/textView48" />
+                app:layout_constraintStart_toEndOf="@+id/check_tv1" />
 
             <TextView
                 android:id="@+id/textView52"
@@ -92,11 +92,12 @@
                 android:textColor="#504E4E"
                 android:textSize="46sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView6"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView5" />
+                app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu" />
 
             <TextView
-                android:id="@+id/ch"
+                android:id="@+id/check_tv1"
                 android:layout_width="wrap_content"
                 android:layout_height="67dp"
                 android:text="차가운"
@@ -104,7 +105,7 @@
                 android:textSize="46sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toTopOf="@+id/textView5" />
+                app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -177,7 +178,7 @@
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toStartOf="@+id/btn_cart_page3"
-                app:layout_constraintTop_toTopOf="@+id/tvcname" />
+                app:layout_constraintTop_toTopOf="@+id/main_menu_name" />
 
 
             <TextView
@@ -205,14 +206,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView70" />
 
             <TextView
-                android:id="@+id/textView75"
+                android:id="@+id/check_tv2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="차갑게"
                 android:textColor="#FFFFFF"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView78"
+                app:layout_constraintStart_toStartOf="@+id/check_menu_menu"
                 app:layout_constraintTop_toTopOf="@+id/textView67" />
 
             <TextView
@@ -234,11 +235,11 @@
                 android:textColor="#FFFFFF"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView75"
+                app:layout_constraintStart_toStartOf="@+id/check_tv2"
                 app:layout_constraintTop_toTopOf="@+id/textView70" />
 
             <TextView
-                android:id="@+id/textView78"
+                android:id="@+id/check_menu_menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -272,7 +273,7 @@
                 app:srcCompat="@drawable/coffee_01" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/check_menu_add"
                 android:layout_width="270dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="35dp"
@@ -295,8 +296,8 @@
                 android:textColor="#504E4E"
                 android:textSize="50sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/button3"
-                app:layout_constraintStart_toEndOf="@+id/button3" />
+                app:layout_constraintBottom_toBottomOf="@+id/check_menu_add"
+                app:layout_constraintStart_toEndOf="@+id/check_menu_add" />
 
             <TextView
                 android:id="@+id/textView59"

@@ -37,7 +37,7 @@ class Customer_main_page : AppCompatActivity(){
 
 
         //상호명
-        val customer_main_name = findViewById<TextView>(R.id.customer_main_name)
+        val customer_main_name = findViewById<TextView>(R.id.main_menu_name)
         //받아온 매장명
        user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 적용
