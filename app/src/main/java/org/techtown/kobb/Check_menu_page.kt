@@ -20,6 +20,7 @@ class Check_menu_page : AppCompatActivity() {
         setContentView(R.layout.activity_check_menu_page)
         //먹고가기 포장하기
         eat = intent.getStringExtra("먹포")!!
+
         //차가운지 뜨거운지
          var ch = findViewById<TextView>(R.id.ch)
         if(intent.getStringExtra("COLD")!=null){

@@ -96,7 +96,7 @@
                 app:layout_constraintTop_toTopOf="@+id/textView5" />
 
             <TextView
-                android:id="@+id/textView48"
+                android:id="@+id/ch"
                 android:layout_width="wrap_content"
                 android:layout_height="67dp"
                 android:text="차가운"
