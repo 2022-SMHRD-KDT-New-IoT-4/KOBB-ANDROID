@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 
 class Check_menu_page : AppCompatActivity() {
@@ -52,7 +53,7 @@ class Check_menu_page : AppCompatActivity() {
 
 
         //장바구니 확인
-        val btn_Cart_page1=findViewById<Button>(R.id.btn_Cart_page1)
+        val btn_Cart_page1=findViewById<ImageButton>(R.id.btn_Cart_page1)
 
 
 
