@@ -41,7 +41,9 @@ class Hot_cold_page : AppCompatActivity() {
             cnt = intent.getStringExtra("cnt2")!!
         }
         Log.d("cnt",cnt)
+
         val tv_Hot_Cold_ryu = findViewById<TextView>(R.id.tv_Hot_Cold_ryu)
+
         choice_menu = intent.getStringExtra("choice_menu")!!
         tv_Hot_Cold_ryu.text = choice_menu
         //음성출력
@@ -52,8 +54,10 @@ class Hot_cold_page : AppCompatActivity() {
         })
         //먹고가기 포장하기
         eat = intent.getStringExtra("먹포")!!
+
         //상호명
-        val hot_cold_name = findViewById<TextView>(R.id.hot_cold_name)
+        val hot_cold_name = findViewById<TextView>(R.id.main_menu_name)
+
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         hot_cold_name.text = user_shop_name

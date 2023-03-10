@@ -7,7 +7,16 @@
     android:backgroundTint="#FFFFFF"
     tools:context=".Customer_main_page">
 
-
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +32,7 @@
                 app:layout_constraintGuide_percent="0.10218978" />
 
             <Button
-                android:id="@+id/btn_Mode_change_page"
+                android:id="@+id/btn_card"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -52,7 +61,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tvcname2"
+                android:id="@+id/main_menu_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -73,12 +82,12 @@
                 android:layout_marginBottom="6dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView6"
                 app:layout_constraintEnd_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu"
                 app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/casher" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tv_Hot_Cold_ryu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="안녕하세요:)"
@@ -158,4 +167,5 @@
                 app:layout_constraintGuide_begin="736dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
