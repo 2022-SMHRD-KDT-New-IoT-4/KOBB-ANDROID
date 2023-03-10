@@ -129,7 +129,7 @@
                             app:layout_constraintGuide_begin="222dp" />
 
                         <ImageButton
-                            android:id="@+id/btn_cart_page3"
+                            android:id="@+id/btn_Cart_page1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="500dp"
@@ -154,8 +154,8 @@
                             android:textColor="#504E4E"
                             android:textSize="24sp"
                             app:layout_constraintBottom_toTopOf="@+id/guideline"
-                            app:layout_constraintEnd_toStartOf="@+id/btn_cart_page3"
-                            app:layout_constraintTop_toTopOf="@+id/btn_cart_page3" />
+                            app:layout_constraintEnd_toStartOf="@+id/btn_Cart_page1"
+                            app:layout_constraintTop_toTopOf="@+id/btn_Cart_page1" />
 
                         <Button
                             android:id="@+id/btn_btn_Check_menu_page"
