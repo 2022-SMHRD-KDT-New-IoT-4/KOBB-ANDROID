@@ -182,7 +182,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="70dp"
                 android:text="관리자 비밀번호를 입력해주세요"
                 android:textColor="#504E4E"
                 android:textSize="40dp"
