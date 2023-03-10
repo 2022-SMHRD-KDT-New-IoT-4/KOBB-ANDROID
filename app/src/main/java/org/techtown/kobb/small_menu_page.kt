@@ -13,7 +13,7 @@ class small_menu_page : AppCompatActivity() {
     lateinit var eat:String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_small_menu_page)
+        setContentView(R.layout.activity_small_menu_page1_1)
         //먹고가기 포장하기
        eat = intent.getStringExtra("먹포")!!
 
