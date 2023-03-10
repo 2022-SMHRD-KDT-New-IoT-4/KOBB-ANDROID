@@ -66,14 +66,14 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="260dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView49"
-                app:layout_constraintEnd_toStartOf="@+id/textView5"
+                app:layout_constraintEnd_toStartOf="@+id/tv_Hot_Cold_ryu"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu"
                 app:srcCompat="@drawable/casher" />
 
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tv_Hot_Cold_ryu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -94,9 +94,9 @@
                 android:textColor="#504E4E"
                 android:textSize="34sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/textView5"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                app:layout_constraintEnd_toEndOf="@+id/tv_Hot_Cold_ryu"
+                app:layout_constraintStart_toStartOf="@+id/tv_Hot_Cold_ryu"
+                app:layout_constraintTop_toBottomOf="@+id/tv_Hot_Cold_ryu" />
 
             <TextView
                 android:id="@+id/textView49"
@@ -206,7 +206,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/check_menu_add"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="210dp"

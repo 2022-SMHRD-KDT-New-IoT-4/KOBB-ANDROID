@@ -8,11 +8,6 @@ import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.ImageButton
 import android.widget.TextView
-import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.annotation.RequiresApi
-import org.w3c.dom.Text
 import java.util.*
 
 class Customer_main_page : AppCompatActivity(){
@@ -42,11 +37,11 @@ class Customer_main_page : AppCompatActivity(){
 
 
         //상호명
-        val tvname = findViewById<TextView>(R.id.tvcname)
+        val customer_main_name = findViewById<TextView>(R.id.customer_main_name)
         //받아온 매장명
        user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 적용
-        tvname.text =user_shop_name
+        customer_main_name.text =user_shop_name
 
         //음성전환
 //       val intent : Intent = Intent()

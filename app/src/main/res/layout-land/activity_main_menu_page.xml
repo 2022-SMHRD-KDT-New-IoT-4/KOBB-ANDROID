@@ -31,6 +31,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.10218978" />
 
+            <!-- 뚜껑 상호명-->
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="0dp"
@@ -44,11 +45,10 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="1.0" />
 
-            <!-- 뚜껑 상호명-->
             <TextView
-                android:id="@+id/tvcname"
+                android:id="@+id/main_menu_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -68,12 +68,12 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:background="#FEE9E9"
-                app:layout_constraintEnd_toStartOf="@+id/textView5"
+                app:layout_constraintEnd_toStartOf="@+id/tv_Hot_Cold_ryu"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
                 app:srcCompat="@drawable/casher" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tv_Hot_Cold_ryu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="어떤 메뉴를 주문할까요?"
@@ -225,8 +225,8 @@
                 android:layout_marginTop="11dp"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintBottom_toTopOf="@+id/textView"
-                app:layout_constraintStart_toEndOf="@+id/tvcname"
-                app:layout_constraintTop_toTopOf="@+id/tvcname"
+                app:layout_constraintStart_toEndOf="@+id/main_menu_name"
+                app:layout_constraintTop_toTopOf="@+id/main_menu_name"
                 app:srcCompat="@drawable/shoppingcart" />
 
             <Button

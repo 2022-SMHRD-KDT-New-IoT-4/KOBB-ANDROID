@@ -61,7 +61,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tvcname"
+                android:id="@+id/customer_main_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -81,13 +81,13 @@
                 android:layout_marginStart="150dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="180dp"
-                app:layout_constraintEnd_toStartOf="@+id/textView5"
+                app:layout_constraintEnd_toStartOf="@+id/tv_Hot_Cold_ryu"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline"
                 app:srcCompat="@drawable/casher" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tv_Hot_Cold_ryu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="안녕하세요:)"
@@ -107,9 +107,9 @@
                 android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                app:layout_constraintEnd_toEndOf="@+id/textView5"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                app:layout_constraintEnd_toEndOf="@+id/tv_Hot_Cold_ryu"
+                app:layout_constraintStart_toStartOf="@+id/tv_Hot_Cold_ryu"
+                app:layout_constraintTop_toBottomOf="@+id/tv_Hot_Cold_ryu" />
 
             <ImageButton
                 android:id="@+id/btn_Eat_main_menu_page"

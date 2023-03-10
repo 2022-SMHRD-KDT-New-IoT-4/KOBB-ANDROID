@@ -141,7 +141,7 @@
                         android:textSize="24dp" />
 
                     <TextView
-                        android:id="@+id/textView18"
+                        android:id="@+id/check_tv2"
                         android:layout_width="15dp"
                         android:layout_height="40dp"
                         android:layout_margin="1dp"

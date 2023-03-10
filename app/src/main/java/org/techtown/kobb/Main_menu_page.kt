@@ -5,11 +5,9 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
 import java.util.*
 
 class Main_menu_page : AppCompatActivity() {
@@ -24,6 +22,9 @@ class Main_menu_page : AppCompatActivity() {
     lateinit var text : String
     lateinit var tts :TextToSpeech
     lateinit var cnt :String
+
+//    //류
+    lateinit var ryu: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu_page)
@@ -45,11 +46,11 @@ class Main_menu_page : AppCompatActivity() {
 
 
         //상호명
-        var tvmenu= findViewById<TextView>(R.id.tvcname)
+        val main_menu_name= findViewById<TextView>(R.id.main_menu_name)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 담아주기
-        tvmenu.text = user_shop_name
+        main_menu_name.text = user_shop_name
         // 6개 버튼 소메뉴 페이지(small_menu_page) 로 이동
         var btn_small_menu_page1 = findViewById<Button>(R.id.btn_small_menu_page1)
         var btn_small_menu_page2 = findViewById<Button>(R.id.btn_small_menu_page2)
@@ -60,10 +61,10 @@ class Main_menu_page : AppCompatActivity() {
         //커피 버튼
         btn_small_menu_page1.setOnClickListener{
             //현재 페이지에서 버튼을 눌렀을 때 출력되는 음성
+            ryu="커피 메뉴를 선택하셨습니다."
             cnt="커피 메뉴를 선택하셨습니다. 아메리카노 1번. 에스프레소 2번"
             voice = cnt
-            //다음 페이지로 넘기는 음성 값
-            //cnt = "아메리카노를 선택하셨습니다. 차갑게 드실려면 1번.따뜻하게 드실려면2번"
+
             if(voice != null){
                 Log.d("TAG", "onCreate: 음성출력")
                 ttsSpeak(voice!!)
@@ -72,14 +73,16 @@ class Main_menu_page : AppCompatActivity() {
             intent.putExtra("매장명",user_shop_name)
             intent.putExtra("먹포",eat)
             intent.putExtra("cnt1",cnt)
+            intent.putExtra("ryu",ryu)
             startActivity(intent)
 
         }
         //라떼 버튼
         btn_small_menu_page2.setOnClickListener{
+            ryu="라떼 메뉴를 선택하셨습니다."
             cnt="라떼 메뉴를 선택하셨습니다. 바닐라라떼 1번. 카페라떼는 2번"
             voice = cnt
-          //  cnt = "카페라떼. 차갑게 드실려면 1번.따뜻하게 드실려면2번"
+
             if(voice != null){
                 Log.d("TAG", "onCreate: 음성출력")
                 ttsSpeak(voice!!)
@@ -88,13 +91,14 @@ class Main_menu_page : AppCompatActivity() {
             intent.putExtra("매장명",user_shop_name)
             intent.putExtra("먹포",eat)
             intent.putExtra("cnt2",cnt)
+            intent.putExtra("ryu",ryu)
             startActivity(intent)
         }
         //차 버튼
         btn_small_menu_page3.setOnClickListener{
+            ryu="차 메뉴를 선택하셨습니다."
             cnt="차 메뉴를 선택하셨습니다. 차차차는 1번. 칡 차는 2번"
             voice = cnt
-           // cnt = "케이크. 차갑게 드실려면 1번.따뜻하게 드실려면2번"
             if(voice != null){
                 Log.d("TAG", "onCreate: 음성출력")
                 ttsSpeak(voice!!)
@@ -103,13 +107,15 @@ class Main_menu_page : AppCompatActivity() {
             intent.putExtra("매장명",user_shop_name)
             intent.putExtra("먹포",eat)
             intent.putExtra("cnt3",cnt)
+            intent.putExtra("ryu",ryu)
             startActivity(intent)
         }
         //에이드
         btn_small_menu_page4.setOnClickListener{
+            ryu="에이드 메뉴를 선택하셨습니다."
             cnt = "에이드 메뉴를 선택하셨습니다. 망고에이드는  1번. 레몬에이드는 2번"
             voice = cnt
-           // cnt = "레몬에이드. 차갑게 드실려면 1번.따뜻하게 드실려면2번"
+
             if(voice != null){
                 Log.d("TAG", "onCreate: 음성출력")
                 ttsSpeak(voice!!)
@@ -118,13 +124,15 @@ class Main_menu_page : AppCompatActivity() {
             intent.putExtra("매장명",user_shop_name)
             intent.putExtra("먹포",eat)
             intent.putExtra("cnt4",cnt)
+            intent.putExtra("ryu",ryu)
             startActivity(intent)
         }
         //요거트
         btn_small_menu_page5.setOnClickListener{
+            ryu="요거트 메뉴를 선택하셨습니다."
             cnt = "요거트 메뉴를 선택하셨습니다. 딸기요거트는 1번. 블루베리요거트는 2번"
             voice = cnt
-          //  cnt = "딸기요거트. 차갑게 드실려면 1번.따뜻하게 드실려면2번"
+
             if(voice != null){
                 Log.d("TAG", "onCreate: 음성출력")
                 ttsSpeak(voice!!)
@@ -133,13 +141,15 @@ class Main_menu_page : AppCompatActivity() {
             intent.putExtra("매장명",user_shop_name)
             intent.putExtra("먹포",eat)
             intent.putExtra("cnt5",cnt)
+            intent.putExtra("ryu",ryu)
             startActivity(intent)
         }
         //디저트
         btn_small_menu_page6.setOnClickListener{
+            ryu="디저트 메뉴를 선택하셨습니다."
             cnt= "디저트 메뉴를 선택하셨습니다. 케이크는 1번. 류승주는 2번"
             voice = cnt
-           // cnt = "보리차. 차갑게 드실려면 1번.따뜻하게 드실려면2번"
+
             if(voice != null){
                 Log.d("TAG", "onCreate: 음성출력")
                 ttsSpeak(voice!!)
@@ -148,6 +158,7 @@ class Main_menu_page : AppCompatActivity() {
             intent.putExtra("매장명",user_shop_name)
             intent.putExtra("먹포",eat)
             intent.putExtra("cnt6",cnt)
+            intent.putExtra("ryu",ryu)
             startActivity(intent)
         }
 

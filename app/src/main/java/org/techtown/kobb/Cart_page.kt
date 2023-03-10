@@ -12,7 +12,7 @@ class Cart_page : AppCompatActivity() {
         setContentView(R.layout.activity_cart_page)
 
         //상호명
-        val tvcname2 = findViewById<TextView>(R.id.tvcname)
+        val tvcname2 = findViewById<TextView>(R.id.small_menu_name)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         tvcname2.text = user_shop_name
