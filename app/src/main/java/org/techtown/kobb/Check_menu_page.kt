@@ -29,6 +29,27 @@ class Check_menu_page : AppCompatActivity() {
             hot =intent.getStringExtra("HOT")!!
             ch.text = hot
         }
+
+
+        // 수량 증감 버튼
+        var minbutton = findViewById<Button>(R.id.minbutton)
+        var plusbutton = findViewById<Button>(R.id.plusbutton)
+        val result = findViewById<TextView>(R.id.result)
+        var number = 0;
+
+        // 마이너스 버튼 선택시
+        minbutton.setOnClickListener {
+            number--
+            result.setText(number.toString())
+        }
+        // 플러스 버튼 선택시
+        plusbutton.setOnClickListener {
+            number++
+            result.setText(number.toString())
+        }
+
+
+
         //장바구니 확인
         val btn_Cart_page1=findViewById<Button>(R.id.btn_Cart_page1)
 
@@ -52,6 +73,7 @@ class Check_menu_page : AppCompatActivity() {
             intent.putExtra("먹포",eat)
             startActivity(intent)
         }
+
 
 
 
