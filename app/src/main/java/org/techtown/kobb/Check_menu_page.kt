@@ -62,11 +62,6 @@ class Check_menu_page : AppCompatActivity() {
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         tvcname.text = user_shop_name
-        // page 20 메뉴확인 페이지
-        // 메뉴마다 이미지뷰 사진 바뀜 : btn_check_menu_img
-        // 장바구니 담기 버튼 : btn_Small_menu_page1 (바로 전 페이지로 갈 수 있는걸까?)
-        // 장바구니 확인 버튼 : btn_Cart_page1
-        // 뒤로가기 버튼 : btn_Small_menu_page2
 
         //장바구니 확인 버튼 눌렀을 때
         btn_Cart_page1.setOnClickListener {

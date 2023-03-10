@@ -75,6 +75,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="67dp"
+                android:layout_marginEnd="20dp"
                 android:text="아메리카노"
                 android:textColor="#504E4E"
                 android:textSize="46sp"
