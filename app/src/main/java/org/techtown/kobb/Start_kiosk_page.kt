@@ -12,7 +12,7 @@ class Start_kiosk_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start_kiosk_page)
         //영업시작
-       val btn_Choice_mode_page = findViewById<Button>(R.id.btn_Choice_mode_page)
+       val btn_Choice_mode_page = findViewById<Button>(R.id.btn_Mode_change_page)
         //문구
         val textView71 = findViewById<TextView>(R.id.textView71)
         //Choice에서 넘어온 이름 값

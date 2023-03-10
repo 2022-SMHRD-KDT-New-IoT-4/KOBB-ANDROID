@@ -47,7 +47,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tvcname"
+                android:id="@+id/tvcname2"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -97,7 +97,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvcname" />
+                app:layout_constraintTop_toBottomOf="@+id/tvcname2" />
 
             <ImageView
                 android:id="@+id/imageView13"
@@ -201,7 +201,7 @@
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toStartOf="@+id/btn_cart_page3"
-                app:layout_constraintTop_toTopOf="@+id/tvcname" />
+                app:layout_constraintTop_toTopOf="@+id/tvcname2" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

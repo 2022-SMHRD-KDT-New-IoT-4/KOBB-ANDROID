@@ -22,6 +22,13 @@ class Check_menu_page : AppCompatActivity() {
         //먹고가기 포장하기
         eat = intent.getStringExtra("먹포")!!
 
+        var btn_cart_page3 = findViewById<ImageButton>(R.id.btn_cart_page3)
+
+        btn_cart_page3.setOnClickListener{
+            intent = Intent(this,Cart_page::class.java)
+            startActivity(intent)
+        }
+
         //차가운지 뜨거운지
          var ch = findViewById<TextView>(R.id.ch)
         if(intent.getStringExtra("COLD")!=null){
@@ -37,7 +44,7 @@ class Check_menu_page : AppCompatActivity() {
         var minbutton = findViewById<Button>(R.id.minbutton)
         var plusbutton = findViewById<Button>(R.id.plusbutton)
         val result = findViewById<TextView>(R.id.result)
-        var number = 0;
+        var number = 1;
 
         // 마이너스 버튼 선택시
         minbutton.setOnClickListener {
@@ -58,7 +65,7 @@ class Check_menu_page : AppCompatActivity() {
 
 
         //상호명
-        var tvcname = findViewById<TextView>(R.id.tvcname)
+        var tvcname = findViewById<TextView>(R.id.tvcname2)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         tvcname.text = user_shop_name

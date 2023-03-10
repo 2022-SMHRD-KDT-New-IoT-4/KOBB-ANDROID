@@ -18,7 +18,7 @@ class small_menu_page : AppCompatActivity() {
        eat = intent.getStringExtra("먹포")!!
 
         //상호명
-        var tvname = findViewById<TextView>(R.id.tvcname)
+        var tvname = findViewById<TextView>(R.id.tvcname2)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 담아주기

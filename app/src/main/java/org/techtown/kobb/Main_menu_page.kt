@@ -33,7 +33,7 @@ class Main_menu_page : AppCompatActivity(), TextToSpeech.OnInitListener {
 
 
         //상호명
-        var tvmenu= findViewById<TextView>(R.id.tvcname)
+        var tvmenu= findViewById<TextView>(R.id.tvcname2)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 담아주기

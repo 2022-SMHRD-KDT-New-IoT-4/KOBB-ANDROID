@@ -7,16 +7,6 @@
     android:backgroundTint="#F6ABAB"
     tools:context=".Main_menu_page">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
 
         <!-- 뚜껑 시작 -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,12 +52,10 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="260dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView49"
                 app:layout_constraintEnd_toStartOf="@+id/textView5"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textView5"
                 app:srcCompat="@drawable/casher" />
 
@@ -138,40 +126,53 @@
             <!-- 뚜껑 끝 -->
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btn_Mode_change_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/button_style"
                 android:backgroundTint="#FF5555"
                 android:text="모드 전환"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
-                tools:layout_editor_absoluteX="1110dp"
-                tools:layout_editor_absoluteY="10dp" />
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_style"
+                android:backgroundTint="#FBD7D7"
+                android:text="뒤로 가기"
+                android:textColor="#504E4E"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Mode_change_page"
+                app:layout_constraintTop_toTopOf="@+id/tvname" />
 
 
             <!-- 자물쇠 이미지 -->
 
             <TextView
                 android:id="@+id/textView50"
-                android:layout_width="0dp"
-                android:layout_height="430dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginBottom="50dp"
+                android:layout_width="1100dp"
+                android:layout_height="440dp"
                 android:background="#F6ABAB"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/guideline14"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView49"
-                app:layout_constraintVertical_bias="0.545" />
+                app:layout_constraintTop_toTopOf="@+id/guideline10"
+                app:layout_constraintVertical_bias="0.513" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="200dp"
+                android:layout_marginBottom="150dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView50"
                 app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
                 app:layout_constraintTop_toBottomOf="@+id/textView12"
@@ -181,7 +182,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="48dp"
                 android:text="관리자 비밀번호를 입력해주세요"
                 android:textColor="#504E4E"
                 android:textSize="40dp"
@@ -209,33 +210,16 @@
                 android:id="@+id/button2"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="210dp"
+                android:layout_marginStart="50dp"
                 android:background="@drawable/button_style"
                 android:backgroundTint="#FF5555"
                 android:text="전환 하기"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button9"
-                app:layout_constraintEnd_toEndOf="@+id/textView12"
-                app:layout_constraintStart_toEndOf="@+id/button9"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/button_style"
-                android:backgroundTint="#FF5555"
-                android:text="뒤로 가기"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView50"
-                app:layout_constraintStart_toStartOf="@+id/textView12"
-                app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
+                app:layout_constraintStart_toEndOf="@+id/editTextTextPassword"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextPassword" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

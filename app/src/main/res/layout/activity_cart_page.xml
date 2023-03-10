@@ -40,7 +40,7 @@
                 app:srcCompat="@drawable/kobbicon" />
 
             <TextView
-                android:id="@+id/tvcname"
+                android:id="@+id/tvcname2"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -120,7 +120,7 @@
                 app:srcCompat="@drawable/shoppingcart" />
 
             <Button
-                android:id="@+id/btn_card"
+                android:id="@+id/btn_Mode_change_page"
                 android:layout_width="301dp"
                 android:layout_height="161dp"
                 android:layout_marginStart="20dp"
@@ -149,7 +149,7 @@
                 android:text="현금결제"
                 android:textColor="#F7F7F7"
                 android:textSize="34sp"
-                app:layout_constraintStart_toEndOf="@+id/btn_card"
+                app:layout_constraintStart_toEndOf="@+id/btn_Mode_change_page"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
             <Button
@@ -168,7 +168,7 @@
                 android:textColor="#F7F7F7"
                 android:textSize="28sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_card" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_Mode_change_page" />
 
             <Button
                 android:id="@+id/btn_payco"

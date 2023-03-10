@@ -11,7 +11,6 @@ import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import java.nio.charset.Charset
 
 class Login_page : AppCompatActivity() {
 
@@ -24,7 +23,7 @@ class Login_page : AppCompatActivity() {
 
         var login_user_id  = findViewById<EditText>(R.id.login_user_id)
         var login_user_pw = findViewById<EditText>(R.id.login_user_pw)
-        var btn_Choice_mode_page = findViewById<Button>(R.id.btn_Choice_mode_page)
+        var btn_Choice_mode_page = findViewById<Button>(R.id.btn_Mode_change_page)
         var btn_Join_page = findViewById<Button>(R.id.btn_Join_page)
 
         val requestQueue = Volley.newRequestQueue(applicationContext)

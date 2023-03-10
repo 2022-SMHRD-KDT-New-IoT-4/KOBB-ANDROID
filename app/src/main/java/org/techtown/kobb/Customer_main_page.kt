@@ -30,7 +30,7 @@ class Customer_main_page : AppCompatActivity() , TextToSpeech.OnInitListener{
 
         a = "안녕하세요 시각 장애인 이시면 아래 점자를 읽고 버튼을 눌러주세요"
         //상호명
-        val tvname = findViewById<TextView>(R.id.tvcname)
+        val tvname = findViewById<TextView>(R.id.tvcname2)
         //받아온 매장명
        user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 적용
