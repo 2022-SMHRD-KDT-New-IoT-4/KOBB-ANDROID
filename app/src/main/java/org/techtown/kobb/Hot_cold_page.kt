@@ -56,7 +56,7 @@ class Hot_cold_page : AppCompatActivity() {
         eat = intent.getStringExtra("먹포")!!
 
         //상호명
-        val hot_cold_name = findViewById<TextView>(R.id.main_menu_name)
+        val hot_cold_name = findViewById<TextView>(R.id.small_menu_name)
 
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!

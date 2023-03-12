@@ -51,6 +51,25 @@ class Check_menu_page : AppCompatActivity() {
         check_menu_menu.text = choice_menu
         check_menu.text = choice_menu
 
+        // 수량 증감 버튼
+        var minbutton = findViewById<Button>(R.id.minbutton)
+        var plusbutton = findViewById<Button>(R.id.plusbutton)
+        val result = findViewById<TextView>(R.id.result)
+        var number = 1;
+
+        // 마이너스 버튼 선택시
+        minbutton.setOnClickListener {
+            number--
+            result.setText(number.toString())
+        }
+        // 플러스 버튼 선택시
+        plusbutton.setOnClickListener {
+            number++
+            result.setText(number.toString())
+        }
+
+
+
         //음성출력
         tts = TextToSpeech(this, TextToSpeech.OnInitListener {
             if (it != TextToSpeech.ERROR){
