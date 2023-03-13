@@ -30,7 +30,7 @@ class small_menu_page : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_small_menu_page)
+        setContentView(R.layout.activity_small_menu_page1_1)
 
         Log.d("넘어와?" , intent.getStringExtra("ryu")!!)
        val  btn_Hot_cold_page1 = findViewById<Button>(R.id.btn_Hot_cold_page1)

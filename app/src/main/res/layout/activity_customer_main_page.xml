@@ -32,7 +32,7 @@
                 app:layout_constraintGuide_percent="0.10218978" />
 
             <Button
-                android:id="@+id/btn_card"
+                android:id="@+id/btn_Customer_main_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -61,7 +61,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/small_menu_name"
+                android:id="@+id/tvcname2"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -85,7 +85,7 @@
                 app:srcCompat="@drawable/casher" />
 
             <TextView
-                android:id="@+id/tv_Hot_Cold_ryu"
+                android:id="@+id/textView5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -109,8 +109,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/tv_Hot_Cold_ryu"
-                app:layout_constraintTop_toBottomOf="@+id/tv_Hot_Cold_ryu"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
                 app:layout_constraintVertical_bias="1.0" />
 
             <ImageButton

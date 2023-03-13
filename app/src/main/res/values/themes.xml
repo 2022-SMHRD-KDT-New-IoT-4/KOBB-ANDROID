@@ -12,8 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
-
+        <!-- 액션바 날리는 코드 -->
+        <item name="windowNoTitle">true</item>
 
     </style>
 </resources>

@@ -7,7 +7,7 @@
     tools:context=".Start_kiosk_page">
 
     <Button
-        android:id="@+id/btn_Choice_mode_page"
+        android:id="@+id/btn_Customer_main_page"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
@@ -40,7 +40,7 @@
         app:srcCompat="@drawable/kobbicon" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_change_mode_page"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginEnd="16dp"
@@ -48,11 +48,11 @@
         android:text="모드 전환"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btn_User_info_page"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"

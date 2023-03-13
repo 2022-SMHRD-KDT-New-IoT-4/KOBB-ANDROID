@@ -4,169 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FEFEFE"
-    tools:context=".Choice_mode_page">
-
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".Start_kiosk_page">
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.1" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="220dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/kobbicon" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.9" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kobbicon" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="#FFF7F7"
-                app:layout_constraintBottom_toTopOf="@+id/guideline2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="800dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="120dp"
-                android:layout_marginBottom="70dp"
-                android:background="#FFEAEA"
-                app:layout_constraintBottom_toTopOf="@+id/guideline2"
-                app:layout_constraintEnd_toEndOf="@+id/textView"
-                app:layout_constraintStart_toStartOf="@+id/textView"
-                app:layout_constraintTop_toTopOf="@+id/guideline"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <Button
-                android:id="@+id/btn_Start_kiosk_page"
-                android:layout_width="300dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/button_style"
-                android:backgroundTint="#FF5555"
-                android:text="고객 모드"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/textView2"
-                app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
-                app:layout_constraintStart_toStartOf="@+id/btn_Manage_main_page"
-                app:layout_constraintTop_toBottomOf="@+id/btn_Manage_main_page" />
-
-            <TextView
-                android:id="@+id/small_menu_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="사장님 안녕하세요!"
-                android:textColor="#504E4E"
-                android:textSize="40sp"
-                app:layout_constraintBottom_toTopOf="@+id/textView2"
-                app:layout_constraintEnd_toEndOf="@+id/choice_user_shop_name"
-                app:layout_constraintStart_toStartOf="@+id/choice_user_shop_name"
-                app:layout_constraintTop_toBottomOf="@+id/choice_user_shop_name"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/choice_user_shop_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="(매장명)"
-                android:textColor="#504E4E"
-                android:textSize="40sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline" />
-
-            <Button
-                android:id="@+id/btn_Manage_main_page"
-                android:layout_width="300dp"
-                android:layout_height="100dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/button_style"
-                android:backgroundTint="#FF5555"
-                android:text="관리자 모드"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/textView2"
-                app:layout_constraintEnd_toEndOf="@+id/textView2"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="50dp"
-                android:text="모드 선택"
-                android:textColor="#504E4E"
-                android:textSize="38sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/textView2"
-                app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
-                app:layout_constraintHorizontal_bias="0.503"
-                app:layout_constraintStart_toStartOf="@+id/btn_Manage_main_page"
-                app:layout_constraintTop_toTopOf="@+id/textView2"
-                app:layout_constraintVertical_bias="0.173" />
-
-            <ImageButton
-                android:id="@+id/btn_User_info_page1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginEnd="16dp"
-                android:background="#FFFFFF"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toTopOf="@+id/choice_user_shop_name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/user" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline2"
-                app:srcCompat="@drawable/kobbtext" />
+        <ImageButton
+            android:id="@+id/btn_User_info_page"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user" />
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#FBF8F8"
+            android:gravity="center_horizontal"
+            android:textColor="#504E4E"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="800dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="80dp"
+            android:background="#FFEAEA"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="800dp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:srcCompat="@drawable/kobbtext" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="60dp" />
+
+        <TextView
+            android:id="@+id/tvcname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사장님 안녕하세요!"
+            android:textColor="#504E4E"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choice_user_shop_name" />
+
+        <TextView
+            android:id="@+id/choice_user_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(매장명)"
+            android:textColor="#504E4E"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvcname2"
+            app:layout_constraintStart_toStartOf="@+id/tvcname2"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="모드선택"
+            android:textColor="#504E4E"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/btn_Start_kiosk_page"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style"
+            android:backgroundTint="#FF5555"
+            android:text="고객 모드"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
+            app:layout_constraintStart_toStartOf="@+id/btn_Manage_main_page"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Manage_main_page" />
+
+        <Button
+            android:id="@+id/btn_Manage_main_page"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_style"
+            android:backgroundTint="#FF5555"
+            android:text="관리자 모드"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView81"
+            app:layout_constraintStart_toStartOf="@+id/textView81"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,13 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.0998632" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="220dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="152dp"
+        android:layout_height="69dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.9015048" />
 
     <TextView
         android:id="@+id/textView"
@@ -59,19 +58,18 @@
         android:id="@+id/btn_Start_kiosk_page"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_style"
         android:backgroundTint="#FF5555"
         android:text="고객 모드"
         android:textColor="#F7F7F7"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
         app:layout_constraintStart_toStartOf="@+id/btn_Manage_main_page"
         app:layout_constraintTop_toBottomOf="@+id/btn_Manage_main_page" />
 
     <TextView
-        android:id="@+id/small_menu_name"
+        android:id="@+id/tvcname2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -91,7 +89,7 @@
         android:textColor="#504E4E"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/small_menu_name"
+        app:layout_constraintBottom_toTopOf="@+id/tvcname2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -100,36 +98,35 @@
         android:id="@+id/btn_Manage_main_page"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_style"
         android:backgroundTint="#FF5555"
         android:text="관리자 모드"
         android:textColor="#F7F7F7"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="모드 선택"
         android:textColor="#504E4E"
         android:textSize="38sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="@+id/btn_Manage_main_page"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <ImageButton
         android:id="@+id/btn_User_info_page1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="1dp"
         android:background="#FFFFFF"
         android:scaleType="fitXY"

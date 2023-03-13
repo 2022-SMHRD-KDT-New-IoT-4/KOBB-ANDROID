@@ -46,7 +46,7 @@ class Main_menu_page : AppCompatActivity() {
 
 
         //상호명
-        val main_menu_name= findViewById<TextView>(R.id.main_menu_name)
+        val main_menu_name= findViewById<TextView>(R.id.small_menu_name)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 담아주기

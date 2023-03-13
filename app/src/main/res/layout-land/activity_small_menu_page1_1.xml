@@ -7,16 +7,6 @@
     android:backgroundTint="#FFFFFF"
     tools:context=".Main_menu_page">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
 
 <!-- 뚜껑 시작 -->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,7 +37,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tvcname"
+                android:id="@+id/small_menu_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -68,11 +58,11 @@
                 android:layout_marginEnd="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView6"
                 app:layout_constraintEnd_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu"
                 app:srcCompat="@drawable/casher" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tv_Hot_Cold_ryu"
                 android:layout_width="wrap_content"
                 android:layout_height="67dp"
                 android:layout_marginStart="10dp"
@@ -97,7 +87,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvcname" />
+                app:layout_constraintTop_toBottomOf="@+id/small_menu_name" />
 
             <ImageView
                 android:id="@+id/imageView13"
@@ -137,9 +127,9 @@
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="#00FFFFFF"
-                app:layout_constraintBottom_toBottomOf="@+id/button7"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_Choice_mode_page"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/button7"
+                app:layout_constraintTop_toTopOf="@+id/btn_Choice_mode_page"
                 app:srcCompat="@drawable/shoppingcart" />
 
             <Button
@@ -190,7 +180,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/btn_Hot_cold_page2" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btn_Choice_mode_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -201,9 +191,8 @@
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toStartOf="@+id/btn_cart_page3"
-                app:layout_constraintTop_toTopOf="@+id/tvcname" />
+                app:layout_constraintTop_toTopOf="@+id/small_menu_name" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
