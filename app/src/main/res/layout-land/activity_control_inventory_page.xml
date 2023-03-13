@@ -40,7 +40,7 @@
                 app:srcCompat="@drawable/kobb" />
 
             <Button
-                android:id="@+id/btn_Start_kiosk_page"
+                android:id="@+id/Choice_mode_page"
                 android:layout_width="120dp"
                 android:layout_height="70dp"
                 android:layout_marginEnd="40dp"
@@ -49,9 +49,9 @@
                 android:textColor="#F8F0F0"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page1"
-                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
-                app:layout_constraintTop_toTopOf="@+id/btn_User_info_page1" />
+                app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
+                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
+                app:layout_constraintTop_toTopOf="@+id/btn_User_info_page" />
 
             <TextView
                 android:id="@+id/textView"
@@ -65,7 +65,7 @@
 
             <!-- 개인정보 페이지 이동 버튼  -->
             <ImageButton
-                android:id="@+id/btn_User_info_page1"
+                android:id="@+id/btn_User_info_page"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
@@ -290,7 +290,7 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
-                app:layout_constraintStart_toStartOf="@+id/btn_Start_kiosk_page"
+                app:layout_constraintStart_toStartOf="@+id/Choice_mode_page"
                 app:layout_constraintTop_toTopOf="@+id/textView45" />
 
             <androidx.constraintlayout.widget.Guideline

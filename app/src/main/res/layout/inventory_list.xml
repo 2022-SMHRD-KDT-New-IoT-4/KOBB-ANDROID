@@ -1,99 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:backgroundTint="#FFFFFF"
     tools:context=".Control_inventory_page">
 
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/invent_num"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
         android:background="@drawable/table_temp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        android:backgroundTint="#D1C6C6"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
-        <!-- 체크박스1 -->
-
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="37dp"
-            android:layout_height="match_parent" />
-
-        <TextView
-            android:id="@+id/invent_num"
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@drawable/table_temp"
-            android:gravity="center"
-            android:text="1"
-            android:textColor="#000000"
-            android:textSize="24dp" />
-
-        <TextView
-            android:id="@+id/invent_name"
-            android:layout_width="158dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@drawable/table_temp"
-            android:gravity="center"
-            android:textSize="24dp" />
-
-        <TextView
-            android:id="@+id/invent_price"
-            android:layout_width="158dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@drawable/table_temp"
-            android:gravity="center"
-            android:textSize="24dp" />
-
-        <TextView
-            android:id="@+id/invent_stock"
-            android:layout_width="157dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@drawable/table_temp"
-            android:gravity="center"
-            android:textSize="24dp" />
-
-        <TextView
-            android:id="@+id/invent_partner"
-            android:layout_width="155dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@drawable/table_temp"
-            android:gravity="center"
-            android:textSize="24dp" />
-
-        <TextView
-            android:id="@+id/invent_partNum"
-            android:layout_width="158dp"
-            android:layout_height="match_parent"
-            android:layout_margin="1dp"
-            android:background="@drawable/table_temp"
-            android:gravity="center"
-            android:textSize="24dp" />
-
-    </TableRow>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+    <TextView
+        android:id="@+id/invent_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.05" />
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="#FFEAEA"
+        android:backgroundTint="#FFEAEA"
+        android:gravity="center"
+        android:textSize="14sp" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
+    <TextView
+        android:id="@+id/invent_price"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.0" />
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="#FFEAEA"
+        android:backgroundTint="#FFEAEA"
+        android:gravity="center"
+        android:textSize="14sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/invent_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="#FFEAEA"
+        android:backgroundTint="#FFEAEA"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/invent_partner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="#FFEAEA"
+        android:backgroundTint="#FFEAEA"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/invent_partNum"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="#FFEAEA"
+        android:backgroundTint="#FFEAEA"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FFF7F7"
+        android:scrollbarAlwaysDrawVerticalTrack="false" />
+
+</LinearLayout>
 

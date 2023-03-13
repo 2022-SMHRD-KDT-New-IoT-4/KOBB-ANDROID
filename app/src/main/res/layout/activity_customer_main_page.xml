@@ -32,7 +32,7 @@
                 app:layout_constraintGuide_percent="0.10218978" />
 
             <Button
-                android:id="@+id/btn_Mode_change_page"
+                android:id="@+id/btn_Customer_main_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"

@@ -30,7 +30,7 @@
         android:layout_width="59dp"
         android:layout_height="55dp"
         app:layout_constraintBottom_toBottomOf="@+id/login_user_pw"
-        app:layout_constraintStart_toStartOf="@+id/btn_Mode_change_page"
+        app:layout_constraintStart_toStartOf="@+id/btn_Customer_main_page"
         app:layout_constraintTop_toTopOf="@+id/login_user_pw"
         app:srcCompat="@drawable/passwordkey2" />
 
@@ -77,10 +77,10 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Mode_change_page" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Customer_main_page" />
 
     <Button
-        android:id="@+id/btn_Mode_change_page"
+        android:id="@+id/btn_Customer_main_page"
         android:layout_width="480dp"
         android:layout_height="70dp"
         android:layout_marginTop="28dp"
@@ -117,7 +117,7 @@
         android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Mode_change_page"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Customer_main_page"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/login_user_id" />
 

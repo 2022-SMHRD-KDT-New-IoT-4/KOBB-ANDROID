@@ -32,7 +32,7 @@
             app:srcCompat="@drawable/kobbicon" />
 
         <ImageButton
-            android:id="@+id/btn_User_info_page1"
+            android:id="@+id/btn_User_info_page"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginEnd="16dp"
@@ -107,10 +107,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/choice_user_shop_name" />
+            app:layout_constraintTop_toBottomOf="@+id/user_shop_name" />
 
         <TextView
-            android:id="@+id/choice_user_shop_name"
+            android:id="@+id/user_shop_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(매장명)"
@@ -135,7 +135,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView2" />
 
         <Button
-            android:id="@+id/btn_Start_kiosk_page"
+            android:id="@+id/Choice_mode_page"
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:layout_marginTop="30dp"

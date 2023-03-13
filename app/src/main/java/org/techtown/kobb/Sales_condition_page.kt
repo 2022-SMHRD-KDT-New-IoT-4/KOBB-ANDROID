@@ -1,9 +1,7 @@
 
 package org.techtown.kobb
 
-import android.annotation.SuppressLint
 import java.io.FileInputStream
-import java.io.FileOutputStream
 
 import android.view.View
 import android.os.Bundle
@@ -35,7 +33,7 @@ class Sales_condition_page : AppCompatActivity() {
         // 캘린더
         calendarView=findViewById(R.id.calendarView)
         // 일 총 매출액을 여기에서 보여주면 좋겠다.
-        diaryTextView=findViewById(R.id.diaryTextView)
+        diaryTextView=findViewById(R.id.TextView)
         // 저장 버튼
 
 

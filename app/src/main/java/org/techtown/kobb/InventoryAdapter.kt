@@ -42,6 +42,7 @@ class InventoryAdapter(val context : Context, val data : ArrayList<InventoryVO>)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.invent_num.setText(data.get(position).invent_num)
             holder.invent_name.setText(data.get(position).invent_name)
+            holder.invent_price.setText(data.get(position).invent_price)
             holder.invent_stock.setText(data.get(position).invent_stock)
             holder.invent_partner.setText(data.get(position).invent_partner)
             holder.invent_partNum.setText(data.get(position).invent_partNum)

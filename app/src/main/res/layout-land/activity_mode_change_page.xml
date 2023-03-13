@@ -126,7 +126,7 @@
             <!-- 뚜껑 끝 -->
 
             <Button
-                android:id="@+id/btn_Mode_change_page"
+                android:id="@+id/btn_Customer_main_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -150,7 +150,7 @@
                 android:textColor="#504E4E"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
-                app:layout_constraintEnd_toStartOf="@+id/btn_Mode_change_page"
+                app:layout_constraintEnd_toStartOf="@+id/btn_Customer_main_page"
                 app:layout_constraintTop_toTopOf="@+id/tvname" />
 
 

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".Choice_mode_page">
 
     <androidx.constraintlayout.widget.Guideline
@@ -16,7 +18,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="152dp"
-        android:layout_height="69dp"
+        android:layout_height="67dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,21 +43,8 @@
         app:layout_constraintTop_toTopOf="@+id/guideline"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="1220dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="50dp"
-        android:background="#FFEAEA"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="0.0" />
-
     <Button
-        android:id="@+id/btn_Start_kiosk_page"
+        android:id="@+id/Choice_mode_page"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
@@ -75,20 +64,35 @@
         android:layout_marginBottom="10dp"
         android:text="사장님 안녕하세요!"
         android:textColor="#504E4E"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/user_shop_name"
+        app:layout_constraintStart_toStartOf="@+id/user_shop_name" />
 
     <TextView
-        android:id="@+id/choice_user_shop_name"
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FFEAEA"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/user_shop_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(매장명)"
         android:textColor="#504E4E"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/tvcname2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +119,7 @@
         android:layout_marginTop="20dp"
         android:text="모드 선택"
         android:textColor="#504E4E"
-        android:textSize="38sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
         app:layout_constraintHorizontal_bias="0.503"
@@ -123,14 +127,15 @@
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <ImageButton
-        android:id="@+id/btn_User_info_page1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/btn_User_info_page"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/choice_user_shop_name"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user" />

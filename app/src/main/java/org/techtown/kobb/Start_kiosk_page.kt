@@ -1,6 +1,7 @@
 package org.techtown.kobb
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.app.ActivityCompat
 import java.util.*
 
 class Start_kiosk_page : AppCompatActivity() {
@@ -21,6 +23,7 @@ class Start_kiosk_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start_kiosk_page)
 
+        // 음성출력
         tts = TextToSpeech(this, TextToSpeech.OnInitListener {
             if (it != TextToSpeech.ERROR){
                 tts.language = Locale.KOREAN
@@ -31,15 +34,15 @@ class Start_kiosk_page : AppCompatActivity() {
         voice = "시각 장애인 이시면 아래 점자를 읽고 버튼을 눌러주세요. 드시고 가실려면 1번, 포장 하시려면 2번을 눌러주세요"
 
         //영업시작
-       val btn_Choice_mode_page = findViewById<Button>(R.id.btn_Mode_change_page)
+       val btn_Customer_main_page = findViewById<Button>(R.id.btn_Customer_main_page)
+
         //문구
         val textView71 = findViewById<TextView>(R.id.textView71)
         //Choice에서 넘어온 이름 값
-        user_shop_name = intent.getStringExtra("매장명")!!
-
+        user_shop_name = intent.getStringExtra("user_shop_name").toString()
         textView71.text= user_shop_name
         //영업시작을 눌렀을 때
-        btn_Choice_mode_page.setOnClickListener {
+        btn_Customer_main_page.setOnClickListener {
             //음성
             if(voice != null){
                 Log.d("TAG", "onCreate: 음성출력")
@@ -50,6 +53,23 @@ class Start_kiosk_page : AppCompatActivity() {
             intent.putExtra("매장명",user_shop_name)
             startActivity(intent)
         }
+
+
+
+        // 영업 시작 전 다음 페이지에서 쓰일 카메라 권한 설정하기
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            // 권한이 허용이랑면
+            if (checkSelfPermission(android.Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED && checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                val intent = Intent(this,Customer_main_page::class.java)
+                intent.putExtra("permission","허용")
+                // intent 에 허용 값을 넣어서 다음 페이지에 전송한다.
+            } else {
+                Log.d("test", "권한 설정 요청")
+                ActivityCompat.requestPermissions(this, arrayOf<String?>(android.Manifest.permission.CAMERA,android.Manifest.permission.WRITE_EXTERNAL_STORAGE), 1)
+            }
+        }
+
+
     }   //onCreate밖
         //음성
     private fun initTextToSpeech(){
@@ -70,4 +90,11 @@ class Start_kiosk_page : AppCompatActivity() {
     private fun ttsSpeak(text : String){
         tts?.speak(text,TextToSpeech.QUEUE_ADD, null, null)
     }
+
+
+
+
+
+
+
 }

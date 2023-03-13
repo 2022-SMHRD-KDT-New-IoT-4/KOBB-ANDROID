@@ -9,6 +9,15 @@ import android.util.Log
 import android.widget.ImageButton
 import android.widget.TextView
 import java.util.*
+import android.Manifest
+import android.app.Activity
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.provider.MediaStore
+import android.provider.MediaStore.Audio.Media
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 
 class Customer_main_page : AppCompatActivity(){
     lateinit var btn_Eat_main_menu_page : ImageButton
@@ -20,9 +29,12 @@ class Customer_main_page : AppCompatActivity(){
     lateinit var  voice : String
     //매장명
     lateinit var user_shop_name : String
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_customer_main_page)
+
 
         tts = TextToSpeech(this, TextToSpeech.OnInitListener {
             if (it != TextToSpeech.ERROR){
@@ -93,7 +105,26 @@ class Customer_main_page : AppCompatActivity(){
 //            startActivity(intent)
         }
 
+
+        // 초음파 거리 센서 1m 값이 서버에서 들
+        val distance = 0 ;
+
+            // 이전 화면에서 설정한 카메라의 권한 설정이 "허용"이고 ,
+            if(intent.getStringExtra("permission").equals("허용")){
+                // 거리가 1m 라면
+                if(distance == 1){
+                    // 카메라를 실행한다.
+                    val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                    startActivityForResult(cameraIntent,1)
+
+                }
+        }
+
+
+
     }
+
+
     //onCreate 밖
 
 //    private  val activityResult: ActivityResultLauncher<Intent> = registerForActivityResult(

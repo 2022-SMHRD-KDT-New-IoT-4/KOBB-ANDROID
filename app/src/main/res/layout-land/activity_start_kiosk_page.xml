@@ -15,7 +15,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btn_Mode_change_page"
+                android:id="@+id/btn_Customer_main_page"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="20dp"
@@ -61,7 +61,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
-                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
+                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
@@ -79,7 +79,7 @@
                 app:layout_constraintTop_toTopOf="@+id/button" />
 
             <ImageButton
-                android:id="@+id/btn_User_info_page1"
+                android:id="@+id/btn_User_info_page"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"

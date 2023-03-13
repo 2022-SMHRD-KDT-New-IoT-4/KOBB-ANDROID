@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_Mode_change_page"
+        android:id="@+id/btn_Customer_main_page"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginBottom="20dp"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="235dp" />
+        app:layout_constraintGuide_percent="0.32147744" />
 
     <EditText
         android:id="@+id/login_user_id"
@@ -75,17 +75,17 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         app:layout_constraintBottom_toBottomOf="@+id/login_user_pw"
-        app:layout_constraintStart_toStartOf="@+id/btn_Mode_change_page"
+        app:layout_constraintStart_toStartOf="@+id/btn_Customer_main_page"
         app:layout_constraintTop_toTopOf="@+id/login_user_pw"
         app:srcCompat="@drawable/passwordkey2" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="587dp"
+        android:layout_width="wrap_content"
         android:layout_height="116dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="@+id/login_user_id"
-        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/kobbicon" />
 
@@ -110,8 +110,8 @@
         android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Mode_change_page"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Mode_change_page"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Customer_main_page"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Customer_main_page"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/login_user_id" />
 
