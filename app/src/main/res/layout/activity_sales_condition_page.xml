@@ -1,200 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FF5555"
-    tools:context=".Manage_main_page">
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobb" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView45"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#FFF7F7"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView44"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000000원"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintEnd_toEndOf="@+id/textView46"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
     <ImageButton
         android:id="@+id/btn_User_info_page"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="5dp"
         android:background="#FFFFFF"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user" />
 
+    <TextView
+        android:id="@+id/diaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="지정일 매출"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/Btn"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
         app:srcCompat="@drawable/kobbtext" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="#FFEAEA"
+        app:layout_constraintBottom_toBottomOf="@+id/textView45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="매출현황"
+        android:textColor="#FF5555"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="105dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kobb" />
+
+    <Button
+        android:id="@+id/Btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_style"
+        android:text="조회하기"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textView45"
+        app:layout_constraintEnd_toEndOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="@+id/calendarView"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"></Button>
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2월 총 매출 "
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/calendarView"
+        app:layout_constraintStart_toStartOf="@+id/calendarView"
+        app:layout_constraintTop_toTopOf="@+id/textView45" />
 
     <Button
         android:id="@+id/btn_Start_kiosk_page"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
+        android:background="@drawable/button_style"
         android:backgroundTint="#FF5555"
         android:text="모드전환"
+        android:textColor="#F8F0F0"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
         app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
         app:layout_constraintTop_toTopOf="@+id/btn_User_info_page" />
 
-    <TextView
-        android:id="@+id/tv_Hot_Cold_ryu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:text="매출 현황"
-        android:textColor="#FF5555"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Start_kiosk_page"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TableLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="@+id/guideline3">
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="59dp"
-                android:layout_height="70dp"
-                android:background="#E9E9E9"
-                android:gravity="center"
-                android:text="월"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView33"
-                android:layout_width="59dp"
-                android:layout_height="70dp"
-                android:background="#E9E9E9"
-                android:gravity="center"
-                android:text="화"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView34"
-                android:layout_width="59dp"
-                android:layout_height="70dp"
-                android:background="#E9E9E9"
-                android:gravity="center"
-                android:text="수"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView35"
-                android:layout_width="59dp"
-                android:layout_height="70dp"
-                android:background="#E9E9E9"
-                android:gravity="center"
-                android:text="목"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView36"
-                android:layout_width="59dp"
-                android:layout_height="70dp"
-                android:background="#E9E9E9"
-                android:gravity="center"
-                android:text="금"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView37"
-                android:layout_width="59dp"
-                android:layout_height="70dp"
-                android:background="#E9E9E9"
-                android:gravity="center"
-                android:text="토"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView38"
-                android:layout_width="59dp"
-                android:layout_height="70dp"
-                android:background="#E9E9E9"
-                android:gravity="center"
-                android:text="일"
-                android:textSize="20sp" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </TableLayout>
-
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
+        android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.18" />
+        app:layout_constraintGuide_percent="0.95" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
