@@ -15,7 +15,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/btn_Mode_change_page"
+                android:id="@+id/btn_Customer_main_page"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="20dp"
@@ -51,7 +51,7 @@
                 app:srcCompat="@drawable/kobbicon" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_change_mode_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -61,11 +61,11 @@
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
-                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
+                app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btn_Choice_mode_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -74,12 +74,12 @@
                 android:text="뒤로 가기"
                 android:textColor="#504E4E"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="@+id/button"
-                app:layout_constraintEnd_toStartOf="@+id/button"
-                app:layout_constraintTop_toTopOf="@+id/button" />
+                app:layout_constraintBottom_toBottomOf="@+id/btn_change_mode_page"
+                app:layout_constraintEnd_toStartOf="@+id/btn_change_mode_page"
+                app:layout_constraintTop_toTopOf="@+id/btn_change_mode_page" />
 
             <ImageButton
-                android:id="@+id/btn_User_info_page1"
+                android:id="@+id/btn_User_info_page"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"

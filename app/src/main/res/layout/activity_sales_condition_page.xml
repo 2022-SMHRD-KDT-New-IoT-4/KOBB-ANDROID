@@ -46,7 +46,7 @@
 
 
     <ImageButton
-        android:id="@+id/btn_User_info_page1"
+        android:id="@+id/btn_User_info_page"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="5dp"
@@ -76,9 +76,9 @@
         android:text="모드전환"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page1"
-        app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
-        app:layout_constraintTop_toTopOf="@+id/btn_User_info_page1" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
+        app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
+        app:layout_constraintTop_toTopOf="@+id/btn_User_info_page" />
 
     <TextView
         android:id="@+id/tv_Hot_Cold_ryu"

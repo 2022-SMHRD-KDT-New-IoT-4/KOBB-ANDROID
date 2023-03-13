@@ -8,7 +8,7 @@
     tools:context=".Manage_main_page">
 
     <ImageButton
-        android:id="@+id/btn_User_info_page1"
+        android:id="@+id/btn_User_info_page"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -30,9 +30,9 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page1"
-        app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
-        app:layout_constraintTop_toTopOf="@+id/btn_User_info_page1" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
+        app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
+        app:layout_constraintTop_toTopOf="@+id/btn_User_info_page" />
 
     <ImageView
         android:id="@+id/imageView"

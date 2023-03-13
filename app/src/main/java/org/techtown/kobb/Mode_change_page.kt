@@ -11,7 +11,7 @@ class Mode_change_page : AppCompatActivity() {
         setContentView(R.layout.activity_mode_change_page)
 
         // Page16 모드전환(잠금)페이지
-        var Mode_change_page = findViewById<Button>(R.id.btn_Mode_change_page)
+        var Mode_change_page = findViewById<Button>(R.id.btn_Customer_main_page)
 
         Mode_change_page.setOnClickListener {
             intent = Intent(this,Mode_change_page::class.java)

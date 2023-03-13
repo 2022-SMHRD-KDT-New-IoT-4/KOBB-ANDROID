@@ -10,7 +10,7 @@ class Choice_pay_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choice_pay_page)
 
-        var btn_card = findViewById<Button>(R.id.btn_Mode_change_page)
+        var btn_card = findViewById<Button>(R.id.btn_Customer_main_page)
 
         btn_card.setOnClickListener{
             var intent = Intent(this,Pay_page::class.java)

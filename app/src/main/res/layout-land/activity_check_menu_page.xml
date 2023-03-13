@@ -55,10 +55,11 @@
                 android:id="@+id/imageView2"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView6"
                 app:layout_constraintEnd_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toTopOf="@+id/textView48"
+                app:layout_constraintTop_toTopOf="@+id/guideline"
                 app:srcCompat="@drawable/casher" />
 
             <TextView
@@ -149,15 +150,15 @@
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
                 android:backgroundTint="#00FFFFFF"
-                app:layout_constraintBottom_toBottomOf="@+id/button7"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_Choice_mode_page"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/button7"
+                app:layout_constraintTop_toTopOf="@+id/btn_Choice_mode_page"
                 app:srcCompat="@drawable/shoppingcart" />
 
             <!-- 뚜껑 끝 -->
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btn_Choice_mode_page"
                 android:layout_width="150dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="16dp"
@@ -173,12 +174,12 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="0dp"
+                android:layout_width="1200dp"
                 android:layout_height="450dp"
                 android:background="#FF5555"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.437"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
                 app:layout_constraintVertical_bias="0.66" />
@@ -207,18 +208,18 @@
                 app:layout_constraintTop_toTopOf="@+id/textView67" />
 
             <TextView
-                android:id="@+id/textView76"
+                android:id="@+id/check_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="9,000원"
                 android:textColor="#FFFFFF"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/textView77"
+                app:layout_constraintStart_toStartOf="@+id/check_count"
                 app:layout_constraintTop_toTopOf="@+id/textView68" />
 
             <TextView
-                android:id="@+id/textView77"
+                android:id="@+id/check_count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1잔"
@@ -264,7 +265,7 @@
 
             <Button
                 android:id="@+id/check_menu_add"
-                android:layout_width="270dp"
+                android:layout_width="260dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginBottom="10dp"
@@ -278,7 +279,7 @@
 
             <Button
                 android:id="@+id/btn_Cart_page1"
-                android:layout_width="270dp"
+                android:layout_width="260dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="30dp"
                 android:backgroundTint="#FFFFFF"
@@ -322,8 +323,8 @@
                 android:layout_marginTop="128dp"
                 android:text="-"
                 android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView77"
-                app:layout_constraintStart_toEndOf="@+id/textView77"
+                app:layout_constraintBottom_toBottomOf="@+id/check_count"
+                app:layout_constraintStart_toEndOf="@+id/check_count"
                 app:layout_constraintTop_toTopOf="@+id/textView4" />
 
             <Button

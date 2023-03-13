@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/kobbicon" />
 
     <Button
-        android:id="@+id/btn_Mode_change_page"
+        android:id="@+id/btn_Customer_main_page"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
@@ -84,7 +84,7 @@
         android:textColor=" #FF5555"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Mode_change_page"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Customer_main_page"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 

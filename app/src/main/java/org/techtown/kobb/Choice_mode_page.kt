@@ -3,7 +3,6 @@ package org.techtown.kobb
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
@@ -16,7 +15,7 @@ class Choice_mode_page : AppCompatActivity() {
         //login에서 넘어온 이름 값
         user_shop_name = intent.getStringExtra("매장명")!!
 
-        val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page1)
+        val btn_User_info_page = findViewById<ImageButton>(R.id.btn_User_info_page)
 
         //매장명
         val choice_user_shop_name = findViewById<TextView>(R.id.choice_user_shop_name)
@@ -40,6 +39,7 @@ class Choice_mode_page : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // 사람 버튼 눌렀을 때 개인정보 수정 페이지 이동
         btn_User_info_page.setOnClickListener{
             val intent = Intent(this,User_info_page::class.java)
             startActivity(intent)

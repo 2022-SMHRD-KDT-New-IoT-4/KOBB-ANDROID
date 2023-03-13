@@ -30,13 +30,15 @@ class Check_menu_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_menu_page)
 
-
+        // 주문내역 출력 - 메뉴명
         val check_menu_menu =findViewById<TextView>(R.id.check_menu_menu)
+        // 안내문구 출력 - 메뉴명 
         val check_menu = findViewById<TextView>(R.id.tv_Hot_Cold_ryu)
-        //먹고가기 포장하기
+        // 먹고가기 포장하기
         eat = intent.getStringExtra("먹포")!!
-        //차가운지 뜨거운지
-         var check_tv1 = findViewById<TextView>(R.id.check_tv1)
+        // 안내문구 출력 - 차가운지 뜨거운지
+        var check_tv1 = findViewById<TextView>(R.id.check_tv1)
+        // 주문내역 출력 - 차가운지 뜨거운지
         var check_tv2 =findViewById<TextView>(R.id.check_tv2)
         if(intent.getStringExtra("COLD")!=null){
             cold = intent.getStringExtra("COLD")!!
@@ -81,6 +83,7 @@ class Check_menu_page : AppCompatActivity() {
         //장바구니 확인
        // val btn_Cart_page1=findViewById<Button>(R.id.btn_Cart_page1)
 
+        // 장바구니 담기 버튼
         val check_menu_add =findViewById<Button>(R.id.check_menu_add)
         //장바구니 담기를 눌렀을 때
         check_menu_add.setOnClickListener {
@@ -97,11 +100,7 @@ class Check_menu_page : AppCompatActivity() {
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         tvcname.text = user_shop_name
-        // page 20 메뉴확인 페이지
-        // 메뉴마다 이미지뷰 사진 바뀜 : btn_check_menu_img
-        // 장바구니 담기 버튼 : btn_Small_menu_page1 (바로 전 페이지로 갈 수 있는걸까?)
-        // 장바구니 확인 버튼 : btn_Cart_page1
-        // 뒤로가기 버튼 : btn_Small_menu_page2
+
 
         //장바구니 확인 버튼 눌렀을 때
 //        btn_Cart_page1.setOnClickListener {
