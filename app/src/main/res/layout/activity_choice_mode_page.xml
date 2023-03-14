@@ -70,7 +70,7 @@
         android:id="@+id/tvcname2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@font/nanumsquareneo_variable"
         android:text="사장님 안녕하세요!"
         android:textColor="#504E4E"

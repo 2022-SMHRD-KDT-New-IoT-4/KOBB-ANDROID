@@ -32,9 +32,13 @@ class Sales_condition_page : AppCompatActivity() {
         // UI값 생성
         // 캘린더
         calendarView=findViewById(R.id.calendarView)
-        // 일 총 매출액을 여기에서 보여주면 좋겠다.
-        diaryTextView=findViewById(R.id.TextView)
+
+        // 일 총 매출을 보여주는 곳
+        diaryTextView=findViewById(R.id.sales_search_result)
+
         // 저장 버튼
+
+
 
 
 
@@ -86,33 +90,5 @@ class Sales_condition_page : AppCompatActivity() {
     }
 
 
-    // 달력 내용 제거
-//    @SuppressLint("WrongConstant")
-//    fun removeDiary(readDay: String?) {
-//        var fileOutputStream: FileOutputStream
-//        try {
-//            fileOutputStream = openFileOutput(readDay, MODE_NO_LOCALIZED_COLLATORS)
-//            val content = ""
-//            fileOutputStream.write(content.toByteArray())
-//            fileOutputStream.close()
-//        } catch (e: java.lang.Exception) {
-//            e.printStackTrace()
-//        }
-//    }
-
-
-    // 달력 내용 추가
-//    @SuppressLint("WrongConstant")
-//    fun saveDiary(readDay: String?) {
-//        var fileOutputStream: FileOutputStream
-//        try {
-//            fileOutputStream = openFileOutput(readDay, MODE_NO_LOCALIZED_COLLATORS)
-//            val content = contextEditText.text.toString()
-//            fileOutputStream.write(content.toByteArray())
-//            fileOutputStream.close()
-//        } catch (e: java.lang.Exception) {
-//            e.printStackTrace()
-//        }
-//    }
 }
 
