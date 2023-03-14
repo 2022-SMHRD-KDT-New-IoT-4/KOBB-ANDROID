@@ -18,16 +18,15 @@
         app:layout_constraintTop_toTopOf="@+id/guideline13"
         app:srcCompat="@drawable/kobbtext" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="152dp"
-        android:layout_height="67dp"
-        android:scaleType="fitXY"
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF5555"
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/kobb" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_User_info_page"
@@ -45,13 +44,13 @@
 
     <Button
         android:id="@+id/Choice_mode_page"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:background="@drawable/button_style"
-        android:backgroundTint="#FF5555"
+        android:backgroundTint="#FFF7F7"
         android:text="모드전환"
-        android:textColor="#F8F0F0"
+        android:textColor="#504E4E"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
@@ -84,11 +83,98 @@
         app:layout_constraintTop_toTopOf="@+id/guideline12"
         app:layout_constraintVertical_bias="1.0" />
 
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox12"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox10"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox14"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox14" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/nanumsquareneo_bold"
+        android:text="저장"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="@+id/lv_Control_inventory_page"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/lv_Control_inventory_page"
+        app:layout_constraintTop_toTopOf="@+id/lv_Control_inventory_page" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/lv_Control_inventory_page"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@drawable/serch_bar_style"
+        android:queryHint="상품 / 거래처 입력"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42">
+
+    </SearchView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lv_Control_inventory_page"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
@@ -99,7 +185,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginEnd="20dp"
         android:background="#FFEAEA"
         android:orientation="horizontal"
@@ -114,7 +200,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/table_temp" />
+            android:background="@drawable/table_temp"
+            android:backgroundTint="#EDE3E3" />
 
         <TextView
             android:id="@+id/textView34"
@@ -122,6 +209,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/table_temp"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:gravity="center"
             android:text="상품"
             android:textSize="16sp"
@@ -133,6 +221,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/table_temp"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:gravity="center"
             android:text="가격"
             android:textSize="16sp"
@@ -144,6 +233,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:background="@drawable/table_temp"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:gravity="center"
             android:text="재고"
             android:textSize="16sp"
@@ -155,6 +245,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.8"
             android:background="@drawable/table_temp"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:gravity="center"
             android:text="거래처"
             android:textSize="16sp"
@@ -166,6 +257,7 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:background="@drawable/table_temp"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:gravity="center"
             android:text="연락처"
             android:textSize="16sp"
@@ -178,7 +270,66 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.2" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView42"
+        app:srcCompat="@drawable/kobblogo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareneo_bold"
+        android:text="재고 관리"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="#D5D6D6"
+        android:fontFamily="@font/nanumsquareneo_bold"
+        android:text="선택항목 삭제"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/lv_Control_inventory_page"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lv_Control_inventory_page"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

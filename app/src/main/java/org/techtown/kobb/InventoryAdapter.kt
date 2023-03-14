@@ -19,12 +19,12 @@ class InventoryAdapter(val context : Context, val data : ArrayList<InventoryVO>)
         val invent_partNum : TextView // 거래처 연락처
 
         init {
-            invent_name = itemView.findViewById(R.id.invent_name)
-            invent_price = itemView.findViewById(R.id.invent_price)
-            invent_stock = itemView.findViewById(R.id.invent_stock)
-            invent_partner = itemView.findViewById(R.id.invent_partner)
-            invent_partNum = itemView.findViewById(R.id.invent_partNum)
-            invent_num = itemView.findViewById(R.id.invent_num)
+            invent_name = itemView.findViewById(R.id.menu_name)
+            invent_price = itemView.findViewById(R.id.menu_price)
+            invent_stock = itemView.findViewById(R.id.menu_sort)
+            invent_partner = itemView.findViewById(R.id.menu_status)
+            invent_partNum = itemView.findViewById(R.id.menu_image)
+            invent_num = itemView.findViewById(R.id.menu_num)
         }
 
     }

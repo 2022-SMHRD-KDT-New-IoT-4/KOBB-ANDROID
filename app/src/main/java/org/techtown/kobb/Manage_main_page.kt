@@ -35,11 +35,12 @@ class Manage_main_page : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //val btn_Control_kiosk_page = findViewById<Button>(R.id.btn_Control_kiosk_page)
-        // 키오스크 관리 페이지 승철님 담담이라 잠시 주석 처리 해놓겠습니다.
-        //btn_Control_kiosk_page.setOnClickListener{
-        //    val intent = Intent(this,Control_kiosk_page::class.java)
-        //}
+        // 키오스크 관리
+        val btn_Control_kiosk_page = findViewById<Button>(R.id.btn_Control_kiosk_page)
+        btn_Control_kiosk_page.setOnClickListener{
+            val intent = Intent(this,Control_kiosk_page::class.java)
+            startActivity(intent)
+        }
 
         // 모드전환 -> 오류나서 일단 구현 x
         val btn_Choice_mode_page = findViewById<Button>(R.id.Choice_mode_page)

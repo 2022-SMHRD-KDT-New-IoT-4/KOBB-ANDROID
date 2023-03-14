@@ -208,7 +208,7 @@
                         android:textSize="24dp" />
 
                     <TextView
-                        android:id="@+id/invent_name"
+                        android:id="@+id/menu_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
@@ -217,7 +217,7 @@
                         android:textSize="24dp" />
 
                     <TextView
-                        android:id="@+id/invent_price"
+                        android:id="@+id/menu_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
@@ -226,7 +226,7 @@
                         android:textSize="24dp" />
 
                     <TextView
-                        android:id="@+id/invent_stock"
+                        android:id="@+id/menu_sort"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"
