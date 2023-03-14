@@ -144,11 +144,11 @@
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:background="#FFFFFF"
+        android:background="#FF5555"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user" />
+        app:srcCompat="@drawable/usericon" />
 
     <Button
         android:id="@+id/Choice_mode_page"

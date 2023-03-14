@@ -11,12 +11,13 @@
     <Button
         android:id="@+id/btn_Join_page"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/button_style"
         android:backgroundTint=" #FFEAEA"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="회원가입"
         android:textColor="#504E4E"
         android:textSize="30dp"
@@ -28,9 +29,10 @@
     <Button
         android:id="@+id/btn_Customer_main_page"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_style"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="로그인"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
@@ -54,63 +56,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.32147744" />
+        app:layout_constraintGuide_percent="0.17" />
 
     <EditText
         android:id="@+id/login_user_id"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="70dp"
         android:background="@android:color/transparent"
         android:ems="10"
+        android:fontFamily="@font/nanumsquareneo_variable"
         android:hint="아이디를 입력하세요"
         android:inputType="textPersonName"
         android:shadowColor="#3A3838"
+        android:textColorHint="#504E4E"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/login_user_pw"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintStart_toStartOf="@+id/login_user_pw"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/login_user_pw"
         app:layout_constraintStart_toStartOf="@+id/btn_Customer_main_page"
         app:layout_constraintTop_toTopOf="@+id/login_user_pw"
         app:srcCompat="@drawable/passwordkey2" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="116dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobbicon" />
-
-    <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/login_user_id"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/login_user_id"
-        app:srcCompat="@drawable/usericon" />
+        app:srcCompat="@drawable/usericon_color" />
 
     <EditText
         android:id="@+id/login_user_pw"
         android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
         android:background="@android:color/transparent"
         android:ems="10"
+        android:fontFamily="@font/nanumsquareneo_variable"
         android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
+        android:textColorHint="#504E4E"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Customer_main_page"
         app:layout_constraintEnd_toEndOf="@+id/btn_Customer_main_page"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/login_user_id" />
@@ -121,5 +117,55 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF5555"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503"
+        app:srcCompat="@drawable/kobblogo" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:text="  비밀번호 찾기"
+        android:textColor="#504E4E"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Join_page"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Join_page" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:text="아이디 찾기 |"
+        android:textColor="#504E4E"
+        android:textColorHint="#504E4E"
+        app:layout_constraintBottom_toBottomOf="@+id/textView28"
+        app:layout_constraintEnd_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toTopOf="@+id/textView28" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
