@@ -75,7 +75,7 @@
         android:text="사장님 안녕하세요!"
         android:textColor="#504E4E"
         android:textSize="24sp"
-        android:textStyle="normal"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/user_shop_name"
         app:layout_constraintHorizontal_bias="0.504"
@@ -106,7 +106,7 @@
         android:text="(매장명)"
         android:textColor="#504E4E"
         android:textSize="24sp"
-        android:textStyle="normal"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tvcname2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,10 +164,9 @@
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toStartOf="@+id/user_shop_name"
         app:layout_constraintStart_toStartOf="@+id/textView48"
         app:layout_constraintTop_toTopOf="@+id/textView48"
         app:srcCompat="@drawable/kobblogo" />
