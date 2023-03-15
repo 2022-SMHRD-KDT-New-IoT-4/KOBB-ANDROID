@@ -45,7 +45,7 @@ class small_menu_page1_1 : AppCompatActivity() {
             ttsSpeak(voice!!)
         }
         val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt1",cnt)
         intent.putExtra("choice_menu",choice_menu)
@@ -63,7 +63,7 @@ class small_menu_page1_1 : AppCompatActivity() {
             ttsSpeak(voice!!)
         }
         val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt2",cnt)
         intent.putExtra("choice_menu",choice_menu)
@@ -80,7 +80,7 @@ class small_menu_page1_1 : AppCompatActivity() {
             ttsSpeak(voice!!)
         }
         val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt1",cnt)
         intent.putExtra("choice_menu",choice_menu)
@@ -99,7 +99,7 @@ class small_menu_page1_1 : AppCompatActivity() {
             ttsSpeak(voice!!)
         }
         val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt2",cnt)
         intent.putExtra("choice_menu",choice_menu)
@@ -141,7 +141,7 @@ class small_menu_page1_1 : AppCompatActivity() {
         //상호명
         val small_menu_name = findViewById<TextView>(R.id.user_shop_name)
         //받아온 매장명
-        user_shop_name = intent.getStringExtra("매장명")!!
+        user_shop_name = intent.getStringExtra("user_shop_name")!!
         //상호명에 받아온 매장명 담아주기
        small_menu_name.text = user_shop_name
 

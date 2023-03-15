@@ -44,7 +44,7 @@ class Main_menu_page : AppCompatActivity() {
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt",cnt)
         intent.putExtra("ryu",ryu)
@@ -60,7 +60,7 @@ class Main_menu_page : AppCompatActivity() {
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt",cnt)
         intent.putExtra("ryu",ryu)
@@ -76,7 +76,7 @@ class Main_menu_page : AppCompatActivity() {
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt",cnt)
         intent.putExtra("ryu",ryu)
@@ -92,7 +92,7 @@ class Main_menu_page : AppCompatActivity() {
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         intent.putExtra("cnt",cnt)
         intent.putExtra("ryu",ryu)
@@ -149,7 +149,7 @@ class Main_menu_page : AppCompatActivity() {
         //상호명
         val main_menu_name= findViewById<TextView>(R.id.user_shop_name)
         //받아온 매장명
-        user_shop_name = intent.getStringExtra("매장명")!!
+        user_shop_name = intent.getStringExtra("user_shop_name")!!
         //상호명에 받아온 매장명 담아주기
         main_menu_name.text = user_shop_name
         // 6개 버튼 소메뉴 페이지(small_menu_page) 로 이동

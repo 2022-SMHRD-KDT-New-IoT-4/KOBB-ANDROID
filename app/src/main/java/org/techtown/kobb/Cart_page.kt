@@ -14,7 +14,7 @@ class Cart_page : AppCompatActivity() {
         //상호명
         val tvcname2 = findViewById<TextView>(R.id.user_shop_name)
         //받아온 매장명
-        user_shop_name = intent.getStringExtra("매장명")!!
+        user_shop_name = intent.getStringExtra("user_shop_name")!!
         tvcname2.text = user_shop_name
 
         // page 21 장바구니 페이지

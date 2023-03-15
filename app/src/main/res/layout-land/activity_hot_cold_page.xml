@@ -4,180 +4,200 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
     tools:context=".Main_menu_page">
 
+        <Button
+            android:id="@+id/btn_Check_menu_page"
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="80dp"
+            android:background="#FF5555"
+            android:drawableBottom="@drawable/cold_file"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="50dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="40dp"
+            android:text="차갑게   "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView98"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-                <!-- 뚜껑 시작 -->
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbarAlwaysDrawHorizontalTrack="false">
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#FFF7F7"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
-                        <androidx.constraintlayout.widget.Guideline
-                            android:id="@+id/guideline"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layout_constraintGuide_percent="0.10218978" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu"
+            app:srcCompat="@drawable/casher" />
 
-                        <TextView
-                            android:id="@+id/textView"
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:background="#FFEAEA"
-                            android:gravity="center_horizontal"
-                            android:textColor="#504E4E"
-                            android:textSize="24dp"
-                            app:layout_constraintBottom_toTopOf="@+id/guideline14"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="@+id/guideline"
-                            app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:text="차갑게 또는 따뜻하게 중 선택해주세요."
+            android:textColor="#504E4E"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Hot_Cold_ryu" />
 
-                        <TextView
-                            android:id="@+id/user_shop_name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="0dp"
-                            android:gravity="center"
-                            android:text="상호명"
-                            android:textColor=" #FF5555"
-                            android:textSize="34sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toTopOf="@+id/guideline"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.10218978" />
 
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#FE5555"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="130dp"
-                            android:layout_height="130dp"
-                            android:layout_marginEnd="10dp"
-                            app:layout_constraintBottom_toBottomOf="@+id/textView6"
-                            app:layout_constraintEnd_toStartOf="@+id/textView6"
-                            app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu"
-                            app:layout_constraintVertical_bias="0.0"
-                            app:srcCompat="@drawable/casher" />
+        <TextView
+            android:id="@+id/user_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:gravity="center"
+            android:text="상호명"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                        <TextView
-                            android:id="@+id/tv_Hot_Cold_ryu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="아메리카노를 선택하셨습니다."
-                            android:textColor="#504E4E"
-                            android:textSize="46sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toTopOf="@+id/textView6"
-                            app:layout_constraintEnd_toEndOf="@+id/textView6"
-                            app:layout_constraintStart_toStartOf="@+id/textView6" />
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline14"
+            app:srcCompat="@drawable/kobbtext" />
 
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="140dp"
-                            android:layout_marginTop="90dp"
-                            android:text="차갑게 또는 따뜻하게 중 선택해주세요."
-                            android:textColor="#504E4E"
-                            android:textSize="46sp"
-                            android:textStyle="bold"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="@+id/guideline" />
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_style"
+            android:backgroundTint="#FBD7D7"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:text="뒤로 가기"
+            android:textColor="#504E4E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toStartOf="@+id/btn_cart_page3"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:id="@+id/imageView13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView"
-                            app:srcCompat="@drawable/kobbtext" />
+        <TextView
+            android:id="@+id/tv_Hot_Cold_ryu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:text="아메리카노"
+            android:textColor="#504E4E"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:text="를 선택하셨습니다."
+            android:textColor="#504E4E"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_Hot_Cold_ryu"
+            app:layout_constraintStart_toEndOf="@+id/tv_Hot_Cold_ryu"
+            app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu" />
 
-                        <androidx.constraintlayout.widget.Guideline
-                            android:id="@+id/guideline8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="60dp" />
 
-                        <androidx.constraintlayout.widget.Guideline
-                            android:id="@+id/guideline14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layout_constraintGuide_begin="736dp" />
+        <ImageButton
+            android:id="@+id/btn_cart_page3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_back"
+            app:srcCompat="@drawable/shoppingcart" />
 
-                        <androidx.constraintlayout.widget.Guideline
-                            android:id="@+id/guideline10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layout_constraintGuide_begin="222dp" />
+        <Button
+            android:id="@+id/btn_btn_Check_menu_page"
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="100dp"
+            android:background="#FF5555"
+            android:drawableBottom="@drawable/hot_file"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:gravity="center|top"
+            android:paddingLeft="20dp"
+            android:paddingTop="25dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="25dp"
+            android:text="따뜻하게 "
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_Check_menu_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/btn_Check_menu_page"
+            app:layout_constraintVertical_bias="0.0" />
 
-                        <ImageButton
-                            android:id="@+id/btn_cart_page3"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginEnd="16dp"
-                            android:backgroundTint="#00FFFFFF"
-                            app:layout_constraintBottom_toBottomOf="@+id/btn_Choice_mode_page"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="@+id/btn_Choice_mode_page"
-                            app:srcCompat="@drawable/shoppingcart" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
 
-                        <!-- 뚜껑 끝 -->
-
-                        <Button
-                            android:id="@+id/btn_Choice_mode_page"
-                            android:layout_width="150dp"
-                            android:layout_height="60dp"
-                            android:layout_marginEnd="16dp"
-                            android:background="@drawable/button_style"
-                            android:backgroundTint="#FBD7D7"
-                            android:text="뒤로 가기"
-                            android:textColor="#504E4E"
-                            android:textSize="24sp"
-                            app:layout_constraintBottom_toTopOf="@+id/guideline"
-                            app:layout_constraintEnd_toStartOf="@+id/btn_cart_page3"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <Button
-                            android:id="@+id/btn_btn_Check_menu_page"
-                            android:layout_width="440dp"
-                            android:layout_height="440dp"
-                            android:layout_marginStart="50dp"
-                            android:background="#FF5555"
-                            android:drawableBottom="@drawable/hot_file"
-                            android:gravity="center|top"
-                            android:text="따뜻하게"
-                            android:textColor="#FFFFFF"
-                            android:textSize="60sp"
-                            app:layout_constraintBottom_toBottomOf="@+id/btn_Check_menu_page"
-                            app:layout_constraintStart_toStartOf="@+id/guideline8"
-                            app:layout_constraintTop_toTopOf="@+id/btn_Check_menu_page"
-                            app:layout_constraintVertical_bias="0.0" />
-
-                        <Button
-                            android:id="@+id/btn_Check_menu_page"
-                            android:layout_width="440dp"
-                            android:layout_height="440dp"
-                            android:layout_marginEnd="50dp"
-                            android:background="#FF5555"
-                            android:drawableBottom="@drawable/cold_file"
-                            android:gravity="center|top"
-                            android:text="차갑게"
-                            android:textColor="#FFFFFF"
-                            android:textSize="60sp"
-                            app:layout_constraintBottom_toBottomOf="@+id/textView"
-                            app:layout_constraintEnd_toStartOf="@+id/guideline8"
-                            app:layout_constraintTop_toTopOf="@+id/guideline10" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

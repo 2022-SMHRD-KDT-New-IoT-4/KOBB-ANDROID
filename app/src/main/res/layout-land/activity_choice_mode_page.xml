@@ -30,7 +30,6 @@
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="10dp"
             android:background="#FFF7F7"
             android:gravity="center_horizontal"
             android:textColor="#504E4E"
@@ -40,7 +39,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvcname2"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
@@ -81,11 +80,12 @@
             android:fontFamily="@font/nanumsquareneo_variable"
             android:text="매장을 관리하시려면"
             android:textColor="#504E4E"
-            android:textSize="34sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvcname2"
+            app:layout_constraintHorizontal_bias="0.482"
             app:layout_constraintStart_toStartOf="@+id/tvcname2"
-            app:layout_constraintTop_toTopOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/tvcname2" />
 
         <TextView
             android:id="@+id/tvcname3"
@@ -95,7 +95,7 @@
             android:fontFamily="@font/nanumsquareneo_variable"
             android:text="키오스크를 실행 하시려면"
             android:textColor="#504E4E"
-            android:textSize="34sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
             app:layout_constraintHorizontal_bias="0.485"

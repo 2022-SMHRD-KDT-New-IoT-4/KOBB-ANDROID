@@ -1,6 +1,7 @@
 package org.techtown.kobb
 
 import android.content.Intent
+import android.icu.util.BuddhistCalendar
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,15 +11,10 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
-import com.android.volley.Request
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
 import java.util.*
 
 class EatClick : View.OnClickListener {
     override fun onClick(p0: View?) {
-        TODO("Not yet implemented")
     }
 
 }
@@ -37,38 +33,31 @@ class Customer_main_page : AppCompatActivity() {
     //매장명
     lateinit var user_shop_name: String
 
+    //먹고가기 선택시 실행 되는 함수
     fun handleEatClick() {
         val voice_text: String = "먹고가기를 선택하셨습니다.  커피 1번. 라떼 2번. 에이드 3번. 요거트 4번"
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
-
-        // intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-        //activityResult.launch(intent)
-
         val intent = Intent(this, Main_menu_page::class.java)
         //매장명
-        intent.putExtra("매장명", user_shop_name)
+        intent.putExtra("user_shop_name", user_shop_name)
         intent.putExtra("먹고가기", "먹고가기")
         startActivity(intent)
-//            a = "먹고 가시겠습니까?"
-//            intent.putExtra("음성",a)
-//           startActivity(intent)
         manager.stop()
         manager.start()
     }
+
+
+    //포장하기 선택시 실행 되는 함수
     fun handleTakeOut(){
         val voice_text: String = "포장하기를 선택하셨습니다.  커피 1번. 라떼 2번. 에이드 3번. 요거트 4번"
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-        // activityResult.launch(intent)
         val intent = Intent(this, Main_menu_page::class.java)
-        intent.putExtra("매장명", user_shop_name)
+        intent.putExtra("user_shop_name", user_shop_name)
         intent.putExtra("포장하기", "포장하기")
         startActivity(intent)
-//            a = "포장 하시겠습니까?"
-//            intent.putExtra("음성",a)
-//            startActivity(intent)
         manager.stop()
         manager.start()
     }
@@ -102,41 +91,41 @@ class Customer_main_page : AppCompatActivity() {
 
 
 
-
-
         //텍스트 읽기
         btn_Eat_main_menu_page = findViewById(R.id.btn_Eat_main_menu_page)
         btn_TakeOut_main_menu_page = findViewById(R.id.btn_TakeOut_main_menu_page)
 
 
         //상호명
-
         val shop_name = findViewById<TextView>(R.id.user_shop_name)
+
+        // 모드 전환 버튼
+        val btn_Mode_change_page = findViewById<Button>(R.id.btn_Mode_change_page)
 
         //받아온 매장명
         user_shop_name = intent.getStringExtra("user_shop_name")!!
         //상호명에 받아온 매장명 적용
         shop_name.text = user_shop_name
 
-        //음성전환
-//       val intent : Intent = Intent()
-//       intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-//       activityResult.launch(intent)
-
-        //시각 장애인이 하드웨어 버튼을 눌렀을 때
-
-        // 음성출력
-
-
         //먹고가기 버튼을 눌렀을 때
         btn_Eat_main_menu_page.setOnClickListener{
             handleEatClick()
+
         }
         //포장하기 눌렀을 때
         btn_TakeOut_main_menu_page.setOnClickListener {
             handleTakeOut()
 
         }
+
+        //모드 전환 눌렀을 때
+        btn_Mode_change_page.setOnClickListener{
+            val intent = Intent(this,Mode_change_page::class.java)
+            intent.putExtra("user_shop_name",user_shop_name)
+            startActivity(intent)
+
+        }
+
 
     }
     //onCreate 밖

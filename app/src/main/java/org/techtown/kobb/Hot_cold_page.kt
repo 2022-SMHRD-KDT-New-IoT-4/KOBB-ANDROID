@@ -45,9 +45,9 @@ class Hot_cold_page : AppCompatActivity() {
             ttsSpeak(voice!!)
         }
         val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
-        intent.putExtra("COLD","상태 : COLD")
+        intent.putExtra("COLD","차갑게")
         intent.putExtra("choice_menu",choice_menu)
         startActivity(intent)
         manager.stop()
@@ -59,9 +59,9 @@ class Hot_cold_page : AppCompatActivity() {
             ttsSpeak(voice!!)
         }
         val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
-        intent.putExtra("HOT","상태 : HOT")
+        intent.putExtra("HOT","뜨겁게")
         intent.putExtra("choice_menu",choice_menu)
         startActivity(intent)
         manager.stop()
@@ -109,7 +109,7 @@ class Hot_cold_page : AppCompatActivity() {
         val hot_cold_name = findViewById<TextView>(R.id.user_shop_name)
 
         //받아온 매장명
-        user_shop_name = intent.getStringExtra("매장명")!!
+        user_shop_name = intent.getStringExtra("user_shop_name")!!
         hot_cold_name.text = user_shop_name
 
 

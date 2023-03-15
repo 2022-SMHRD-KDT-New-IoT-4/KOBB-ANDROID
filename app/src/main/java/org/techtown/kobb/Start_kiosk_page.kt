@@ -35,9 +35,9 @@ class Start_kiosk_page : AppCompatActivity() {
        val btn_Customer_main_page = findViewById<Button>(R.id.btn_Customer_main_page)
 
         //문구
-        val shop_name = findViewById<TextView>(R.id.user_shop_name)
+        val user_shop_name = findViewById<TextView>(R.id.user_shop_name)
         //Choice에서 넘어온 이름 값
-        shop_name.text = intent.getStringExtra("user_shop_name")!!
+        user_shop_name.text = intent.getStringExtra("user_shop_name")!!
 
         //영업시작을 눌렀을 때
         btn_Customer_main_page.setOnClickListener {
@@ -48,7 +48,7 @@ class Start_kiosk_page : AppCompatActivity() {
             }
             val intent = Intent(this,Customer_main_page::class.java)
             // 매장명 보내기
-            intent.putExtra("user_shop_name",shop_name.text)
+            intent.putExtra("user_shop_name",user_shop_name.text)
             startActivity(intent)
         }
 

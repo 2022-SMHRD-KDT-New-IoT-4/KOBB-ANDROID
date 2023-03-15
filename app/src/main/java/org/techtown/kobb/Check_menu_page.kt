@@ -56,7 +56,7 @@ class Check_menu_page : AppCompatActivity() {
         }
         val intent = Intent(this@Check_menu_page,Cart_page::class.java)
         intent.putExtra("choice_menu",choice_menu)
-        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("user_shop_name",user_shop_name)
         intent.putExtra("먹포",eat)
         startActivity(intent)
         manager.stop()
@@ -154,7 +154,7 @@ class Check_menu_page : AppCompatActivity() {
         //상호명
         var tvcname = findViewById<TextView>(R.id.user_shop_name)
         //받아온 매장명
-        user_shop_name = intent.getStringExtra("매장명")!!
+        user_shop_name = intent.getStringExtra("user_shop_name")!!
         tvcname.text = user_shop_name
 
 
