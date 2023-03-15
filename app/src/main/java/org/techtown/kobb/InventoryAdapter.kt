@@ -19,12 +19,12 @@ class InventoryAdapter(val context : Context, val data : ArrayList<InventoryVO>)
         val invent_partNum : TextView // 거래처 연락처
 
         init {
-            invent_name = itemView.findViewById(R.id.invent_name)
-            invent_price = itemView.findViewById(R.id.invent_price)
-            invent_stock = itemView.findViewById(R.id.invent_stock)
-            invent_partner = itemView.findViewById(R.id.invent_partner)
-            invent_partNum = itemView.findViewById(R.id.invent_partNum)
-            invent_num = itemView.findViewById(R.id.invent_num)
+            invent_name = itemView.findViewById(R.id.menu_name)
+            invent_price = itemView.findViewById(R.id.menu_price)
+            invent_stock = itemView.findViewById(R.id.menu_sort)
+            invent_partner = itemView.findViewById(R.id.menu_status)
+            invent_partNum = itemView.findViewById(R.id.menu_image)
+            invent_num = itemView.findViewById(R.id.menu_num)
         }
 
     }
@@ -42,6 +42,7 @@ class InventoryAdapter(val context : Context, val data : ArrayList<InventoryVO>)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.invent_num.setText(data.get(position).invent_num)
             holder.invent_name.setText(data.get(position).invent_name)
+            holder.invent_price.setText(data.get(position).invent_price)
             holder.invent_stock.setText(data.get(position).invent_stock)
             holder.invent_partner.setText(data.get(position).invent_partner)
             holder.invent_partNum.setText(data.get(position).invent_partNum)

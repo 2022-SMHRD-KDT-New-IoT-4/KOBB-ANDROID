@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+    <shape>
+        android:shape="rectangle">
+
+    <corners
+        android:radius="3dp"/>
+
+    <!-- #f5f5f5" 색으로 채움 -->
+    <solid
+        android:color="#FFEAEA"/>
+
+    <!-- 1dp 크기의 #000000 색 테두리 -->
+    <stroke
+        android:width="0.7dp"
+        android:color="#504E4E"/>
+    </shape>
+    </item>
+
+    <item
+        android:drawable="@drawable/baseline_keyboard_arrow_down_24"
+        android:gravity="right|center" android:start="20dp" android:top="1dp"
+        android:width="70px" android:height="70px">
+    </item>
+
+        </layer-list>
+    </item>
+</selector>

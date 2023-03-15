@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
     tools:context=".Manage_main_page">
 
@@ -12,23 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="50dp"
-        android:background="#FFEAEA"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintGuide_percent="0.10123119" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -57,6 +42,22 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="#FFEAEA"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -66,6 +67,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/button_style"
         android:backgroundTint="#FF5555"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="키오스크 관리"
         android:textColor="#F7F7F7"
         android:textSize="24sp"
@@ -76,28 +78,31 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_Control_inventory_page" />
 
     <Button
-        android:id="@+id/btn_Start_kiosk_page"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
+        android:id="@+id/Choice_mode_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/button_style"
-        android:backgroundTint="#FF5555"
+        android:backgroundTint="#FFEAEA"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="모드전환"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textColor="#504E4E"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page1"
-        app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page1"
-        app:layout_constraintTop_toTopOf="@+id/btn_User_info_page1" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
+        app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
+        app:layout_constraintTop_toTopOf="@+id/btn_User_info_page" />
 
     <Button
         android:id="@+id/btn_Sales_condition_page"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/button_style"
         android:backgroundTint="#FF5555"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="매출 현황"
         android:textColor="#F7F7F7"
         android:textSize="24sp"
@@ -106,23 +111,16 @@
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2" />
 
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="152dp"
-        android:layout_height="67dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobbicon" />
-
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="관리자 메뉴"
         android:textColor="#504E4E"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -134,6 +132,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/button_style"
         android:backgroundTint="#FF5555"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="재고 관리"
         android:textColor="#F7F7F7"
         android:textSize="24sp"
@@ -150,6 +149,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/button_style"
         android:backgroundTint="#FF5555"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="메뉴 관리"
         android:textColor="#F7F7F7"
         android:textSize="24sp"
@@ -159,35 +159,37 @@
         app:layout_constraintStart_toStartOf="@+id/btn_Sales_condition_page"
         app:layout_constraintTop_toBottomOf="@+id/btn_Sales_condition_page" />
 
-    <ImageButton
-        android:id="@+id/btn_User_info_page1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:background="#FFFFFF"
-        android:scaleType="fitXY"
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF5555"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="152dp"
-        android:layout_height="67dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobbicon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_User_info_page"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
-        android:background="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:background="#FF5555"
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user" />
+        app:srcCompat="@drawable/usericon" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView76"
+        app:srcCompat="@drawable/kobblogo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

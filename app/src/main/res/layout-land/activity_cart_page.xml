@@ -37,7 +37,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/small_menu_name"
+                android:id="@+id/user_shop_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -169,7 +169,7 @@
                 app:layout_constraintTop_toTopOf="@+id/textView4" />
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/month_sales"
                 android:layout_width="360dp"
                 android:layout_height="330dp"
                 android:layout_marginStart="16dp"
@@ -186,8 +186,8 @@
                 android:textSize="30sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/textView4"
-                app:layout_constraintStart_toStartOf="@+id/textView30"
-                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+                app:layout_constraintStart_toStartOf="@+id/month_sales"
+                app:layout_constraintTop_toBottomOf="@+id/month_sales" />
 
             <!--            <TextView-->
 <!--                android:id="@+id/textView28"-->

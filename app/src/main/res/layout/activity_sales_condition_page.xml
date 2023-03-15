@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     android:orientation="vertical">
 
     <TextView
@@ -16,43 +18,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView44"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/month_sales"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="000000원"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nanumsquareneo_bold"
+        android:text="6,745,300원"
+        android:textColor="#504E4E"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/textView46"
+        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="@+id/textView46"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
-    <ImageButton
-        android:id="@+id/btn_User_info_page"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="#FFFFFF"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user" />
-
     <TextView
-        android:id="@+id/diaryTextView"
+        android:id="@+id/TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:gravity="center"
-        android:text="지정일 매출"
+        android:text=" 매출 : "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/Btn"
-        app:layout_constraintStart_toStartOf="@+id/textView45"
+        android:textColor="#504E4E"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Sales_condition_search"
+        app:layout_constraintStart_toEndOf="@+id/select_date_sales"
         app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <TextView
+        android:id="@+id/sales_search_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareneo_bold"
+        android:gravity="center"
+        android:text="520,400"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#504E4E"
+        app:layout_constraintBottom_toBottomOf="@+id/TextView"
+        app:layout_constraintStart_toEndOf="@+id/TextView"
+        app:layout_constraintTop_toTopOf="@+id/TextView" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -68,43 +77,23 @@
         android:id="@+id/calendarView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
         android:background="#FFEAEA"
-        app:layout_constraintBottom_toBottomOf="@+id/textView45"
+        android:clickable="true"
+        android:selectedWeekBackgroundColor="#FF5555"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView44" />
-
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="매출현황"
-        android:textColor="#FF5555"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="105dp"
-        android:layout_height="59dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kobb" />
+        app:layout_constraintTop_toBottomOf="@+id/month_sales" />
 
     <Button
-        android:id="@+id/Btn"
+        android:id="@+id/btn_Sales_condition_search"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/button_style"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="조회하기"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
@@ -119,27 +108,67 @@
         android:id="@+id/textView46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nanumsquareneo_bold"
         android:text="2월 총 매출 "
-        android:textSize="30dp"
+        android:textColor="#504E4E"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/calendarView"
         app:layout_constraintStart_toStartOf="@+id/calendarView"
         app:layout_constraintTop_toTopOf="@+id/textView45" />
 
-    <Button
-        android:id="@+id/btn_Start_kiosk_page"
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF5555"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView82"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareneo_bold"
+        android:text="매출 현황"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintEnd_toEndOf="@+id/textView46"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toTopOf="@+id/textView77" />
+
+    <Button
+        android:id="@+id/Choice_mode_page"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:background="@drawable/button_style"
-        android:backgroundTint="#FF5555"
+        android:backgroundTint="#FFEAEA"
         android:text="모드전환"
-        android:textColor="#F8F0F0"
+        android:textColor="#504E4E"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_User_info_page"
         app:layout_constraintEnd_toStartOf="@+id/btn_User_info_page"
         app:layout_constraintTop_toTopOf="@+id/btn_User_info_page" />
+
+    <ImageButton
+        android:id="@+id/btn_User_info_page"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FF5555"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usericon" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
@@ -147,5 +176,35 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView45"
+        app:layout_constraintStart_toStartOf="@+id/textView77"
+        app:layout_constraintTop_toTopOf="@+id/textView77"
+        app:srcCompat="@drawable/kobblogo" />
+
+    <TextView
+        android:id="@+id/select_date_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/nanumsquareneo_bold"
+        android:gravity="center"
+        android:text="0월0일"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#504E4E"
+        app:layout_constraintBottom_toBottomOf="@+id/TextView"
+        app:layout_constraintStart_toStartOf="@+id/btn_Sales_condition_search"
+        app:layout_constraintTop_toTopOf="@+id/TextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

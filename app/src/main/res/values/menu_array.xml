@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_array">
+        <item>카테고리 선택</item>
+        <item>커피</item>
+        <item>라떼</item>
+        <item>차</item>
+        <item>에이드</item>
+        <item>요거트</item>
+        <item>디저트</item>
+    </string-array>
+</resources>
+

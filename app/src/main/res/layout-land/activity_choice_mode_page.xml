@@ -21,28 +21,6 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.1" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="220dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/kobbicon" />
-
-        <ImageButton
-            android:id="@+id/btn_User_info_page"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="16dp"
-            android:background="#FFFFFF"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="@+id/guideline"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/user" />
-
 
         <TextView
             android:id="@+id/textView"
@@ -107,10 +85,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/choice_user_shop_name" />
+            app:layout_constraintTop_toBottomOf="@+id/user_shop_name" />
 
         <TextView
-            android:id="@+id/choice_user_shop_name"
+            android:id="@+id/user_shop_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(매장명)"
@@ -135,7 +113,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView2" />
 
         <Button
-            android:id="@+id/btn_Start_kiosk_page"
+            android:id="@+id/Choice_mode_page"
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:layout_marginTop="30dp"
@@ -163,6 +141,37 @@
             app:layout_constraintEnd_toEndOf="@+id/textView81"
             app:layout_constraintStart_toStartOf="@+id/textView81"
             app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#FF5555"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_User_info_page"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FF5555"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/usericon" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView58"
+            app:srcCompat="@drawable/kobblogo" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

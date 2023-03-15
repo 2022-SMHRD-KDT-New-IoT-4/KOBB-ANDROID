@@ -38,7 +38,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/small_menu_name"
+                android:id="@+id/user_shop_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -88,7 +88,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/small_menu_name" />
+                app:layout_constraintTop_toBottomOf="@+id/user_shop_name" />
 
             <ImageView
                 android:id="@+id/imageView13"
@@ -204,7 +204,7 @@
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toStartOf="@+id/btn_cart_page3"
-                app:layout_constraintTop_toTopOf="@+id/small_menu_name" />
+                app:layout_constraintTop_toTopOf="@+id/user_shop_name" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
