@@ -34,8 +34,8 @@ class Choice_mode_page : AppCompatActivity() {
         //고객 모드를 눌렀을 때 Start_kiosk_page로 이동
         btn_Start_kiosk_page.setOnClickListener{
             val intent = Intent(this,Start_kiosk_page::class.java)
-            // 매장명 보내기 
-            intent.putExtra("user_shop_name",user_shop_name.toString())
+            // 매장명 보내기
+            intent.putExtra("user_shop_name",user_shop_name.text)
             startActivity(intent)
         }
 
