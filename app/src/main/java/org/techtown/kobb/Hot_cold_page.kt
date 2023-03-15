@@ -4,13 +4,23 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import java.util.*
 
 class Hot_cold_page : AppCompatActivity() {
+    class Main_menu : View.OnClickListener {
+        override fun onClick(p0: View?) {
+            TODO("Not yet implemented")
+        }
+
+    }
+
+    lateinit var manager: STTManager
     //매장명
     lateinit var user_shop_name : String
 
@@ -28,9 +38,49 @@ class Hot_cold_page : AppCompatActivity() {
 
     //메뉴 이름
     lateinit var choice_menu : String
+    fun handleh1Click() {
+        voice = "차갑게를 선택하셨습니다. 장바구니에 담으시려면 1번. 장바구니를 확인하시려면 2번"
+        if(voice != null){
+            Log.d("TAG", "onCreate: 음성출력")
+            ttsSpeak(voice!!)
+        }
+        val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
+        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("먹포",eat)
+        intent.putExtra("COLD","상태 : COLD")
+        intent.putExtra("choice_menu",choice_menu)
+        startActivity(intent)
+        manager.stop()
+    }
+    fun handleh2Click() {
+        voice = "따뜻하게를 선택하셨습니다. 장바구니에 담으시려면 1번. 장바구니를 확인하시려면 2번"
+        if(voice != null){
+            Log.d("TAG", "onCreate: 음성출력")
+            ttsSpeak(voice!!)
+        }
+        val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
+        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("먹포",eat)
+        intent.putExtra("HOT","상태 : HOT")
+        intent.putExtra("choice_menu",choice_menu)
+        startActivity(intent)
+        manager.stop()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hot_cold_page)
+
+        Handler().postDelayed({
+            manager = STTManager(context = applicationContext)
+            manager.setBtn1ClickListener {
+                handleh1Click()
+            }
+            manager.setBtn2ClickListener {
+                handleh2Click()
+            }
+            manager.start()
+        },1000)
+
 
         //cnt1 차갑게
         if(intent.getStringExtra("cnt1")!=null){
@@ -70,31 +120,11 @@ class Hot_cold_page : AppCompatActivity() {
 
         //차갑게 눌렀을 때
         btn_Check_menu_page.setOnClickListener {
-            voice = "차갑게를 선택하셨습니다."
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("COLD","상태 : COLD")
-            intent.putExtra("choice_menu",choice_menu)
-            startActivity(intent)
+            handleh1Click()
         }
         //따뜻하게 눌렀을 때
         btn_btn_Check_menu_page.setOnClickListener {
-            voice = "따뜻하게를 선택하셨습니다."
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Hot_cold_page,Check_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("HOT","상태 : HOT")
-            intent.putExtra("choice_menu",choice_menu)
-            startActivity(intent)
+            handleh2Click()
         }
 
         // page 19 온도결정 페이지 (하하 테스트에요)

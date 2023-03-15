@@ -4,13 +4,64 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import java.util.*
 
 class Check_menu_page : AppCompatActivity() {
+    class Main_menu : View.OnClickListener {
+        override fun onClick(p0: View?) {
+            TODO("Not yet implemented")
+        }
+
+    }
+    fun handlec1Click() {
+        voice = "장바구니에 담았습니다"
+        if(voice != null){
+            Log.d("TAG", "onCreate: 음성출력")
+            ttsSpeak(voice!!)
+        }
+     //   voice = "장바구니에 담았습니다"
+//        if(voice != null){
+//            Log.d("TAG", "onCreate: 음성출력")
+//            ttsSpeak(voice!!)
+//        }
+//        val intent = Intent(this@Check_menu_page,this::class.java)
+//
+//        startActivity(intent)
+        Toast.makeText(this,"장바구니에 담았습니다" , Toast.LENGTH_LONG).show()
+       // intent.putExtra("먹포",eat)
+        manager.stop()
+        Handler().postDelayed({
+            manager = STTManager(context = applicationContext)
+            manager.setBtn1ClickListener {
+                handlec1Click()
+            }
+            manager.setBtn2ClickListener {
+                handlec2Click()
+            }
+            manager.start()
+        },1000)
+    }
+    fun handlec2Click() {
+        voice = "결제를 하시려면 1번 "
+        if(voice != null){
+            Log.d("TAG", "onCreate: 음성출력")
+            ttsSpeak(voice!!)
+        }
+        val intent = Intent(this@Check_menu_page,Cart_page::class.java)
+        intent.putExtra("choice_menu",choice_menu)
+        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("먹포",eat)
+        startActivity(intent)
+        manager.stop()
+    }
+    lateinit var manager: STTManager
     //매장명
     lateinit var user_shop_name : String
     //차갑게
@@ -29,8 +80,18 @@ class Check_menu_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_menu_page)
-
+        Handler().postDelayed({
+            manager = STTManager(context = applicationContext)
+            manager.setBtn1ClickListener {
+                handlec1Click()
+            }
+            manager.setBtn2ClickListener {
+                handlec2Click()
+            }
+            manager.start()
+        },1000)
         // 주문내역 출력 - 메뉴명
+
         val check_menu_menu =findViewById<TextView>(R.id.check_menu_menu)
         // 안내문구 출력 - 메뉴명 
         val check_menu = findViewById<TextView>(R.id.tv_Hot_Cold_ryu)
@@ -81,19 +142,14 @@ class Check_menu_page : AppCompatActivity() {
 
 
         //장바구니 확인
-       // val btn_Cart_page1=findViewById<Button>(R.id.btn_Cart_page1)
+        val btn_Cart_page1=findViewById<Button>(R.id.btn_Cart_page1)
 
         // 장바구니 담기 버튼
         val check_menu_add =findViewById<Button>(R.id.check_menu_add)
         //장바구니 담기를 눌렀을 때
         check_menu_add.setOnClickListener {
-            voice = "장바구니에 담았습니다"
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Check_menu_page,Check_menu_page::class.java)
-            startActivity(intent)
+            handlec1Click()
+
         }
         //상호명
         var tvcname = findViewById<TextView>(R.id.small_menu_name)
@@ -102,13 +158,10 @@ class Check_menu_page : AppCompatActivity() {
         tvcname.text = user_shop_name
 
 
-        //장바구니 확인 버튼 눌렀을 때
-//        btn_Cart_page1.setOnClickListener {
-//            val intent = Intent(this@Check_menu_page,Cart_page::class.java)
-//            intent.putExtra("매장명",user_shop_name)
-//            intent.putExtra("먹포",eat)
-//            startActivity(intent)
-//        }
+       // 장바구니 확인 버튼 눌렀을 때
+        btn_Cart_page1.setOnClickListener {
+            handlec2Click()
+        }
 
     }
     //음성 함수

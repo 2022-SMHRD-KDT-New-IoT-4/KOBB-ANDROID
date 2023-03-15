@@ -4,12 +4,19 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import java.util.*
+class Main_menu : View.OnClickListener {
+    override fun onClick(p0: View?) {
+        TODO("Not yet implemented")
+    }
 
+}
 class Main_menu_page : AppCompatActivity() {
 
     lateinit var textToSpeech: TextToSpeech
@@ -22,12 +29,106 @@ class Main_menu_page : AppCompatActivity() {
     lateinit var text : String
     lateinit var tts :TextToSpeech
     lateinit var cnt :String
+    lateinit var manager: STTManager
 
 //    //류
     lateinit var ryu: String
+
+    fun handlecoffeClick() {
+        //커피먹고가기
+        //현재 페이지에서 버튼을 눌렀을 때 출력되는 음성
+
+        cnt = "커피"
+        ryu="커피류"
+        val voice_text: String = "커피 메뉴를 선택하셨습니다. 아메리카노 1번. 에스프레소 2번"
+        Log.d("TAG", "onCreate: 음성출력")
+        ttsSpeak(voice_text)
+        val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
+        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("먹포",eat)
+        intent.putExtra("cnt",cnt)
+        intent.putExtra("ryu",ryu)
+        startActivity(intent)
+        manager.stop()
+        manager.start()
+    }
+    fun handleLatteClick(){
+
+        cnt = "라떼"
+        ryu="라떼류"
+        val voice_text: String = "라떼 메뉴를 선택하셨습니다. 바닐라라떼 1번. 카페라떼는 2번"
+        Log.d("TAG", "onCreate: 음성출력")
+        ttsSpeak(voice_text)
+        val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
+        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("먹포",eat)
+        intent.putExtra("cnt",cnt)
+        intent.putExtra("ryu",ryu)
+        startActivity(intent)
+        manager.stop()
+        manager.start()
+    }
+    fun handleAdeClick(){
+
+        cnt = "에이드"
+        ryu="에이드류"
+        val voice_text: String = "에이드 메뉴를 선택하셨습니다. 망고에이드는  1번. 레몬에이드는 2번"
+        Log.d("TAG", "onCreate: 음성출력")
+        ttsSpeak(voice_text)
+        val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
+        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("먹포",eat)
+        intent.putExtra("cnt",cnt)
+        intent.putExtra("ryu",ryu)
+        startActivity(intent)
+        manager.stop()
+        manager.start()
+    }
+    fun handleYogurtClick(){
+
+        cnt="요거트"
+        ryu="요거트류"
+        val voice_text: String = "요거트 메뉴를 선택하셨습니다. 딸기요거트는 1번. 블루베리요거트는 2번"
+        Log.d("TAG", "onCreate: 음성출력")
+        ttsSpeak(voice_text)
+        val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
+        intent.putExtra("매장명",user_shop_name)
+        intent.putExtra("먹포",eat)
+        intent.putExtra("cnt",cnt)
+        intent.putExtra("ryu",ryu)
+        startActivity(intent)
+        manager.stop()
+        manager.start()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu_page)
+        //다른페이지 복붙
+
+
+        //다른페이지 복붙
+    Handler().postDelayed({
+        manager = STTManager(context = applicationContext)
+        manager.setBtn1ClickListener {
+            handlecoffeClick()
+        }
+        manager.setBtn2ClickListener {
+            handleLatteClick()
+        }
+        manager.setBtn3ClickListener {
+            handleAdeClick()
+        }
+        manager.setBtn4ClickListener {
+            handleYogurtClick()
+
+        }
+        manager.start()
+
+    },1000)
+
+
+
+
         //음성출력
         tts = TextToSpeech(this, TextToSpeech.OnInitListener {
             if (it != TextToSpeech.ERROR){
@@ -54,112 +155,27 @@ class Main_menu_page : AppCompatActivity() {
         // 6개 버튼 소메뉴 페이지(small_menu_page) 로 이동
         var btn_small_menu_page1 = findViewById<Button>(R.id.btn_small_menu_page1)
         var btn_small_menu_page2 = findViewById<Button>(R.id.btn_small_menu_page2)
-        var btn_small_menu_page3 = findViewById<Button>(R.id.btn_small_menu_page3)
         var btn_small_menu_page4 = findViewById<Button>(R.id.btn_small_menu_page4)
         var btn_small_menu_page5 = findViewById<Button>(R.id.btn_small_menu_page5)
-        var btn_small_menu_page6 = findViewById<Button>(R.id.btn_small_menu_page6)
+
         //커피 버튼
         btn_small_menu_page1.setOnClickListener{
-            //현재 페이지에서 버튼을 눌렀을 때 출력되는 음성
-            ryu="커피 메뉴를 선택하셨습니다."
-            cnt="커피 메뉴를 선택하셨습니다. 아메리카노 1번. 에스프레소 2번"
-            voice = cnt
+            handlecoffeClick()
 
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("cnt1",cnt)
-            intent.putExtra("ryu",ryu)
-            startActivity(intent)
 
         }
         //라떼 버튼
         btn_small_menu_page2.setOnClickListener{
-            ryu="라떼 메뉴를 선택하셨습니다."
-            cnt="라떼 메뉴를 선택하셨습니다. 바닐라라떼 1번. 카페라떼는 2번"
-            voice = cnt
-
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("cnt2",cnt)
-            intent.putExtra("ryu",ryu)
-            startActivity(intent)
-        }
-        //차 버튼
-        btn_small_menu_page3.setOnClickListener{
-            ryu="차 메뉴를 선택하셨습니다."
-            cnt="차 메뉴를 선택하셨습니다. 차차차는 1번. 칡 차는 2번"
-            voice = cnt
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("cnt3",cnt)
-            intent.putExtra("ryu",ryu)
-            startActivity(intent)
+            handleLatteClick()
         }
         //에이드
         btn_small_menu_page4.setOnClickListener{
-            ryu="에이드 메뉴를 선택하셨습니다."
-            cnt = "에이드 메뉴를 선택하셨습니다. 망고에이드는  1번. 레몬에이드는 2번"
-            voice = cnt
+            handleAdeClick()
 
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("cnt4",cnt)
-            intent.putExtra("ryu",ryu)
-            startActivity(intent)
         }
         //요거트
         btn_small_menu_page5.setOnClickListener{
-            ryu="요거트 메뉴를 선택하셨습니다."
-            cnt = "요거트 메뉴를 선택하셨습니다. 딸기요거트는 1번. 블루베리요거트는 2번"
-            voice = cnt
-
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("cnt5",cnt)
-            intent.putExtra("ryu",ryu)
-            startActivity(intent)
-        }
-        //디저트
-        btn_small_menu_page6.setOnClickListener{
-            ryu="디저트 메뉴를 선택하셨습니다."
-            cnt= "디저트 메뉴를 선택하셨습니다. 케이크는 1번. 류승주는 2번"
-            voice = cnt
-
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            val intent = Intent(this@Main_menu_page,small_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹포",eat)
-            intent.putExtra("cnt6",cnt)
-            intent.putExtra("ryu",ryu)
-            startActivity(intent)
+            handleYogurtClick()
         }
 
         //customer 에서 넘어온 음성 값

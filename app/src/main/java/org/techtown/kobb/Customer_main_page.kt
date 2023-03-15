@@ -4,8 +4,10 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -14,73 +16,107 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import java.util.*
 
-class Customer_main_page : AppCompatActivity(){
-    lateinit var btn_Eat_main_menu_page : ImageButton
-    lateinit var btn_TakeOut_main_menu_page : ImageButton
+class EatClick : View.OnClickListener {
+    override fun onClick(p0: View?) {
+        TODO("Not yet implemented")
+    }
+
+}
+
+class Customer_main_page : AppCompatActivity() {
+    lateinit var btn_Eat_main_menu_page: ImageButton
+    lateinit var btn_TakeOut_main_menu_page: ImageButton
     lateinit var textToSpeech: TextToSpeech
-    lateinit var text : String
-    lateinit var tts :TextToSpeech
+    lateinit var text: String
+    lateinit var tts: TextToSpeech
+    lateinit var manager: STTManager
+
     //음성
-    lateinit var  voice : String
+    lateinit var voice: String
+
     //매장명
-    lateinit var user_shop_name : String
+    lateinit var user_shop_name: String
+
+    fun handleEatClick() {
+        val voice_text: String = "먹고가기를 선택하셨습니다.  커피 1번. 라떼 2번. 에이드 3번. 요거트 4번"
+        Log.d("TAG", "onCreate: 음성출력")
+        ttsSpeak(voice_text)
+
+        // intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
+        //activityResult.launch(intent)
+
+        val intent = Intent(this, Main_menu_page::class.java)
+        //매장명
+        intent.putExtra("매장명", user_shop_name)
+        intent.putExtra("먹고가기", "먹고가기")
+        startActivity(intent)
+//            a = "먹고 가시겠습니까?"
+//            intent.putExtra("음성",a)
+//           startActivity(intent)
+        manager.stop()
+        manager.start()
+    }
+    fun handleTakeOut(){
+        val voice_text: String = "포장하기를 선택하셨습니다.  커피 1번. 라떼 2번. 에이드 3번. 요거트 4번"
+        Log.d("TAG", "onCreate: 음성출력")
+        ttsSpeak(voice_text)
+        intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
+        // activityResult.launch(intent)
+        val intent = Intent(this, Main_menu_page::class.java)
+        intent.putExtra("매장명", user_shop_name)
+        intent.putExtra("포장하기", "포장하기")
+        startActivity(intent)
+//            a = "포장 하시겠습니까?"
+//            intent.putExtra("음성",a)
+//            startActivity(intent)
+        manager.stop()
+        manager.start()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_customer_main_page)
         //버튼값 서버에서 받아오기
-        val serial_no :String ="1"
-        val requestQueue = Volley.newRequestQueue(applicationContext)
-        val url="http://119.206.166.38:8081/KOBB/buttonAndroid.do?serial_no="+serial_no
-        val request = StringRequest(
-            Request.Method.GET,
-            url,
-            {response->
-                // Log.d("리스폰스",String(response.toString().toByteArray(Charsets.ISO_8859_1),Charsets.UTF_8))
-                var  btn1 = response.subSequence(0,response.indexOf(','))
-                //Log.d("쪼갠 아이디 값",id2.toString())
-                var btn2 = response.subSequence(response.indexOf(',')+1,response.indexOf('.'))
-                Log.d("쪼갠 패스워드 값",btn2.toString())
-                var user_shop_name = response.subSequence(response.indexOf('.')+1,response.length)
-                Log.d("쪼갠 이름 값",user_shop_name.toString())
-                if(response!="fuck") {
-                    Toast.makeText(this@Customer_main_page, "로그인 성공", Toast.LENGTH_SHORT).show()
-                    user_shop_name = String(response.subSequence(response.indexOf('.')+1,response.length).toString().toByteArray(Charsets.ISO_8859_1),Charsets.UTF_8)
-                    val intent = Intent(this, Choice_mode_page::class.java)
-                    intent.putExtra("매장명", user_shop_name)
-                    Log.d("?", user_shop_name.toString())
 
-                    startActivity(intent)
-                }else{
-                    Toast.makeText(this@Customer_main_page,"로그인 실패 다시 시도해주세요", Toast.LENGTH_SHORT).show()
-//                        val intent = Intent(this, Login_page::class.java)
-//                        intent.putExtra("사용자 이름", name)
-//                        startActivity(intent)
-                }
-            },
-            { error ->
-                Log.d("톻신에러", error.printStackTrace().toString());
-                Toast.makeText(this@Customer_main_page,"통신실패", Toast.LENGTH_SHORT).show()
-            }
-
-        )
-        tts = TextToSpeech(this, TextToSpeech.OnInitListener {
-            if (it != TextToSpeech.ERROR){
+        tts = TextToSpeech(this) {
+            if (it != TextToSpeech.ERROR) {
                 tts.language = Locale.KOREAN
             }
-        })
+        }
+
         initTextToSpeech()
 
+        //다른페이지 복붙
+        Handler().postDelayed({
+            manager = STTManager(context = applicationContext)
+            manager.setBtn1ClickListener {
+                handleEatClick()
+            }
+            manager.setBtn2ClickListener {
+                handleTakeOut()
+            }
+
+            manager.start()
+
+            },1000)
+
+
+
+
+
         //텍스트 읽기
-        btn_Eat_main_menu_page =findViewById(R.id.btn_Eat_main_menu_page)
-        btn_TakeOut_main_menu_page =findViewById(R.id.btn_TakeOut_main_menu_page)
+        btn_Eat_main_menu_page = findViewById(R.id.btn_Eat_main_menu_page)
+        btn_TakeOut_main_menu_page = findViewById(R.id.btn_TakeOut_main_menu_page)
 
 
         //상호명
-        val customer_main_name = findViewById<TextView>(R.id.tvcname)
+
+        val customer_main_name = findViewById<TextView>(R.id.small_menu_name)
+
         //받아온 매장명
-       user_shop_name = intent.getStringExtra("매장명")!!
+        user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 적용
-        customer_main_name.text =user_shop_name
+        customer_main_name.text = user_shop_name
 
         //음성전환
 //       val intent : Intent = Intent()
@@ -92,50 +128,20 @@ class Customer_main_page : AppCompatActivity(){
         // 음성출력
 
 
-
         //먹고가기 버튼을 눌렀을 때
-        btn_Eat_main_menu_page.setOnClickListener {
-            voice = "먹고가기를 선택하셨습니다. 커피 1번.라떼 2번.차 3번.에이드 4번. 요거트 5번. 디저트6번"
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-
-            // intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-            //activityResult.launch(intent)
-
-           val intent = Intent(this, Main_menu_page::class.java)
-            //매장명
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("먹고가기","먹고가기")
-            startActivity(intent)
-//            a = "먹고 가시겠습니까?"
-//            intent.putExtra("음성",a)
-//           startActivity(intent)
-
+        btn_Eat_main_menu_page.setOnClickListener{
+            handleEatClick()
         }
         //포장하기 눌렀을 때
         btn_TakeOut_main_menu_page.setOnClickListener {
-            voice = "포장하기를 선택하셨습니다. 커피 1번. 라떼 2번. 차 3번. 에이드 4번. 요거트 5번. 디저트6번"
-            if(voice != null){
-                Log.d("TAG", "onCreate: 음성출력")
-                ttsSpeak(voice!!)
-            }
-            intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
-            // activityResult.launch(intent)
-          val intent =Intent(this,Main_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
-            intent.putExtra("포장하기","포장하기")
-            startActivity(intent)
-//            a = "포장 하시겠습니까?"
-//            intent.putExtra("음성",a)
-//            startActivity(intent)
+            handleTakeOut()
+
         }
 
     }
     //onCreate 밖
 
-//    private  val activityResult: ActivityResultLauncher<Intent> = registerForActivityResult(
+    //    private  val activityResult: ActivityResultLauncher<Intent> = registerForActivityResult(
 //        ActivityResultContracts.StartActivityForResult()){
 //        if(it.resultCode == TextToSpeech.Engine.CHECK_VOICE_DATA_PASS){
 //            //음성전환 준비
@@ -198,22 +204,23 @@ class Customer_main_page : AppCompatActivity(){
 //        }
 //    })
 //}
-private fun initTextToSpeech(){
-    Log.d("tag", "initTextToSpeech: 함수실행")
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP){
-        return
-    }
-    tts = TextToSpeech(applicationContext, TextToSpeech.OnInitListener {
-        if(it == TextToSpeech.SUCCESS){
-            var result = tts?.setLanguage(Locale.KOREA)
-            if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
-                return@OnInitListener
-            }
+    private fun initTextToSpeech() {
+        Log.d("tag", "initTextToSpeech: 함수실행")
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            return
         }
-    })
-}
-    private fun ttsSpeak(text : String){
-        tts?.speak(text,TextToSpeech.QUEUE_ADD, null, null)
+        tts = TextToSpeech(applicationContext, TextToSpeech.OnInitListener {
+            if (it == TextToSpeech.SUCCESS) {
+                var result = tts?.setLanguage(Locale.KOREA)
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    return@OnInitListener
+                }
+            }
+        })
+    }
+
+    private fun ttsSpeak(text: String) {
+        tts?.speak(text, TextToSpeech.QUEUE_ADD, null, null)
     }
 
 }

@@ -71,21 +71,22 @@
                 android:textSize="46sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/textView6"
-                app:layout_constraintEnd_toStartOf="@+id/textView52"
+                app:layout_constraintEnd_toStartOf="@+id/textView222"
                 app:layout_constraintStart_toEndOf="@+id/check_tv1" />
 
             <TextView
-                android:id="@+id/textView52"
+                android:id="@+id/textView222"
                 android:layout_width="wrap_content"
                 android:layout_height="67dp"
-                android:layout_marginEnd="150dp"
+                android:layout_marginEnd="8dp"
                 android:text="선택하셨습니다."
                 android:textColor="#504E4E"
                 android:textSize="46sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/textView6"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu" />
+                app:layout_constraintTop_toTopOf="@+id/tv_Hot_Cold_ryu"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/check_tv1"
