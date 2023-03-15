@@ -8,7 +8,7 @@ import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.view.View
-import android.widget.ImageButton
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import com.android.volley.Request
@@ -24,8 +24,8 @@ class EatClick : View.OnClickListener {
 }
 
 class Customer_main_page : AppCompatActivity() {
-    lateinit var btn_Eat_main_menu_page: ImageButton
-    lateinit var btn_TakeOut_main_menu_page: ImageButton
+    lateinit var btn_Eat_main_menu_page: Button
+    lateinit var btn_TakeOut_main_menu_page: Button
     lateinit var textToSpeech: TextToSpeech
     lateinit var text: String
     lateinit var tts: TextToSpeech
@@ -111,12 +111,12 @@ class Customer_main_page : AppCompatActivity() {
 
         //상호명
 
-        val customer_main_name = findViewById<TextView>(R.id.small_menu_name)
+        val shop_name = findViewById<TextView>(R.id.user_shop_name)
 
         //받아온 매장명
-        user_shop_name = intent.getStringExtra("매장명")!!
+        user_shop_name = intent.getStringExtra("user_shop_name")!!
         //상호명에 받아온 매장명 적용
-        customer_main_name.text = user_shop_name
+        shop_name.text = user_shop_name
 
         //음성전환
 //       val intent : Intent = Intent()

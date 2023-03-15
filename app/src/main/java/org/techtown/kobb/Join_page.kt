@@ -28,10 +28,6 @@ class Join_page : AppCompatActivity() {
         val user_pw = findViewById<EditText>(R.id.user_pw)
         val user_phone = findViewById<EditText>(R.id.user_phone)
 
-
-
-
-
         val requestQueue = Volley.newRequestQueue(applicationContext)
         btn_join.setOnClickListener(View.OnClickListener {
             var id = user_id.text.toString()
