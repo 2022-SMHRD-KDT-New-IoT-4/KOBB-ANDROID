@@ -9,19 +9,9 @@ import android.util.Log
 import android.widget.ImageButton
 import android.widget.TextView
 import java.util.*
-import android.Manifest
-import android.app.Activity
-import android.content.pm.PackageManager
-import android.graphics.Bitmap
 import android.provider.MediaStore
-import android.provider.MediaStore.Audio.Media
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 
 class Customer_main_page : AppCompatActivity(){
-    lateinit var btn_Eat_main_menu_page : ImageButton
-    lateinit var btn_TakeOut_main_menu_page : ImageButton
     lateinit var textToSpeech: TextToSpeech
     lateinit var text : String
     lateinit var tts :TextToSpeech
@@ -34,6 +24,7 @@ class Customer_main_page : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_customer_main_page)
 
 
         tts = TextToSpeech(this, TextToSpeech.OnInitListener {
@@ -44,16 +35,16 @@ class Customer_main_page : AppCompatActivity(){
         initTextToSpeech()
 
         //텍스트 읽기
-        btn_Eat_main_menu_page =findViewById(R.id.btn_Eat_main_menu_page)
-        btn_TakeOut_main_menu_page =findViewById(R.id.btn_TakeOut_main_menu_page)
+        var btn_Eat_main_menu_page = findViewById<ImageButton>(R.id.btn_Eat_main_menu_page)
+        var btn_TakeOut_main_menu_page =findViewById<ImageButton>(R.id.btn_TakeOut_main_menu_page)
 
 
-        //상호명
-        val customer_main_name = findViewById<TextView>(R.id.small_menu_name)
-        //받아온 매장명
-       user_shop_name = intent.getStringExtra("매장명")!!
-        //상호명에 받아온 매장명 적용
-        customer_main_name.text =user_shop_name
+        //현재 페이지 상호명
+        val shop_name = findViewById<TextView>(R.id.user_shop_name)
+        // 전 페이지에서 가져온 상호명
+        user_shop_name = intent.getStringExtra("user_shop_name")!!
+        shop_name.text = user_shop_name
+
 
         //음성전환
 //       val intent : Intent = Intent()
@@ -79,7 +70,7 @@ class Customer_main_page : AppCompatActivity(){
 
            val intent = Intent(this, Main_menu_page::class.java)
             //매장명
-            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("user_shop_name",user_shop_name)
             intent.putExtra("먹고가기","먹고가기")
             startActivity(intent)
 //            a = "먹고 가시겠습니까?"
@@ -97,7 +88,7 @@ class Customer_main_page : AppCompatActivity(){
             intent.action = TextToSpeech.Engine.ACTION_CHECK_TTS_DATA
             // activityResult.launch(intent)
           val intent =Intent(this,Main_menu_page::class.java)
-            intent.putExtra("매장명",user_shop_name)
+            intent.putExtra("user_shop_name",user_shop_name)
             intent.putExtra("포장하기","포장하기")
             startActivity(intent)
 //            a = "포장 하시겠습니까?"

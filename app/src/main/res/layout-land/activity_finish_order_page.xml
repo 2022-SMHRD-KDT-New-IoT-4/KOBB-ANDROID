@@ -37,7 +37,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/small_menu_name"
+                android:id="@+id/user_shop_name"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:gravity="center"

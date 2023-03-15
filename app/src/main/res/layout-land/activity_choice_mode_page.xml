@@ -9,10 +9,14 @@
     tools:context=".Start_kiosk_page">
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -26,7 +30,8 @@
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="#FBF8F8"
+            android:layout_marginTop="10dp"
+            android:background="#FFF7F7"
             android:gravity="center_horizontal"
             android:textColor="#504E4E"
             android:textSize="34sp"
@@ -35,28 +40,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tvcname2"
             app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="800dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginBottom="80dp"
-            android:background="#FFEAEA"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="@+id/guideline"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="800dp" />
 
         <ImageView
             android:id="@+id/imageView15"
@@ -64,8 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/Choice_mode_page"
+            app:layout_constraintStart_toStartOf="@+id/Choice_mode_page"
             app:srcCompat="@drawable/kobbtext" />
 
         <androidx.constraintlayout.widget.Guideline
@@ -79,6 +64,7 @@
             android:id="@+id/tvcname2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:text="사장님 안녕하세요!"
             android:textColor="#504E4E"
             android:textSize="40sp"
@@ -88,69 +74,104 @@
             app:layout_constraintTop_toBottomOf="@+id/user_shop_name" />
 
         <TextView
-            android:id="@+id/user_shop_name"
+            android:id="@+id/tvcname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="(매장명)"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/nanumsquareneo_variable"
+            android:text="매장을 관리하시려면"
             android:textColor="#504E4E"
-            android:textSize="40sp"
+            android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvcname2"
             app:layout_constraintStart_toStartOf="@+id/tvcname2"
             app:layout_constraintTop_toTopOf="@+id/textView" />
 
         <TextView
-            android:id="@+id/textView81"
+            android:id="@+id/tvcname3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="모드선택"
+            android:fontFamily="@font/nanumsquareneo_variable"
+            android:text="키오스크를 실행 하시려면"
             android:textColor="#504E4E"
-            android:textSize="35sp"
+            android:textSize="34sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="@+id/textView2" />
+            app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="@+id/btn_Manage_main_page"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Manage_main_page" />
+
+        <TextView
+            android:id="@+id/user_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:text="(매장명)"
+            android:textColor="#504E4E"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvcname2"
+            app:layout_constraintStart_toStartOf="@+id/tvcname2"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <Button
             android:id="@+id/Choice_mode_page"
-            android:layout_width="300dp"
+            android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button_style"
             android:backgroundTint="#FF5555"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:text="고객 모드"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/btn_Manage_main_page"
             app:layout_constraintStart_toStartOf="@+id/btn_Manage_main_page"
-            app:layout_constraintTop_toBottomOf="@+id/btn_Manage_main_page" />
+            app:layout_constraintTop_toBottomOf="@+id/tvcname3" />
 
         <Button
             android:id="@+id/btn_Manage_main_page"
-            android:layout_width="300dp"
+            android:layout_width="500dp"
             android:layout_height="100dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button_style"
             android:backgroundTint="#FF5555"
+            android:fontFamily="@font/nanumsquareneo_bold"
             android:text="관리자 모드"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/textView81"
-            app:layout_constraintStart_toStartOf="@+id/textView81"
-            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+            app:layout_constraintEnd_toEndOf="@+id/tvcname"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/tvcname"
+            app:layout_constraintTop_toBottomOf="@+id/tvcname" />
 
         <TextView
             android:id="@+id/textView58"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="#FF5555"
-            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareneo_bold"
+            android:text="모드선택"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="@+id/tvcname2"
+            app:layout_constraintStart_toStartOf="@+id/tvcname2"
+            app:layout_constraintTop_toTopOf="@+id/textView58" />
 
         <ImageButton
             android:id="@+id/btn_User_info_page"
@@ -166,12 +187,19 @@
 
         <ImageView
             android:id="@+id/imageView21"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView58"
             app:srcCompat="@drawable/kobblogo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="83dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

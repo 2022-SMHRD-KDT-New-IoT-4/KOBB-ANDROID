@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.TextView
 import java.util.*
 
@@ -37,7 +36,7 @@ class small_menu_page : AppCompatActivity() {
        val btn_Hot_cold_page2 = findViewById<Button>(R.id.btn_Hot_cold_page2)
 
         //상호명
-        val small_menu_name = findViewById<TextView>(R.id.small_menu_name)
+        val small_menu_name = findViewById<TextView>(R.id.user_shop_name)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         //상호명에 받아온 매장명 담아주기

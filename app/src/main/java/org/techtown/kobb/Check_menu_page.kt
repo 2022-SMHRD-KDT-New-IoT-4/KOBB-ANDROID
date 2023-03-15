@@ -96,7 +96,7 @@ class Check_menu_page : AppCompatActivity() {
             startActivity(intent)
         }
         //상호명
-        var tvcname = findViewById<TextView>(R.id.small_menu_name)
+        var tvcname = findViewById<TextView>(R.id.user_shop_name)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("매장명")!!
         tvcname.text = user_shop_name
