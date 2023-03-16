@@ -110,7 +110,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
             <Button
-                android:id="@+id/btn_small_menu_page2"
+                android:id="@+id/btn_Customer_main_page"
                 android:layout_width="300dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="10dp"
@@ -134,9 +134,9 @@
                 android:text="차"
                 android:textColor="#F7F7F7"
                 android:textSize="30dp"
-                app:layout_constraintEnd_toEndOf="@+id/btn_small_menu_page2"
-                app:layout_constraintStart_toStartOf="@+id/btn_small_menu_page2"
-                app:layout_constraintTop_toBottomOf="@+id/btn_small_menu_page2" />
+                app:layout_constraintEnd_toEndOf="@+id/btn_Customer_main_page"
+                app:layout_constraintStart_toStartOf="@+id/btn_Customer_main_page"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Customer_main_page" />
 
             <Button
                 android:id="@+id/btn_small_menu_page5"

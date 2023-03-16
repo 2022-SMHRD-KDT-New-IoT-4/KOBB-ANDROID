@@ -29,6 +29,7 @@ class Main_menu_page : AppCompatActivity() {
     lateinit var text : String
     lateinit var tts :TextToSpeech
     lateinit var cnt :String
+
     lateinit var manager: STTManager
 
 //    //류
@@ -154,7 +155,7 @@ class Main_menu_page : AppCompatActivity() {
         main_menu_name.text = user_shop_name
         // 6개 버튼 소메뉴 페이지(small_menu_page) 로 이동
         var btn_small_menu_page1 = findViewById<Button>(R.id.btn_small_menu_page1)
-        var btn_small_menu_page2 = findViewById<Button>(R.id.btn_small_menu_page2)
+        var btn_small_menu_page2 = findViewById<Button>(R.id.btn_Customer_main_page)
         var btn_small_menu_page4 = findViewById<Button>(R.id.btn_small_menu_page4)
         var btn_small_menu_page5 = findViewById<Button>(R.id.btn_small_menu_page5)
 

@@ -2,6 +2,6 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:drawable="@drawable/payco"
-        android:width="150dp"
-        android:height="130dp" />
+        android:width="130dp"
+        android:height="110dp" />
 </layer-list>

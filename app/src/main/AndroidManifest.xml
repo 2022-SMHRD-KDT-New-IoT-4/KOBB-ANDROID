@@ -87,15 +87,17 @@
         <activity
             android:name=".Login_page"
             android:exported="true" />
-        <activity
-            android:name=".small_menu_page"
-            android:exported="true" >
-        </activity>
+
         <activity
             android:name=".Main_menu_page"
             android:exported="true" />
         <activity
             android:name=".Manage_main_page"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".small_menu_page1_1"
             android:exported="true">
 
         </activity>

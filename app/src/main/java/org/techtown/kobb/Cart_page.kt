@@ -1,7 +1,9 @@
 package org.techtown.kobb
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 class Cart_page : AppCompatActivity() {
@@ -12,18 +14,22 @@ class Cart_page : AppCompatActivity() {
         setContentView(R.layout.activity_cart_page)
 
         //상호명
-        val tvcname2 = findViewById<TextView>(R.id.user_shop_name)
+        val shop_name = findViewById<TextView>(R.id.user_shop_name)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("user_shop_name")!!
-        tvcname2.text = user_shop_name
+        shop_name.text = user_shop_name
 
-        // page 21 장바구니 페이지
-        // 뒤로가기 버튼 : btn_Small_menu_page3
-        // 장바구니 버튼 : btn_Cart_page3
-        // 장바구니 사진1 : btn_cart_page_img
-        // 장바구니 사진2 : btn_cart_page_img1
         // 결제하기 버튼 : btn_Choice_pay_page
-        // 이전페이지, 다음페이지 이동 어떻게 해야 하지?
+
+
+        var pay_page = findViewById<Button>(R.id.btn_Choice_pay_page)
+
+        pay_page.setOnClickListener{
+
+            val intent = Intent(this, Choice_pay_page::class.java)
+            intent.putExtra("user_shop_name",shop_name.text)
+            startActivity(intent)
+        }
 
 
 
