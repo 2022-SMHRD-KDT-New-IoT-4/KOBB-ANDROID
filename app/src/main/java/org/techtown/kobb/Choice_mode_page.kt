@@ -3,6 +3,7 @@ package org.techtown.kobb
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
@@ -20,6 +21,7 @@ class Choice_mode_page : AppCompatActivity() {
 
         // 매장명에 text 를 login 시 가져온 user_shop_name 으로 변경
         user_shop_name.text = intent.getStringExtra("user_shop_name")!! //login에서 넘어온 매장명
+        val user_id = intent.getStringExtra("user_id")
         
         val btn_Manage_main_page = findViewById<Button>(R.id.btn_Manage_main_page)
         val btn_Start_kiosk_page = findViewById<Button>(R.id.Choice_mode_page)
@@ -28,6 +30,7 @@ class Choice_mode_page : AppCompatActivity() {
         btn_Manage_main_page.setOnClickListener{
             val intent = Intent(this,Manage_main_page ::class.java)
             intent.putExtra("user_shop_name",user_shop_name.toString())
+            intent.putExtra("user_id",user_id)
             startActivity(intent)
         }
 

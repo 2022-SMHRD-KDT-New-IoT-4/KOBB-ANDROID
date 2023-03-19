@@ -12,6 +12,7 @@ import com.android.volley.AuthFailureError
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import org.json.JSONObject
 
 class Login_page : AppCompatActivity() {
 
@@ -32,20 +33,19 @@ class Login_page : AppCompatActivity() {
         btn_Choice_mode_page.setOnClickListener(View.OnClickListener {
             var id = login_user_id.text.toString()
             var pw = login_user_pw.text.toString()
-            val url="http://119.206.166.38:8081/KOBB/Login.do?"
+            val url="http://211.107.188.246:8003/KOBB/Login.do?"
 
             val request = object : StringRequest(
                 Request.Method.POST,
                 url,
                 {response->
-                    var index1 = response.indexOf(',') // 데이터를 ,와 . 으로 구분 해놓음
-                    var index2 = response.indexOf('.')
-                    //  indext 0 번에있는 data = id
-                    var user_id = response.subSequence(0,index1)
-                    //  index 1 번에있는 data = pw
-                    var user_pw = response.subSequence(index1+1,index2)
-                    var user_shop_name = response.subSequence(index2+1,response.length)
-                    Log.d("매장명",user_shop_name.toString())
+                    // java 에서 json 타입으로 변환 된 데이터를 안드로이드에서도 JsonObject 로 받아준다
+                    var response_result = JSONObject(response)
+                    // 받아온 매장명
+                    var user_shop_name = response_result.getString("user_shop_name")
+                    // 받아온 아이디 ( 아이디 FK 로 정보조회해야하기 때문에 id 또한 intent 로 계속 넘겨줘야함!
+                    var user_id = response_result.getString("user_id")
+
 
                     // 로그인 실패가 아니라면
                     if(response!="로그인 실패") {
@@ -55,6 +55,7 @@ class Login_page : AppCompatActivity() {
                         // user_shop_name 을 가지고 choice_mode_page 로 이동한다.
                         val intent = Intent(this, Choice_mode_page::class.java)
                         intent.putExtra("user_shop_name", user_shop_name)
+                        intent.putExtra("user_id",user_id)
                         startActivity(intent)
                     }else{
                         Toast.makeText(this@Login_page,"로그인 실패 다시 시도해주세요", Toast.LENGTH_SHORT).show()

@@ -170,7 +170,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         app:layout_constraintEnd_toStartOf="@+id/lv_Control_inventory_page"
-        app:layout_constraintTop_toTopOf="@+id/lv_Control_inventory_page" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -194,7 +194,7 @@
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/guideline19"
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
@@ -356,6 +356,91 @@
         android:text=" 판매량 적은순"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
         app:layout_constraintEnd_toEndOf="@+id/lv_Control_inventory_page" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <EditText
+        android:id="@+id/new_menu_num"
+        android:layout_width="28dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:backgroundTint="#EDE3E3"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/new_menu_name"
+        android:layout_width="59dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_num"
+        app:layout_constraintTop_toTopOf="@+id/new_menu_num"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/new_menu_price"
+        android:layout_width="58dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_name"
+        app:layout_constraintTop_toTopOf="@+id/new_menu_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/new_menu_sort"
+        android:layout_width="75dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_price"
+        app:layout_constraintTop_toTopOf="@+id/new_menu_price"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/new_menu_status"
+        android:layout_width="53dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lv_Control_inventory_page"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_sort"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/new_menu_image"
+        android:layout_width="87dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_status"
+        app:layout_constraintTop_toTopOf="@+id/new_menu_status"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

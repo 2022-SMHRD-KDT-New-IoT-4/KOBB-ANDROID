@@ -97,7 +97,7 @@
             tools:srcCompat="@drawable/checkmark" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/user_shop_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -116,10 +116,10 @@
             android:text="KOBB의 회원이 되신것을 축하합니다!"
             android:textColor="#504E4E"
             android:textSize="34sp"
-            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="@+id/user_shop_name"
             app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="@+id/textView14"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintStart_toStartOf="@+id/user_shop_name"
+            app:layout_constraintTop_toBottomOf="@+id/user_shop_name" />
 
 
 

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FF5555"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".Manage_main_page">
 
 
@@ -46,13 +47,13 @@
         app:srcCompat="@drawable/kobbtext" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="600dp"
-        android:layout_height="300dp"
+        android:id="@+id/imageView28"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:srcCompat="@drawable/kobblogo" />
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/kobbapplogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

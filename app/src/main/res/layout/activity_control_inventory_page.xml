@@ -87,7 +87,6 @@
         android:id="@+id/checkBox15"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/checkBox12"
         app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
 
@@ -139,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         app:layout_constraintEnd_toStartOf="@+id/lv_Control_inventory_page"
-        app:layout_constraintTop_toTopOf="@+id/lv_Control_inventory_page" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -178,7 +177,7 @@
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/guideline20"
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
@@ -330,6 +329,87 @@
         android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="@+id/checkBox5"
         app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="447dp" />
+
+    <EditText
+        android:id="@+id/new_inventory_num"
+        android:layout_width="28dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:backgroundTint="#EDE3E3"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <EditText
+        android:id="@+id/new_inventory_name"
+        android:layout_width="59dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/new_inventory_num"
+        app:layout_constraintStart_toEndOf="@+id/new_inventory_num"
+        app:layout_constraintTop_toTopOf="@+id/new_inventory_num" />
+
+    <EditText
+        android:id="@+id/new_inventory_price"
+        android:layout_width="58dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintStart_toEndOf="@+id/new_inventory_name"
+        app:layout_constraintTop_toTopOf="@+id/new_inventory_name" />
+
+    <EditText
+        android:id="@+id/new_menu_sort4"
+        android:layout_width="69dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_status4"
+        app:layout_constraintTop_toTopOf="@+id/new_menu_status4" />
+
+    <EditText
+        android:id="@+id/new_menu_status4"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintStart_toEndOf="@+id/new_inventory_price"
+        app:layout_constraintTop_toTopOf="@+id/new_inventory_price"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/new_menu_image4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/table_temp"
+        android:fontFamily="@font/nanumsquareneo_variable"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_sort4"
+        app:layout_constraintTop_toTopOf="@+id/new_menu_sort4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

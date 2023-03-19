@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -20,7 +19,7 @@ class MenuAdapter (val context: Context , val data:ArrayList<MenuVO>) : Recycler
         val menu_image : TextView // 메뉴 이미지
 
         init {
-            menu_num = itemView.findViewById(R.id.menu_num)
+            menu_num = itemView.findViewById(R.id.inventory_num)
             menu_name = itemView.findViewById(R.id.menu_name)
             menu_price = itemView.findViewById(R.id.menu_price)
             menu_sort = itemView.findViewById(R.id.menu_sort)
@@ -42,12 +41,12 @@ class MenuAdapter (val context: Context , val data:ArrayList<MenuVO>) : Recycler
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.menu_num.setText(data.get(position).menu_num)
+        holder.menu_num.setText(data.get(position).menu_num.toString())
         holder.menu_name.setText(data.get(position).menu_name)
-        holder.menu_price.setText(data.get(position).menu_price)
+        holder.menu_price.setText(data.get(position).menu_price.toString())
         holder.menu_sort.setText(data.get(position).menu_sort)
-        holder.menu_status.setText(data.get(position).menu_status)
-        holder.menu_image.setText(data.get(position).menu_image)
+        holder.menu_status.setText(data.get(position).menu_status.toString())
+        holder.menu_image.setText(data.get(position).menu_image.toString())
     }
 
 

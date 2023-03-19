@@ -1,6 +1,5 @@
 package org.techtown.kobb
 import android.content.Intent
-import android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -10,19 +9,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.AuthFailureError
 import com.android.volley.Request
-import com.android.volley.Response
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.JsonRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import org.json.JSONObject
-import java.net.CookieManager
-import javax.net.ssl.HttpsURLConnection
+
+
 class Join_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_join_page)
-        val btn_join = findViewById<Button>(R.id.btn_join)
+        val btn_join = findViewById<Button>(R.id.btn_Login_page)
         val user_shop_name = findViewById<EditText>(R.id.user_shop_name)
         val user_id = findViewById<EditText>(R.id.user_id)
         val user_pw = findViewById<EditText>(R.id.user_pw)
@@ -35,13 +30,19 @@ class Join_page : AppCompatActivity() {
             var phone = user_phone.text.toString()
             var shop_name = user_shop_name.text.toString()
             val url="http://211.107.188.246:8003/KOBB/Join.do?"
+
             val request = object: StringRequest(
                 Request.Method.POST,
                 url
                 ,
                 {response->
-                    Toast.makeText(this@Join_page, "통신성공", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Join_page, "로그인 성공", Toast.LENGTH_SHORT).show()
+
+                    var user_shop_name = response.subSequence(0,response.length)
+                    Log.d("매장명",user_shop_name.toString())
+
                     val intent = Intent(this,Join_success_page ::class.java)
+                    intent.putExtra("user_shop_name",user_shop_name)
                     startActivity(intent)
                 },
                 { error ->
