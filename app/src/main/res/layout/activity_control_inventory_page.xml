@@ -137,7 +137,7 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        app:layout_constraintEnd_toStartOf="@+id/lv_Control_inventory_page"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox3"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <CheckBox
@@ -177,7 +177,7 @@
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toTopOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
@@ -346,16 +346,19 @@
         android:fontFamily="@font/nanumsquareneo_variable"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <EditText
         android:id="@+id/new_inventory_name"
-        android:layout_width="59dp"
+        android:layout_width="58.5dp"
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/new_inventory_num"
         app:layout_constraintStart_toEndOf="@+id/new_inventory_num"
@@ -363,35 +366,44 @@
 
     <EditText
         android:id="@+id/new_inventory_price"
-        android:layout_width="58dp"
+        android:layout_width="59dp"
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
         app:layout_constraintStart_toEndOf="@+id/new_inventory_name"
         app:layout_constraintTop_toTopOf="@+id/new_inventory_name" />
 
     <EditText
-        android:id="@+id/new_menu_sort4"
-        android:layout_width="69dp"
+        android:id="@+id/new_inventory_category"
+        android:layout_width="68dp"
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
-        app:layout_constraintStart_toEndOf="@+id/new_menu_status4"
-        app:layout_constraintTop_toTopOf="@+id/new_menu_status4" />
+        app:layout_constraintStart_toEndOf="@+id/new_inventory_status"
+        app:layout_constraintTop_toTopOf="@+id/new_inventory_status" />
 
     <EditText
-        android:id="@+id/new_menu_status4"
-        android:layout_width="45dp"
+        android:id="@+id/new_inventory_status"
+        android:layout_width="44dp"
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
         app:layout_constraintStart_toEndOf="@+id/new_inventory_price"
@@ -400,16 +412,18 @@
 
     <EditText
         android:id="@+id/new_menu_image4"
-        android:layout_width="0dp"
+        android:layout_width="103dp"
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toEndOf="@+id/new_menu_sort4"
-        app:layout_constraintTop_toTopOf="@+id/new_menu_sort4" />
+        app:layout_constraintStart_toEndOf="@+id/new_inventory_category"
+        app:layout_constraintTop_toTopOf="@+id/new_inventory_category" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

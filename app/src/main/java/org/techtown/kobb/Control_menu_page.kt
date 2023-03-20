@@ -56,11 +56,11 @@ class Control_menu_page : AppCompatActivity() {
                     val menu_name = menu.getString("menu_name")
                     val menu_price = menu.getString("menu_price").toLong()
                     // 상품상태 number 로 되어있어서 변경해야함
-                    val menu_sort = menu.getString("menu_stock").toLong()
+                    val menu_status = menu.getString("menu_status")
                     val menu_category = menu.getString("menu_category")
-                    val menu_image = menu.getString("menu_img").toDouble()
+                    val menu_image = menu.getString("menu_img")
 
-                    data.add(MenuVO(menu_num-1,menu_name,menu_price,menu_category,menu_sort,menu_image))
+                    data.add(MenuVO(menu_num-1,menu_name,menu_price,menu_category, menu_status,menu_image))
 
                     Log.d("하이",data.toString())
 
@@ -111,6 +111,8 @@ class Control_menu_page : AppCompatActivity() {
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
+
+
 
             }
 
