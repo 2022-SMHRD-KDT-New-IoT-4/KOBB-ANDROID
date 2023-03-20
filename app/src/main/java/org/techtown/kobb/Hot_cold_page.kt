@@ -39,7 +39,7 @@ class Hot_cold_page : AppCompatActivity() {
     //메뉴 이름
     lateinit var choice_menu : String
     fun handleh1Click() {
-        voice = "차갑게를 선택하셨습니다. 장바구니에 담으시려면 1번. 장바구니를 확인하시려면 2번"
+        voice = "차갑게를 선택하셨습니다 장바구니에 담으시려면 1번, 장바구니를 확인하시려면 2번을 눌러주세요"
         if(voice != null){
             Log.d("TAG", "onCreate: 음성출력")
             ttsSpeak(voice!!)
@@ -53,7 +53,7 @@ class Hot_cold_page : AppCompatActivity() {
         manager.stop()
     }
     fun handleh2Click() {
-        voice = "따뜻하게를 선택하셨습니다. 장바구니에 담으시려면 1번. 장바구니를 확인하시려면 2번"
+        voice = "따뜻하게를 선택하셨습니다 장바구니에 담으시려면 1번, 장바구니를 확인하시려면 2번을 눌러주세요"
         if(voice != null){
             Log.d("TAG", "onCreate: 음성출력")
             ttsSpeak(voice!!)

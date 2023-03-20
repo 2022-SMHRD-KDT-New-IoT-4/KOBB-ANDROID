@@ -41,7 +41,7 @@ class Main_menu_page : AppCompatActivity() {
 
         cnt = "커피"
         ryu="커피류"
-        val voice_text: String = "커피 메뉴를 선택하셨습니다. 아메리카노 1번. 에스프레소 2번"
+        val voice_text: String = "커피 메뉴를 선택하셨습니다, 아메리카노는 1번을, 에스프레소는 2번 뒤로가시려면 3번을 눌러주세요"
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
@@ -57,7 +57,7 @@ class Main_menu_page : AppCompatActivity() {
 
         cnt = "라떼"
         ryu="라떼류"
-        val voice_text: String = "라떼 메뉴를 선택하셨습니다. 바닐라라떼 1번. 카페라떼는 2번"
+        val voice_text: String = "라떼 메뉴를 선택하셨습니다, 바닐라라떼는 1번을 카페라떼는 2번 뒤로가시려면 3번을 눌러주세요."
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
@@ -73,7 +73,7 @@ class Main_menu_page : AppCompatActivity() {
 
         cnt = "에이드"
         ryu="에이드류"
-        val voice_text: String = "에이드 메뉴를 선택하셨습니다. 망고에이드는  1번. 레몬에이드는 2번"
+        val voice_text: String = "에이드 메뉴를 선택하셨습니다. 망고에이드는 1번을 레몬에이드는 2번 뒤로가시려면 3번을 눌러주세요"
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)
@@ -89,7 +89,7 @@ class Main_menu_page : AppCompatActivity() {
 
         cnt="요거트"
         ryu="요거트류"
-        val voice_text: String = "요거트 메뉴를 선택하셨습니다. 딸기요거트는 1번. 블루베리요거트는 2번"
+        val voice_text: String = "요거트 메뉴를 선택하셨습니다. 딸기요거트는 1번을 블루베리요거트는 2번 뒤로가시려면 3번을 눌러주세요"
         Log.d("TAG", "onCreate: 음성출력")
         ttsSpeak(voice_text)
         val intent = Intent(this@Main_menu_page,small_menu_page1_1::class.java)

@@ -22,14 +22,14 @@ class Start_kiosk_page : AppCompatActivity() {
         setContentView(R.layout.activity_start_kiosk_page)
 
         // 음성출력
-        tts = TextToSpeech(this, TextToSpeech.OnInitListener {
-            if (it != TextToSpeech.ERROR){
-                tts.language = Locale.KOREAN
-            }
-        })
+//        tts = TextToSpeech(this, TextToSpeech.OnInitListener {
+//            if (it != TextToSpeech.ERROR){
+//                tts.language = Locale.KOREAN
+//            }
+//        })
         initTextToSpeech()
 
-        voice = "시각 장애인 이시면 아래 점자를 읽고 버튼을 눌러주세요. 드시고 가실려면 1번, 포장 하시려면 2번을 눌러주세요"
+        voice = "시각 장애인 이시면 좌측 하단 점자를 읽고 버튼을 눌러주세요 매장에서 먹고가기 1번, 포장 하시려면 2번을 눌러주세요"
 
         //영업시작
        val btn_Customer_main_page = findViewById<Button>(R.id.btn_Customer_main_page)

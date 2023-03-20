@@ -21,7 +21,7 @@ class Check_menu_page : AppCompatActivity() {
 
     }
     fun handlec1Click() {
-        voice = "장바구니에 담았습니다"
+        voice = "메뉴를 장바구니에 담았습니다"
         if(voice != null){
             Log.d("TAG", "onCreate: 음성출력")
             ttsSpeak(voice!!)
@@ -49,7 +49,7 @@ class Check_menu_page : AppCompatActivity() {
         },1000)
     }
     fun handlec2Click() {
-        voice = "결제를 하시려면 1번 "
+        voice = "결제를 하시려면 1번을 뒤로가시려면 2번을 눌러주세요"
         if(voice != null){
             Log.d("TAG", "onCreate: 음성출력")
             ttsSpeak(voice!!)

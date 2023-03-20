@@ -38,7 +38,7 @@ class small_menu_page1_1 : AppCompatActivity() {
     lateinit var choice_menu : String
     fun handles1Click() {
         //커피먹고가기
-        voice = "아메리카노를 선택하셨습니다.차갑게 드실려면1번.따뜻하게 드실려면2번"
+        voice = "아메리카노를 선택하셨습니다, 차갑게 드실려면 1번 따뜻하게 드실려면 2번 뒤로가시려면 3번을 눌러주세요"
         choice_menu="아메리카노"
         if(voice != null){
             Log.d("TAG", "onCreate: 음성출력")
@@ -55,7 +55,7 @@ class small_menu_page1_1 : AppCompatActivity() {
     }
     fun handles2Click() {
         //커피먹고가기
-        voice ="에스프레소를 선택하셨습니다.차갑게 드실려면1번.따뜻하게 드실려면2번"
+        voice ="에스프레소를 선택하셨습니다, 차갑게 드실려면 1번 따뜻하게 드실려면 2번 뒤로가시려면 3번을 눌러주세요"
         choice_menu="에스프레소"
         // voice = "커피 라떼 메뉴를 선택하셨습니다. 아메리카노는 1번. 카페라떼는 2번"
         if(voice != null){
@@ -72,41 +72,41 @@ class small_menu_page1_1 : AppCompatActivity() {
         manager.start()
 
     }
-    fun handles3Click() {
-        voice = "바닐라라떼를 선택하셨습니다.차갑게 드실려면1번.따뜻하게 드실려면2번"
-        choice_menu="바닐라라떼"
-        if(voice != null){
-            Log.d("TAG", "onCreate: 음성출력")
-            ttsSpeak(voice!!)
-        }
-        val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
-        intent.putExtra("user_shop_name",user_shop_name)
-        intent.putExtra("먹포",eat)
-        intent.putExtra("cnt1",cnt)
-        intent.putExtra("choice_menu",choice_menu)
-        startActivity(intent)
-        manager.stop()
-        manager.start()
-
-
-    }
-    fun handles4Click() {
-        voice ="카페라떼를 선택하셨습니다.차갑게 드실려면1번.따뜻하게 드실려면2번"
-        choice_menu="카페라떼"
-        // voice = "커피 라떼 메뉴를 선택하셨습니다. 아메리카노는 1번. 카페라떼는 2번"
-        if(voice != null){
-            Log.d("TAG", "onCreate: 음성출력")
-            ttsSpeak(voice!!)
-        }
-        val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
-        intent.putExtra("user_shop_name",user_shop_name)
-        intent.putExtra("먹포",eat)
-        intent.putExtra("cnt2",cnt)
-        intent.putExtra("choice_menu",choice_menu)
-        startActivity(intent)
-        manager.stop()
-        manager.start()
-    }
+//    fun handles3Click() {
+//        voice = "바닐라라떼를 선택하셨습니다.차갑게 드실려면1번.따뜻하게 드실려면2번"
+//        choice_menu="바닐라라떼"
+//        if(voice != null){
+//            Log.d("TAG", "onCreate: 음성출력")
+//            ttsSpeak(voice!!)
+//        }
+//        val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
+//        intent.putExtra("user_shop_name",user_shop_name)
+//        intent.putExtra("먹포",eat)
+//        intent.putExtra("cnt1",cnt)
+//        intent.putExtra("choice_menu",choice_menu)
+//        startActivity(intent)
+//        manager.stop()
+//        manager.start()
+//
+//
+//    }
+//    fun handles4Click() {
+//        voice ="카페라떼를 선택하셨습니다.차갑게 드실려면1번.따뜻하게 드실려면2번"
+//        choice_menu="카페라떼"
+//        // voice = "커피 라떼 메뉴를 선택하셨습니다. 아메리카노는 1번. 카페라떼는 2번"
+//        if(voice != null){
+//            Log.d("TAG", "onCreate: 음성출력")
+//            ttsSpeak(voice!!)
+//        }
+//        val intent = Intent(this@small_menu_page1_1,Hot_cold_page::class.java)
+//        intent.putExtra("user_shop_name",user_shop_name)
+//        intent.putExtra("먹포",eat)
+//        intent.putExtra("cnt2",cnt)
+//        intent.putExtra("choice_menu",choice_menu)
+//        startActivity(intent)
+//        manager.stop()
+//        manager.start()
+//    }
 
 
 
@@ -139,11 +139,11 @@ class small_menu_page1_1 : AppCompatActivity() {
        val btn_Hot_cold_page2 = findViewById<Button>(R.id.btn_Hot_cold_page2)
 
         //상호명
-        val small_menu_name = findViewById<TextView>(R.id.user_shop_name)
+        val small_menu_name = findViewById<TextView>(R.id.small_menu_name)
         //받아온 매장명
         user_shop_name = intent.getStringExtra("user_shop_name")!!
         //상호명에 받아온 매장명 담아주기
-       small_menu_name.text = user_shop_name
+        small_menu_name.text = user_shop_name
 
         //먹고가기 포장하기
         eat = intent.getStringExtra("먹포")!!
