@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/inventory_num"
+            android:id="@+id/menu_num"
             android:layout_width="28dp"
             android:layout_height="match_parent"
             android:background="@drawable/table_temp"
@@ -47,7 +47,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/menu_sort"
+            android:id="@+id/menu_category"
             android:layout_width="75dp"
             android:layout_height="match_parent"
             android:background="@drawable/table_temp"

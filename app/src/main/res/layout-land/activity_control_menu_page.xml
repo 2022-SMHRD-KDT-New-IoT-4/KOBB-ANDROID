@@ -226,7 +226,7 @@
                         android:textSize="24dp" />
 
                     <TextView
-                        android:id="@+id/menu_sort"
+                        android:id="@+id/menu_category"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="1dp"

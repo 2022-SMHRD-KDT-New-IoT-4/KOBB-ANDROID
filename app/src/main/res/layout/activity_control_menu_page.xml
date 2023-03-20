@@ -382,7 +382,10 @@
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintStart_toEndOf="@+id/new_menu_num"
@@ -395,7 +398,10 @@
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintStart_toEndOf="@+id/new_menu_name"
@@ -403,12 +409,15 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/new_menu_sort"
+        android:id="@+id/new_menu_category"
         android:layout_width="75dp"
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintStart_toEndOf="@+id/new_menu_price"
@@ -416,15 +425,18 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/new_menu_status"
+        android:id="@+id/new_inventory_status"
         android:layout_width="53dp"
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/lv_Control_inventory_page"
-        app:layout_constraintStart_toEndOf="@+id/new_menu_sort"
+        app:layout_constraintStart_toEndOf="@+id/new_menu_category"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -434,12 +446,15 @@
         android:layout_height="0dp"
         android:background="@drawable/table_temp"
         android:fontFamily="@font/nanumsquareneo_variable"
+        android:gravity="center"
+        android:hint="입력"
         android:paddingLeft="5dp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toEndOf="@+id/new_menu_status"
-        app:layout_constraintTop_toTopOf="@+id/new_menu_status"
+        app:layout_constraintStart_toEndOf="@+id/new_inventory_status"
+        app:layout_constraintTop_toTopOf="@+id/new_inventory_status"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

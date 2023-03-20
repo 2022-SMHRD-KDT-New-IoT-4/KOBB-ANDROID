@@ -14,15 +14,15 @@ class MenuAdapter (val context: Context , val data:ArrayList<MenuVO>) : Recycler
         val menu_num : TextView // 순번
         val menu_name: TextView  // 이름
         val menu_price: TextView  // 가격
-        val menu_sort : TextView  // 카테고리
+        val menu_category : TextView  // 카테고리
         val menu_status : TextView  // 메뉴 상태 (판매/품절)
         val menu_image : TextView // 메뉴 이미지
 
         init {
-            menu_num = itemView.findViewById(R.id.inventory_num)
+            menu_num = itemView.findViewById(R.id.menu_num)
             menu_name = itemView.findViewById(R.id.menu_name)
             menu_price = itemView.findViewById(R.id.menu_price)
-            menu_sort = itemView.findViewById(R.id.menu_sort)
+            menu_category = itemView.findViewById(R.id.menu_category)
             menu_status = itemView.findViewById(R.id.menu_status)
             menu_image = itemView.findViewById(R.id.menu_image)
 
@@ -44,9 +44,9 @@ class MenuAdapter (val context: Context , val data:ArrayList<MenuVO>) : Recycler
         holder.menu_num.setText(data.get(position).menu_num.toString())
         holder.menu_name.setText(data.get(position).menu_name)
         holder.menu_price.setText(data.get(position).menu_price.toString())
-        holder.menu_sort.setText(data.get(position).menu_sort)
-        holder.menu_status.setText(data.get(position).menu_status.toString())
-        holder.menu_image.setText(data.get(position).menu_image.toString())
+        holder.menu_category.setText(data.get(position).menu_category)
+        holder.menu_status.setText(data.get(position).menu_status)
+        holder.menu_image.setText(data.get(position).menu_image)
     }
 
 

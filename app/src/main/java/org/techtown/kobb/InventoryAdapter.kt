@@ -21,10 +21,10 @@ class InventoryAdapter(val context : Context, val data : ArrayList<InventoryVO>)
         init {
             invent_name = itemView.findViewById(R.id.menu_name)
             invent_price = itemView.findViewById(R.id.menu_price)
-            invent_stock = itemView.findViewById(R.id.menu_sort)
+            invent_stock = itemView.findViewById(R.id.menu_category)
             invent_partner = itemView.findViewById(R.id.menu_status)
             invent_partNum = itemView.findViewById(R.id.menu_image)
-            invent_num = itemView.findViewById(R.id.inventory_num)
+            invent_num = itemView.findViewById(R.id.menu_num)
         }
 
     }
