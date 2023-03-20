@@ -28,7 +28,7 @@ class Cart_page : AppCompatActivity() {
             ttsSpeak(voice!!)
         }
         val intent = Intent(this, Choice_pay_page::class.java)
-        intent.putExtra("user_shop_name",shop_name.text)
+       // intent.putExtra("user_shop_name",shop_name.text)
         startActivity(intent)
         manager.stop()
     }
@@ -42,11 +42,6 @@ class Cart_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart_page)
-        tts = TextToSpeech(this, TextToSpeech.OnInitListener {
-            if (it != TextToSpeech.ERROR){
-                tts.language = Locale.KOREAN
-            }
-        })
 
         Handler().postDelayed({
             manager = STTManager(context = applicationContext)
@@ -55,6 +50,15 @@ class Cart_page : AppCompatActivity() {
             }
             manager.start()
         },1000)
+
+        tts = TextToSpeech(this, TextToSpeech.OnInitListener {
+            if (it != TextToSpeech.ERROR){
+                tts.language = Locale.KOREAN
+            }
+        })
+        initTextToSpeech()
+
+
 
 
         //상호명

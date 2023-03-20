@@ -55,6 +55,7 @@ class Choice_pay_page : AppCompatActivity() {
                 tts.language = Locale.KOREAN
             }
         })
+        initTextToSpeech()
 
         var btn_card = findViewById<Button>(R.id.btn_Customer_main_page)
 
