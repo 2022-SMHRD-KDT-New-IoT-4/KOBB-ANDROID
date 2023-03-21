@@ -54,6 +54,7 @@
 
         <activity
             android:name=".Control_inventory_page"
+            android:windowSoftInputMode="adjustNothing"
             android:exported="true">
 
         </activity>
@@ -66,6 +67,7 @@
 
         <activity
             android:name=".Control_menu_page"
+            android:windowSoftInputMode="adjustNothing"
             android:exported="true">
 
         </activity>

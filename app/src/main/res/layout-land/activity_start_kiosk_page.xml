@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
             android:fontFamily="@font/nanumsquareneo_bold"
-            android:text="2023년 00월 00일 00시 00분 00초"
+            android:text="2023년 03 21일 08시 57분 48초"
             android:textColor="#504E4E"
             android:textSize="34sp"
             android:textStyle="normal"
