@@ -1,6 +1,6 @@
 ## :heart: 장애인을 위한 배리어프리 키오스크  팀명 : KOBB
 <div align ="center">
-<img src ="https://user-images.githubusercontent.com/121835105/230782543-369b5f2d-63a4-4dc4-9b60-c9ab225ce7d3.png" width="500" height="300"></img>
+<img src ="https://user-images.githubusercontent.com/121835105/230782543-369b5f2d-63a4-4dc4-9b60-c9ab225ce7d3.png" width="400" height="300"></img>
 </div>
 
 ## 1. 프로젝트 개요
@@ -54,7 +54,7 @@
 
 ## 6.완성시제품
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230781785-8b7787c4-cab2-44f2-84f9-14f3300eb853.jpg" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230781785-8b7787c4-cab2-44f2-84f9-14f3300eb853.jpg" width="600" height="400"></img>
 </div>
 
 ## 7.App페이지
