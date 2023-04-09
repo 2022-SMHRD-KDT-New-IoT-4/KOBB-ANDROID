@@ -1,6 +1,6 @@
 ## :heart: 장애인을 위한 배리어프리 키오스크  팀명 : KOBB
 <div align ="center">
-<img src ="https://user-images.githubusercontent.com/121835105/230781785-8b7787c4-cab2-44f2-84f9-14f3300eb853.jpg" width="250" height="200"></img>
+<img src ="https://user-images.githubusercontent.com/121835105/230782543-369b5f2d-63a4-4dc4-9b60-c9ab225ce7d3.png" width="250" height="200"></img>
 </div>
 
 ## 1. 프로젝트 개요
@@ -22,7 +22,7 @@
 
 #### 서비스 흐름도
 
-#### 하드웨어 
+##### 하드웨어 
 <div align ="center">
 <img src="https://user-images.githubusercontent.com/121835105/230782408-a6e250bd-0029-4b21-a5f2-59d00c83710e.png" width="800" height="300"></img>
 </div>
@@ -36,30 +36,28 @@
 </div>
 
 ## 3. 개발환경
-
-### App
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230777559-1c28c9a5-a7b1-44a9-b59a-175058219170.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230782591-46e1d3e6-a87b-4814-9e13-7477e2e99ad3.png" width="800" height="300"></img>
 </div>
 
 ## 4. 유스케이스
 
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230776867-31872b40-6a23-406f-936b-c04e185e74f6.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230782611-48d4e352-53de-41ff-9666-d00829750136.png" width="800" height="300"></img>
 </div>
 
 ## 5. ER다이어그램
 
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230777872-f41aaa91-3782-4fe9-a7b6-e02a3fde6dc3.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230782706-89339e38-f699-46d9-ac1d-aefe864dc306.png" width="800" height="300"></img>
 </div>
 
 ## 6.완성시제품
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230780083-9a3c16f0-2134-4f5b-abb9-a99ff4a9254a.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230781785-8b7787c4-cab2-44f2-84f9-14f3300eb853.jpg" width="800" height="300"></img>
 </div>
 
-## 7.WEB페이지
+## 7.App페이지
 - 메인페이지
 <div align ="center">
 <img src="https://user-images.githubusercontent.com/121835105/230781227-38e42f8d-1171-46a6-a470-55e2240d0fa6.png" width="800" height="300"></img>
@@ -90,17 +88,27 @@
 
 ### - TeamTruouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230778691-f170e41b-dc30-4dde-8997-1f580c8c3ae7.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230782741-4b5ab7d6-535a-4b7a-a71e-24ae7ad1aa31.png" width="800" height="300"></img>
 </div>
 
 ### - DevelopTrouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230779201-ec3d2b99-22de-485d-9d82-18d39fa99eb9.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230782754-8292c858-23c5-4556-a45c-6f96ec8c1da0.png" width="800" height="300"></img>
 </div>
 
 ### - DevelopTrouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230779218-5acaa285-c608-45fa-a4c2-72a59e4d6e31.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230782769-ef2eb79e-5970-4d39-a5e0-03a3b8f50f7a.png" width="800" height="300"></img>
+</div>
+
+### - DevelopTrouble
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230782784-dbc47bfc-6551-471c-9031-93693b82d174.png" width="800" height="300"></img>
+</div>
+
+### - DevelopTrouble
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230782800-de8f5843-7b5d-4380-b33b-a5b09397abd1.png" width="800" height="300"></img>
 </div>
 
 ## 9.시연영상
