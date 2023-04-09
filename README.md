@@ -43,7 +43,7 @@
 ## 4. 유스케이스
 
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782611-48d4e352-53de-41ff-9666-d00829750136.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230782611-48d4e352-53de-41ff-9666-d00829750136.png" width="600" height="400"></img>
 </div>
 
 ## 5. ER다이어그램
@@ -60,27 +60,27 @@
 ## 7.App페이지
 - 메인페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230781227-38e42f8d-1171-46a6-a470-55e2240d0fa6.png" width="800" height="300"></img>
+<img src="" width="800" height="300"></img>
 </div>
 
 - 수업진행 페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230781301-b09a94df-392b-493a-bc42-f1eae6a8300c.png" width="800" height="300"></img>
+<img src="" width="800" height="300"></img>
 </div>
 
 - 수업진행 페이지- 자리배치도, 타이머, 타이머 제어 기능 구동 화면
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230781306-bfb3715e-731c-4a1a-a19e-5ddeacb129b1.png" width="800" height="400"></img>
+<img src="" width="800" height="400"></img>
 </div>
 
 - 수업준비 페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230781307-8fa1e1fc-1a30-48ae-a562-1da0711ebc2c.png" width="800" height="300"></img>
+<img src="" width="800" height="300"></img>
 </div>
 
 - 수업관리 페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230781311-0506a5be-5544-4374-bd4c-ccfa85dad44b.png" width="800" height="300"></img>
+<img src="" width="800" height="300"></img>
 </div>
 
 
