@@ -74,12 +74,13 @@
 
 - 모드선택 페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230809341-e729c54b-6002-4bd6-a987-c7f7b68a675b.jpg" width="400" height="800"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809341-e729c54b-6002-4bd6-a987-c7f7b68a675b.jpg" width="400" height="600"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809370-8217e6a4-edd5-4560-a89d-9c2efb7a0b3c.png" width="400" height="600"></img>
 </div>
 
 - 관리자모드 메인 페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230809370-8217e6a4-edd5-4560-a89d-9c2efb7a0b3c.png" width="800" height="300"></img>
+
 </div>
 
 - 매출현황 페이지
