@@ -72,35 +72,22 @@
 <img src="https://user-images.githubusercontent.com/121835105/230809317-f368988f-e504-4b8f-9aee-f734644057e1.jpg" width="800" height="300"></img>
 </div>
 
-- 모드선택 페이지
+- 모드선택 페이지 , 관리자모드 메인페이지
 <div align ="center">
 <img src="https://user-images.githubusercontent.com/121835105/230809341-e729c54b-6002-4bd6-a987-c7f7b68a675b.jpg" width="400" height="600"></img>
-<img src="https://user-images.githubusercontent.com/121835105/230809370-8217e6a4-edd5-4560-a89d-9c2efb7a0b3c.png" width="400" height="600"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230810916-e2f19be5-d48e-4d1a-8ecf-d4d0d50121b9.png" width="400" height="600"></img>
 </div>
 
-- 관리자모드 메인 페이지
+- 매출현황 페이지 , 메뉴관리 페이지
 <div align ="center">
-
+<img src="https://user-images.githubusercontent.com/121835105/230810973-66e09a8a-2a6f-4175-b617-9448b4bb4148.png" width="400" height="600"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230810990-7307da7c-32fc-49ef-b342-10b95d78f107.png" width="400" height="600"></img>
 </div>
 
-- 매출현황 페이지
+- 재고관리 페이지, 키오스크 관리 페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230809599-e37c5ba5-3e57-4890-9265-ca46ab3d651d.png" width="800" height="300"></img>
-</div>
-
-- 메뉴관리 페이지
-<div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230809621-e98c34be-a7d3-4195-a04b-9ac3a0232353.png" width="800" height="300"></img>
-</div>
-
-- 재고관리 페이지
-<div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230809656-76d90a50-b24e-4f05-af37-d48784c38731.png" width="800" height="300"></img>
-</div>
-
-- 키오스크관리 페이지
-<div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230809696-7a6eab91-2f90-4ab9-b784-87d08469604d.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230811004-55d71e9d-8ba0-4a3f-be98-9297ea900353.png" width="400" height="600"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230811094-d5d17e25-37fb-4269-8389-cb693fab6dc1.png" width="400" height="600"></img>
 </div>
 
 - 고객모드 메뉴선택 페이지1
