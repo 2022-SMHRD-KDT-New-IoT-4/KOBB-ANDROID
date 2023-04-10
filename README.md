@@ -12,32 +12,35 @@
 ## 2. 주요기능
 #### 개발목표 - 하드웨어
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782292-d0754bb3-d9fa-464a-9a0f-fd9a519f302d.png" width="800" height ="300"></img>
+<img src="(https://user-images.githubusercontent.com/121835105/230807297-b6788bc5-ee16-47b4-ba77-a8e490592ed1.png" width="800" height ="300"></img>
 </div>
 
 #### 개발목표 - App
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782310-b6b25a80-87e9-4134-9b54-f686c87ea35a.png" width="800" height ="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807326-34b4707a-e71e-48c5-be6f-c732f7ec625b.png" width="800" height ="300"></img>
 </div>
+
 
 #### 서비스 흐름도
 
 ##### 하드웨어 
+###### 점자 버튼
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782408-a6e250bd-0029-4b21-a5f2-59d00c83710e.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807363-02d40f30-ca31-4381-b9a1-760e200eec04.png" width="800" height="300"></img>
 </div>
+###### 높이 조절
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782422-3a84e9ce-816a-483e-b2e2-63ebc05f3398.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807394-03ed3971-bfbf-4ae2-9538-e06b0d7eeacc.png" width="800" height="300"></img>
 </div>
 
 ##### App
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782336-9aa29197-3c8e-43eb-82ae-747778553bdd.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807498-4e41f290-eca1-465c-ace3-d3c95ef2922c.png" width="800" height="300"></img>
 </div>
 
 ## 3. 개발환경
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782591-46e1d3e6-a87b-4814-9e13-7477e2e99ad3.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807522-66ec6d3a-106e-42a5-9725-225420831e7c.png" width="800" height="300"></img>
 </div>
 
 ## 4. 유스케이스
@@ -88,27 +91,27 @@
 
 ### - TeamTruouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782741-4b5ab7d6-535a-4b7a-a71e-24ae7ad1aa31.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807563-bf236282-8c4a-422a-af42-5b3994280b13.png" width="800" height="300"></img>
 </div>
 
 ### - DevelopTrouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782754-8292c858-23c5-4556-a45c-6f96ec8c1da0.png" width="800" height="300"></img>
+<img src="hhttps://user-images.githubusercontent.com/121835105/230807586-51703564-ea45-4d11-be85-a51480083100.png" width="800" height="300"></img>
 </div>
 
 ### - DevelopTrouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782769-ef2eb79e-5970-4d39-a5e0-03a3b8f50f7a.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807602-255481bb-0be0-4217-b645-b6b7079457f3.png" width="800" height="300"></img>
 </div>
 
 ### - DevelopTrouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782784-dbc47bfc-6551-471c-9031-93693b82d174.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807650-c19fb7c4-7407-41b2-a167-07826b6bf32e.png" width="800" height="300"></img>
 </div>
 
 ### - DevelopTrouble
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230782800-de8f5843-7b5d-4380-b33b-a5b09397abd1.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807697-48a39fa3-4d96-4e35-912f-a06e54b9a7bf.png" width="800" height="300"></img>
 </div>
 
 ## 9.시연영상
