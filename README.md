@@ -28,6 +28,7 @@
 <div align ="center">
 <img src="https://user-images.githubusercontent.com/121835105/230807363-02d40f30-ca31-4381-b9a1-760e200eec04.png" width="800" height="300"></img>
 </div>
+
 ###### 높이 조절
 <div align ="center">
 <img src="https://user-images.githubusercontent.com/121835105/230807394-03ed3971-bfbf-4ae2-9538-e06b0d7eeacc.png" width="800" height="300"></img>
@@ -61,30 +62,74 @@
 </div>
 
 ## 7.App페이지
-- 메인페이지
+- 로그인 완료 후 메인페이지
 <div align ="center">
-<img src="" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809283-79145ab1-08a6-4049-a954-1bd1052d77a6.jpg" width="800" height="300"></img>
 </div>
 
-- 수업진행 페이지
+- 영업시작 페이지
 <div align ="center">
-<img src="" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809317-f368988f-e504-4b8f-9aee-f734644057e1.jpg" width="800" height="300"></img>
 </div>
 
-- 수업진행 페이지- 자리배치도, 타이머, 타이머 제어 기능 구동 화면
+- 모드선택 페이지
 <div align ="center">
-<img src="" width="800" height="400"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809341-e729c54b-6002-4bd6-a987-c7f7b68a675b.jpg" width="800" height="400"></img>
 </div>
 
-- 수업준비 페이지
+- 관리자모드 메인 페이지
 <div align ="center">
-<img src="" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809370-8217e6a4-edd5-4560-a89d-9c2efb7a0b3c.png" width="800" height="300"></img>
 </div>
 
-- 수업관리 페이지
+- 매출현황 페이지
 <div align ="center">
-<img src="" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809599-e37c5ba5-3e57-4890-9265-ca46ab3d651d.png" width="800" height="300"></img>
 </div>
+
+- 메뉴관리 페이지
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809621-e98c34be-a7d3-4195-a04b-9ac3a0232353.png" width="800" height="300"></img>
+</div>
+
+- 재고관리 페이지
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809656-76d90a50-b24e-4f05-af37-d48784c38731.png" width="800" height="300"></img>
+</div>
+
+- 키오스크관리 페이지
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809696-7a6eab91-2f90-4ab9-b784-87d08469604d.png" width="800" height="300"></img>
+</div>
+
+- 고객모드 메뉴선택 페이지1
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809721-5dd00c78-7759-4014-9e16-0b9cb73440d2.jpg" width="800" height="300"></img>
+</div>
+
+- 고객모드 메뉴선택 페이지2
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809747-6d7e7f8b-ae47-4c55-9a85-2eb88eab40fd.jpg" width="800" height="300"></img>
+</div>
+
+- 고객모드 메뉴선택 페이지3
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809780-ca610e98-8b65-462a-8d61-0753fb2afe13.jpg" width="800" height="300"></img>
+</div>
+
+- 고객모드 메뉴선택 페이지4
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809829-37c274ba-c433-4927-a52f-e29cccb06e40.jpg" width="800" height="300"></img>
+</div>
+
+- 고객모드 장바구니 확인 페이지
+<div align ="center">
+<img src="https://user-images.githubusercontent.com/121835105/230809852-7674579c-e397-4c56-84d6-c46c70e26717.jpg" width="800" height="300"></img>
+</div>
+
+
+
+
 
 
 ## 8.트러블슈팅
@@ -115,5 +160,5 @@
 </div>
 
 ## 9.시연영상
-#### [시연영상 링크]       (https://www.canva.com/design/DAFfn8Vt7sI/qn2eLbjzyWbrcmKiAeQHXw/editutm_content=DAFfn8Vt7sI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+#### [시연영상 링크]       (https://www.canva.com/design/DAFfqUzTMv0/-1ukZMi9Qv2lYNLLCoyQjQ/edit?utm_content=DAFfqUzTMv0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
