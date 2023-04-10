@@ -12,7 +12,7 @@
 ## 2. 주요기능
 #### 개발목표 - 하드웨어
 <div align ="center">
-<img src="(https://user-images.githubusercontent.com/121835105/230807297-b6788bc5-ee16-47b4-ba77-a8e490592ed1.png" width="800" height ="300"></img>
+<img src="(https://user-images.githubusercontent.com/121835105/230807836-3ecde211-b6e0-48e4-8a41-2eeed517cb40.png" width="800" height ="300"></img>
 </div>
 
 #### 개발목표 - App
@@ -96,7 +96,7 @@
 
 ### - DevelopTrouble
 <div align ="center">
-<img src="hhttps://user-images.githubusercontent.com/121835105/230807586-51703564-ea45-4d11-be85-a51480083100.png" width="800" height="300"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230807586-51703564-ea45-4d11-be85-a51480083100.png" width="800" height="300"></img>
 </div>
 
 ### - DevelopTrouble
