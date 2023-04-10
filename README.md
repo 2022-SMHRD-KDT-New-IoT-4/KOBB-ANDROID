@@ -74,7 +74,7 @@
 
 - 모드선택 페이지
 <div align ="center">
-<img src="https://user-images.githubusercontent.com/121835105/230809341-e729c54b-6002-4bd6-a987-c7f7b68a675b.jpg" width="800" height="400"></img>
+<img src="https://user-images.githubusercontent.com/121835105/230809341-e729c54b-6002-4bd6-a987-c7f7b68a675b.jpg" width="400" height="800"></img>
 </div>
 
 - 관리자모드 메인 페이지
